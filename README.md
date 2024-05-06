@@ -1,93 +1,165 @@
-# PP2 - Lab12 - MyString
+# MyString
+W zadaniu chodzi o to, żeby Państwo:
+- zaimplementowali własny typ do obsługi tekstu, którego część pamięci będzie statycznie (tablica o stałym rozmiarze), a reszta będzie się allokować wg potrzeby,
+- zależy mi też aby Państwo byli w stanie zaimplementować własny iterator
+- kolejnym aspektem jest aby Państwo przećwiczyli fundamentalną umiejętność programisty - czytanie kodu. Dlatego nie mają Państwo obszernego opisu, tylko kod z testami i muszą sobie Państwo poradzić.
+- wreszcie zależy mi też aby Państwo spróbowali maksymalnie dużo zrobić przy użyciu biblioteki standardowej C++ (nie wszystko na piechotę),
+dlatego też testy zawierają wskazówki czego można użyć aby daną funkcjonalność dostarczyć bez konieczności implementowania jej samodzielnie.
+- \* osoby ambitne mogą spróbować zaimplementować pewne funkcjonalności przy pomocy biblioteki [boost](https://www.boost.org/).
+  Oczywiście jakby coś nie działało proszę o priv, abym doinstalował.
 
+## Opis bardziej szczegółowy:
+1. Wykorzystanie biblioteki STL i kontenerów podczas implementacji klasy MyString
+   - można też użyć typu `std::string` pod spodem, jak i `std::array`, nie trzeba ręcznie zarządzać pamięcią
+2. Klasa ta ma zawierać statyczna tablice na tekst do 20 znaków,
+   a resztę ma w razie potrzeby pobierać dynamicznie np. przy pomocy typu `std::string`.
+3. Funkcjonalności są dopasowane tak, aby użyć kilku kontenerów standardowych,
+   poćwiczyć pisanie iteratorów, oraz użyć algorytmów uogólnionych (`<algorithm>`).
+4. Treść należy wydedukować w oparciu o plik z testami, nad wieloma testami jest sugestia czego można użyć.
+5. Można też użyć biblioteki `boost` (oczywiście wtedy w razie błędów kompilacji na bobotcie proszę o maila z informacją czego Państwo używają).
+6. Sygnatury funkcji do zaimplementowania (pobrane przy pomocy `ctags`):
 
+| metoda                | sygnatura                                                           |
+|---------------------- |-------------------------------------------------------------------- |
+| MyString              | MyString(const char *text)                                          |
+| MyString              | MyString(const MyString &text)                                      |
+| begin                 | iterator begin()                                                    |
+| begin                 | const_iterator begin() const                                        |
+| capacity              | auto capacity() const                                               |
+| cbegin                | const_iterator cbegin() const                                       |
+| cend                  | const_iterator cend() const                                         |
+| const_iterator        | explicit const_iterator(const MyString* myString, size_t position)  |
+| empty                 | bool empty() const                                                  |
+| end                   | iterator end()                                                      |
+| end                   | const_iterator end() const                                          |
+| getPosition           | auto getPosition() const                                            |
+| iterator              | explicit iterator(MyString* myString, size_t position)              |
+| operator !=           | bool operator!=(const MyString& rhs) const                          |
+| operator !=           | bool operator!=(iterator anotherIt)                                 |
+| operator !=           | bool operator!=(const_iterator anotherIt) const                     |
+| operator *            | char& operator*()                                                   |
+| operator *            | char operator*() const                                              |
+| operator +            | iterator operator+(size_t pos)                                      |
+| operator +            | const_iterator operator+(size_t pos) const                          |
+| operator ++           | iterator& operator++()                                              |
+| operator ++           | const_iterator& operator++()                                        |
+| operator -            | size_t operator-(iterator anotherIt)                                |
+| operator -            | size_t operator-(const_iterator anotherIt) const                    |
+| operator --           | iterator& operator--()                                              |
+| operator --           | const_iterator& operator--()                                        |
+| operator ==           | bool operator==(iterator anotherIt)                                 |
+| operator ==           | bool operator==(const_iterator anotherIt) const                     |
+| operator []           | char operator[](size_t i) const                                     |
+| operator std::string  | explicit operator std::string() const                               |
+| push_back             | void push_back(char c)                                              |
+| size                  | auto size() const                                                   |
+| map<MyString, size_t> | countWordsUsageIgnoringCases() const;                               |
+| all_of                | bool all_of(std::function<bool(char)> predicate) const              |
+| generateRandomWord    | static MyString generateRandomWord(size_t length)                   |
+| getUniqueWords        | std::set<MyString> getUniqueWords() const                           |
+| join                  | MyString join(const std::vector<MyString> &texts) const             |
+| startsWith            | bool MyString::startsWith(const char *text) const                   |
+| toLower               | MyString& toLower()                                                 |
+| trim                  | MyString& trim()                                                    |
 
-## Getting started
+______________
+## Najczęstsze problemy/wątpliwości/Uwaga:
+--------
+1. Konieczne może się okazać zrobienie dwóch wersji metod begin/end -jedna stała, druga nie.
+2. Należy zdefiniować dwie wersje iteratorów - stały `const_iterator` i zwykły `iterator` jako klasy zagnieżdżone.
+    1. Informacje [jak zdefiniować własny iterator](https://medium.com/geekculture/iterator-design-pattern-in-c-42caec84bfc)
+       lub [2](https://stackoverflow.com/questions/3582608/how-to-correctly-implement-custom-iterators-and-const-iterators).
+       Najprościej jest dziedziczyć po `std::iterator`, niemniej jednak jest to deprecated.
+    2. Powinno się to pojawić na ostatnim wykładzie.
+3. Szablony muszą być zdefiniowane w całości w pliku nagłówkowym,
+   jednakże proszę aby definicje metod dłuższych niż 1-linijkowe były pod klasą.
+4. Iterator nie chce działać z kontenerem standardowym
+   - Ponieważ trzeba wskazać jakiego [rodzaju jest ten iterator](https://en.cppreference.com/w/cpp/iterator/iterator_tags).
+5. Można użyć `std::sort` lub `std::stable_sort` - tylko trzeba wiedzieć gdzie i jak.
+6. Można spróbować użyć `if constexpr` aby zmniejszyć ilość funkcji.
+7. Dodałem pliki, ale testy nadal nie przechodzą - trzeba ponownie uruchomić CMake aby wykrył zmiany plików.
+8. Dodałem plik `mystring.h` lub `mystring.cpp` i dalej go nie widzi.
+   - Proszę się upewnić, że wielkość liter się zgadza (Linux je rozróżnia w przeciwieństwie do Windowsa)
+   - Proszę po dodaniu pliku ponownie uruchomić CMake oraz kompilacje - aby wykryło nowe pliki to skompilowania.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+[Bardziej szczegółowe informacje jak pisać programy w ładnym stylu](https://programowaniec.wordpress.com/2017/11/09/czego-sie-czepiam/) dla zaawansowanych.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+____________________________________________________________________________________
 
-## Add your files
+### Informacje o co chodzi w paczce, na co zwrócić uwagę, jak czytać testy znajdują się w materiale [wideo](https://banbye.com/watch/v_HIP0VpziSU92).
+**W opisie filmu jest też częściowy spis treści.**
+1. O co chodzi w zadaniu
+2. Jak to zrobić nie mając pliku z implementacją.
+3. Ponowne uruchamienie pliku CMake.
+4. Omówienie testów, sugestii i testów iteratorów.
+5. Reklama `<algorithm>` i innych algorytmów.
+6. Algorytmy tekstowe: `boost::algorithm`
+7. Koniec paczek, proszę sobie dopilnować
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+____________________________________________________________________________________
+## Ocenianie:
+1. Ocenia [Bobot](https://gitlab.com/agh-courses/bobot), na ten moment w następujący sposób:
+   1. Kompilacja nadesłanego rozwiązania - bez tego zero punktów. Bobot pracuje na Linuxie, używa kompilatora g++.
+   2. Uruchamianie testów - za każdy test, który przejdzie są punkty, ale mogą być odjęte w kolejnych krokach.
+   3. Jeśli program się wywala na którymś z testów (to się pojawia często u osób pracujących na Windowsie - ten system pozwala pisać po nie-swojej pamięci, Linux nie pozwala) lub jest timeout - wtedy będzie przyznane tyle punktów ile przechodzi testów **minus dwa za karę**.
+   4. Jest odpalane narzędzie [valgrind](https://valgrind.org/), które sprawdza czy umiemy obsługiwać pamięć w praktyce - jeśli nie to **minus punkt**.
+   5. Odpalane są też inne narzędzia takie jak [cppcheck](http://cppcheck.net/), czy [fawfinde](https://dwheeler.com/flawfinder/) i inne. One nie odejmują punktów, no ale mają pomóc w pisaniu porządnych programów. Nie olewajmy tego.
+   6. Antyplagiat - za wykrycie plagiatu (jest specjalne narzędzie) otrzymuje się 0 punktów. Róbmy więc samemu!
+____________________________________________________________________________________
+# Pytania po implementacji ćwiczenia:
+1. (Jak macie pomysł to podrzućcie)
+____________________________________________________________________________________
+# Zadania, które warto zrobić (uwaga: nie będzie za to punktów, tylko coś cenniejszego - umiejętności)
+1. Użyć biblioteki boost
+____________________________________________________________________________________
+# Jak skonfigurować sobie pracę nad paczką:
+W formie [wideo](https://banbye.com/watch/v_i79PoGIWrjRC) do poprzedniej paczki (link do projektu inny, reszta analogiczna).
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/agh-courses/23/pp2/pp2-lab12-mystring.git
-git branch -M main
-git push -uf origin main
-```
+**Alternatywnie poniżej jest to spisane w kolejnej sekcji**
+____________________________________________________________________________________
+## Grading (section copied from Mateusz Ślażyński, of course he agreed):
 
-## Integrate with your tools
+* [ ] Make sure, you have a **private** group
+  * [how to create a group](https://docs.gitlab.com/ee/user/group/#create-a-group)
+* [ ] Fork this project into your private group
+  * [how to create a fork](https://docs.gitlab.com/ee/user/project/repository/forking_workflow.html#creating-a-fork)
+* [ ] Add @bobot-is-a-bot as the new project's member (role: **maintainer**)
+  * [how to add an user](https://docs.gitlab.com/ee/user/project/members/index.html#add-a-user)
 
-- [ ] [Set up project integrations](https://gitlab.com/agh-courses/23/pp2/pp2-lab12-mystring/-/settings/integrations)
+## How To Submit Solutions
 
-## Collaborate with your team
+1. [ ] Clone repository: `git clone` (clone only once the same repository):
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+    ```bash
+    git clone <repository url>
+    ```
+2. [ ] Solve the exercises
+3. [ ] Commit your changes
 
-## Test and Deploy
+    ```bash
+    git add <path to the changed files>
+    git commit -m <commit message>
+    ```
+4. [ ] Push changes to the gitlab main branch
 
-Use the built-in continuous integration in GitLab.
+    ```bash
+    git push -u origin main
+    ```
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+The rest will be taken care of automatically. You can check the `GRADE.md` file for your grade / test results. Be aware that it may take some time (up to one hour) till this file. Details can be found in `./logs/` directory where You can check compilation results, tests logs etc.
 
-***
+## Project Structure
 
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+    .
+    └── zaj6MyString
+       ├── CMakeLists.txt         # CMake configuration file - the file is to open out project in our IDE
+       ├── Dockerfile             # this file contains instructions how to run tests in embedded Ubuntu
+       ├── Doxyfile               # here is prepared file for Doxygen, to generate documentation when we type `doxygen .`
+       ├── main.cpp               # main file - here we can test out solution manually, but it is not required, it contains what to do
+       ├── mystring.h             # this file should be created and contain declarations
+       ├── mystring.cpp           # this file should be created and contain definitions for declared methods
+       ├── README.md              # this file
+       ├── tests                  # here are tests for exercise, inner CMakeLists.txt, GTest library used by tests
+       │   ├── CMakeLists.txt     # iner CMake for tests - it is included by outter CMake
+       │   └── myStringTests.cpp  # tests for our class
+       └── trescWygenerowan_dlaStudentowa.pdf
