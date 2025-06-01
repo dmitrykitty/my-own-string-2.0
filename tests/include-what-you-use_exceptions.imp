@@ -1,0 +1,5 @@
+[
+  {
+    "include": ["\"bits/mofunc_impl.h\"", "private", "<functional>", "public"]
+  }
+]
