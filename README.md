@@ -1,4 +1,4 @@
-# MyString
+# Laboratorium 12: MyString
 W zadaniu chodzi o to, żeby Państwo:
 - zaimplementowali własny typ do obsługi tekstu, którego część pamięci będzie statycznie (tablica o stałym rozmiarze), a reszta będzie się allokować wg potrzeby,
 - zależy mi też aby Państwo byli w stanie zaimplementować własny iterator
@@ -111,6 +111,14 @@ ________________________________________________________________________________
 ____________________________________________________________________________________
 # Zadania, które warto zrobić (uwaga: nie będzie za to punktów, tylko coś cenniejszego - umiejętności)
 1. Użyć biblioteki boost
+____________________________________________________________________________________
+## Podpięte narzędzia przy sprawdzaniu (wyniki w katalogu `logs/`):
+1. `cppcheck` - narzędzie do statycznej analizy kodu, które analizuje kod i szyka potencjalnych błędów (statyczny analizator może się pomylić)
+2. `flawfinder` - narzędzie do statycznej analizy kodu pod względem podatności kodu pod względem bezpieczeństwa
+3. `perf` (`perf stats` i `perf record`), narzędzie do zaawansowanego monitorowanania wykonywania programu, można zarówno podejrzeć szczegóły wykonania (`perf stats`), jak i prześledzić ile czasu program spędził w danej funkcji (`perf record`). W oparciu o wynik tej drugiej komendy można prześledzić w sposób interaktywny w [programie hotspot](https://github.com/KDAB/hotspot), natomiast można też wygenerować grafikę w oparciu o [brendangregg/Flamegraph](https://github.com/brendangregg/Flamegraph.git).
+4. `cpplint` - narzędzie do statycznej analizy kodu, autorstwa firmy Google, które znajduje różne rzeczy do poprawy (również aspekty związane ze stylem programowania)
+5. `clang-tidy` - narzędzie do analizy kodu bazujące na kompilatorze, służy jako backend w wielu środowiskach programistycznych znajdując błędy na bieżąco. Narzędzie to raczej się nie myli (ma pod spodem kompilator), chociaż może być bardziej restrykcyjne niż aktualnie używany kompilator.
+6. Wykrywanie tabów w plikach - zła praktyka aby umieszczać znaki tabulacji w plikach źródłowych z C++. A także narzędzie do wykrywania tzw. trailing whitespaces - czyli białych znaków na końcu linii. Robię to jako skrypty bashowe.
 ____________________________________________________________________________________
 # Jak skonfigurować sobie pracę nad paczką:
 W formie [wideo](https://banbye.com/watch/v_i79PoGIWrjRC) do poprzedniej paczki (link do projektu inny, reszta analogiczna).
