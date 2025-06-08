@@ -1,0 +1,373 @@
+[ 16%] Building CXX object tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 33%] Linking CXX static library ../../../lib/libgtest.a
+[ 33%] Built target gtest
+[ 50%] Building CXX object tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 66%] Linking CXX static library ../../../lib/libgtest_main.a
+[ 66%] Built target gtest_main
+[ 83%] Building CXX object tests/CMakeFiles/tests.dir/myStringTests.cpp.o
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:14:6: error: #error "File 'mystring.h' not found!"
+   14 |     #error "File 'mystring.h' not found!"
+      |      ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_emptyStringConstruction_expectedSizeIsZero_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:30:11: error: ‘MyString’ does not name a type
+   30 |     const MyString text;
+      |           ^~~~~~~~
+In file included from /tmp/tmpvc352xdt/student/tests/lib/googletest/include/gtest/gtest.h:71,
+                 from /tmp/tmpvc352xdt/student/tests/myStringTests.cpp:7:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:31:18: error: ‘text’ was not declared in this scope
+   31 |     EXPECT_EQ(0, text.size());
+      |                  ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:32:15: error: ‘MyString’ has not been declared
+   32 |     EXPECT_EQ(MyString::initialBufferSize_+string().capacity(), text.capacity());
+      |               ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:32:65: error: ‘text’ was not declared in this scope
+   32 |     EXPECT_EQ(MyString::initialBufferSize_+string().capacity(), text.capacity());
+      |                                                                 ^~~~
+In file included from /tmp/tmpvc352xdt/student/tests/lib/googletest/include/gtest/gtest-printers.h:122,
+                 from /tmp/tmpvc352xdt/student/tests/lib/googletest/include/gtest/gtest-matchers.h:49,
+                 from /tmp/tmpvc352xdt/student/tests/lib/googletest/include/gtest/internal/gtest-death-test-internal.h:47,
+                 from /tmp/tmpvc352xdt/student/tests/lib/googletest/include/gtest/gtest-death-test.h:43,
+                 from /tmp/tmpvc352xdt/student/tests/lib/googletest/include/gtest/gtest.h:64:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:33:17: error: ‘text’ was not declared in this scope
+   33 |     EXPECT_TRUE(text.empty());
+      |                 ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_constructionFromConstChar_expectedTextCopied_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:45:5: error: ‘MyString’ was not declared in this scope
+   45 |     MyString text(quote);
+      |     ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:47:30: error: ‘text’ was not declared in this scope
+   47 |     ASSERT_EQ(strlen(quote), text.size());
+      |                              ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:48:18: error: ‘text’ was not declared in this scope
+   48 |     EXPECT_FALSE(text.empty());
+      |                  ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_clear_expectedEmptyStringAfterClearing_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:55:5: error: ‘MyString’ was not declared in this scope
+   55 |     MyString text(quote);
+      |     ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:57:30: error: ‘text’ was not declared in this scope
+   57 |     ASSERT_EQ(strlen(quote), text.size());
+      |                              ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:58:18: error: ‘text’ was not declared in this scope
+   58 |     EXPECT_FALSE(text.empty());
+      |                  ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:60:5: error: ‘text’ was not declared in this scope
+   60 |     text.clear();
+      |     ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_ostreamOperator_readTextShorterThanBufferSize_expectedTextInStream_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:68:51: error: ‘MyString’ has not been declared
+   68 |     const string textShorterThanInitialBufferSize(MyString::initialBufferSize_/2, 'i');
+      |                                                   ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:69:11: error: ‘MyString’ does not name a type
+   69 |     const MyString text(textShorterThanInitialBufferSize.c_str());
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:70:15: error: ‘text’ was not declared in this scope
+   70 |     stream << text;
+      |               ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_ostreamOperator_readTextEqualToBufferSize_expectedTextInStream_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:77:50: error: ‘MyString’ has not been declared
+   77 |     const string textSizeEqualsInitialBufferSize(MyString::initialBufferSize_, 'j');
+      |                                                  ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:78:11: error: ‘MyString’ does not name a type
+   78 |     const MyString text(textSizeEqualsInitialBufferSize.c_str());
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:79:15: error: ‘text’ was not declared in this scope
+   79 |     stream << text;
+      |               ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_ostreamOperator_readTextLongerThanBufferSize_expectedTextInStream_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:86:50: error: ‘MyString’ has not been declared
+   86 |     const string textLongerThanInitialBufferSize(MyString::initialBufferSize_*2, 'k');
+      |                                                  ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:87:11: error: ‘MyString’ does not name a type
+   87 |     const MyString text(textLongerThanInitialBufferSize.c_str());
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:88:15: error: ‘text’ was not declared in this scope
+   88 |     stream << text;
+      |               ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_indexAccessOperator_expectedPossibilityToAccesElementsWithIndex_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:96:11: error: ‘MyString’ does not name a type
+   96 |     const MyString text(quote);
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:99:29: error: ‘text’ was not declared in this scope
+   99 |         ASSERT_EQ(quote[i], text[i]) << "index = " << i;
+      |                             ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:101:18: error: ‘text’ was not declared in this scope
+  101 |     ASSERT_THROW(text[text.size()+1], out_of_range);
+      |                  ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_istreamOperator_expectedTextCopiedFromStreamToString_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:112:5: error: ‘MyString’ was not declared in this scope
+  112 |     MyString text;
+      |     ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:113:15: error: ‘text’ was not declared in this scope
+  113 |     stream >> text;
+      |               ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_trimming_expectedSpacesRemoved_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:131:9: error: ‘MyString’ was not declared in this scope
+  131 |         MyString text(trimmedQuote);
+      |         ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:132:9: error: ‘text’ was not declared in this scope
+  132 |         text.trim();
+      |         ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:136:49: error: ‘MyString’ was not declared in this scope
+  136 |         string textWithSpacesOnTheLeft = string(MyString::initialBufferSize_/4, ' ')
+      |                                                 ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:138:17: error: expected ‘;’ before ‘text’
+  138 |         MyString text(textWithSpacesOnTheLeft.c_str());
+      |                 ^~~~~
+      |                 ;
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:139:9: error: ‘text’ was not declared in this scope
+  139 |         text.trim();
+      |         ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:143:68: error: ‘MyString’ was not declared in this scope
+  143 |         string textWithMoreSpacesThanInitialSizeOnTheLeft = string(MyString::initialBufferSize_*2, ' ')
+      |                                                                    ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:145:17: error: expected ‘;’ before ‘text’
+  145 |         MyString text(textWithMoreSpacesThanInitialSizeOnTheLeft.c_str());
+      |                 ^~~~~
+      |                 ;
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:146:9: error: ‘text’ was not declared in this scope
+  146 |         text.trim();
+      |         ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:151:26: error: ‘MyString’ was not declared in this scope
+  151 |                 + string(MyString::initialBufferSize_*2, ' ');
+      |                          ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:152:17: error: expected ‘;’ before ‘text’
+  152 |         MyString text(textWithSpacesOnTheRight.c_str());
+      |                 ^~~~~
+      |                 ;
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:153:9: error: ‘text’ was not declared in this scope
+  153 |         text.trim();
+      |         ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:157:59: error: ‘MyString’ was not declared in this scope
+  157 |         string textWithSpacesOnBothSidesTheRight = string(MyString::initialBufferSize_*2, ' ')
+      |                                                           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:159:25: error: expected primary-expression before ‘(’ token
+  159 |                 + string(MyString::initialBufferSize_*2, ' ');
+      |                         ^
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:159:26: error: ‘MyString’ is not a class, namespace, or enumeration
+  159 |                 + string(MyString::initialBufferSize_*2, ' ');
+      |                          ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:160:17: error: expected ‘;’ before ‘text’
+  160 |         MyString text(textWithSpacesOnBothSidesTheRight.c_str());
+      |                 ^~~~~
+      |                 ;
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:161:9: error: ‘text’ was not declared in this scope
+  161 |         text.trim();
+      |         ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_operatorPlusEqual_expectedTextConcatenation_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:170:5: error: ‘MyString’ was not declared in this scope
+  170 |     MyString text;
+      |     ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:173:9: error: ‘text’ was not declared in this scope
+  173 |         text += quote[i];
+      |         ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:175:30: error: ‘text’ was not declared in this scope
+  175 |     ASSERT_EQ(strlen(quote), text.size());
+      |                              ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:177:15: error: ‘text’ was not declared in this scope
+  177 |     auto it = text.begin();
+      |               ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_countingUniqueWords_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:193:5: error: ‘MyString’ was not declared in this scope
+  193 |     MyString text(quote);
+      |     ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:195:28: error: template argument 2 is invalid
+  195 |     const std::set<MyString> uniqueWords = text.getUniqueWords();
+      |                            ^
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:195:28: error: template argument 3 is invalid
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:195:44: error: ‘text’ was not declared in this scope
+  195 |     const std::set<MyString> uniqueWords = text.getUniqueWords();
+      |                                            ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:196:50: error: request for member ‘size’ in ‘uniqueWords’, which is of non-class type ‘const int’
+  196 |     ASSERT_EQ(expectedNumberOfWords, uniqueWords.size());
+      |                                                  ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:189:16: error: unused variable ‘quote’ [-Werror=unused-variable]
+  189 |     const char quote[] = "Lewice od prawicy rozni wszystko, "
+      |                ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_countingWordsNumbersInText_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:253:11: error: ‘MyString’ does not name a type
+  253 |     const MyString text(weddingPlay);
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:254:15: error: ‘MyString’ was not declared in this scope
+  254 |     const map<MyString,size_t> wordsUsage = text.countWordsUsageIgnoringCases();
+      |               ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:254:30: error: template argument 1 is invalid
+  254 |     const map<MyString,size_t> wordsUsage = text.countWordsUsageIgnoringCases();
+      |                              ^
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:254:30: error: template argument 3 is invalid
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:254:30: error: template argument 4 is invalid
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:254:45: error: ‘text’ was not declared in this scope
+  254 |     const map<MyString,size_t> wordsUsage = text.countWordsUsageIgnoringCases();
+      |                                             ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:256:29: error: request for member ‘at’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  256 |     EXPECT_EQ(3, wordsUsage.at("zaczarowana")) << "all words: " << wordsUsage.size();
+      |                             ^~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:256:79: error: request for member ‘size’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  256 |     EXPECT_EQ(3, wordsUsage.at("zaczarowana")) << "all words: " << wordsUsage.size();
+      |                                                                               ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:257:29: error: request for member ‘at’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  257 |     EXPECT_EQ(6, wordsUsage.at("zaczarowany")) << "all words: " << wordsUsage.size();
+      |                             ^~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:257:79: error: request for member ‘size’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  257 |     EXPECT_EQ(6, wordsUsage.at("zaczarowany")) << "all words: " << wordsUsage.size();
+      |                                                                               ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:258:29: error: request for member ‘at’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  258 |     EXPECT_EQ(4, wordsUsage.at("kon")) << "all words: " << wordsUsage.size();
+      |                             ^~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:258:71: error: request for member ‘size’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  258 |     EXPECT_EQ(4, wordsUsage.at("kon")) << "all words: " << wordsUsage.size();
+      |                                                                       ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:204:16: error: unused variable ‘weddingPlay’ [-Werror=unused-variable]
+  204 |     const char weddingPlay[] = R"DELIMITER(zapytajcie artura,
+      |                ^~~~~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:299:11: error: ‘MyString’ does not name a type
+  299 |     const MyString text(weddingPlay);
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:300:15: error: ‘MyString’ was not declared in this scope
+  300 |     const map<MyString,size_t> wordsUsage = text.countWordsUsageIgnoringCases();
+      |               ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:300:30: error: template argument 1 is invalid
+  300 |     const map<MyString,size_t> wordsUsage = text.countWordsUsageIgnoringCases();
+      |                              ^
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:300:30: error: template argument 3 is invalid
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:300:30: error: template argument 4 is invalid
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:300:45: error: ‘text’ was not declared in this scope
+  300 |     const map<MyString,size_t> wordsUsage = text.countWordsUsageIgnoringCases();
+      |                                             ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:302:29: error: request for member ‘at’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  302 |     EXPECT_EQ(9, wordsUsage.at("krolowa")) << "all words: " << wordsUsage.size();
+      |                             ^~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:302:75: error: request for member ‘size’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  302 |     EXPECT_EQ(9, wordsUsage.at("krolowa")) << "all words: " << wordsUsage.size();
+      |                                                                           ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:303:30: error: request for member ‘at’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  303 |     EXPECT_EQ(16, wordsUsage.at("woznico")) << "all words: " << wordsUsage.size();
+      |                              ^~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:303:76: error: request for member ‘size’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  303 |     EXPECT_EQ(16, wordsUsage.at("woznico")) << "all words: " << wordsUsage.size();
+      |                                                                            ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:304:30: error: request for member ‘at’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  304 |     EXPECT_EQ(11, wordsUsage.at("krol")) << "all words: " << wordsUsage.size();
+      |                              ^~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:304:73: error: request for member ‘size’ in ‘wordsUsage’, which is of non-class type ‘const int’
+  304 |     EXPECT_EQ(11, wordsUsage.at("krol")) << "all words: " << wordsUsage.size();
+      |                                                                         ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:264:16: error: unused variable ‘weddingPlay’ [-Werror=unused-variable]
+  264 |     const char weddingPlay[] = R"DELIMITER(Dawno, dawno temu zyli sobie krol z krolowa.
+      |                ^~~~~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_wordsIntoLowerCase_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:313:5: error: ‘MyString’ was not declared in this scope
+  313 |     MyString text(quote);
+      |     ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:314:5: error: ‘text’ was not declared in this scope
+  314 |     text.toLower();
+      |     ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:310:16: error: unused variable ‘quote’ [-Werror=unused-variable]
+  310 |     const char quote[] = "Ucz sie, jak gdybys mial zyc wiecznie, zyj jak gdybys mial umrzec jutro";
+      |                ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_randomWordGeneration_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:325:29: error: ‘MyString’ has not been declared
+  325 |     const auto randomWord = MyString::generateRandomWord(wordLength);
+      |                             ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_startsWith_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:343:11: error: ‘MyString’ does not name a type
+  343 |     const MyString text(quote);
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:344:17: error: ‘text’ was not declared in this scope
+  344 |     EXPECT_TRUE(text.startsWith("Nauczania"));
+      |                 ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:345:18: error: ‘text’ was not declared in this scope
+  345 |     EXPECT_FALSE(text.startsWith("Oduczanie"));
+      |                  ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:336:16: error: unused variable ‘quote’ [-Werror=unused-variable]
+  336 |     const char quote[] = "Nauczania powinny sie odznaczac poprawnoscia, prostota, otwartoscia, "
+      |                ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_endsWith_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:355:11: error: ‘MyString’ does not name a type
+  355 |     const MyString text(quote);
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:356:17: error: ‘text’ was not declared in this scope
+  356 |     EXPECT_TRUE(text.endsWith("sprawiedliwy."));
+      |                 ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:357:18: error: ‘text’ was not declared in this scope
+  357 |     EXPECT_FALSE(text.endsWith("lajdacki"));
+      |                  ^~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:351:16: error: unused variable ‘quote’ [-Werror=unused-variable]
+  351 |     const char quote[] = "Niesprawiedliwy to ktos, kto zle uzywa swoich dobr, "
+      |                ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_comparingTexts_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:370:11: error: ‘MyString’ does not name a type
+  370 |     const MyString text1(quote), text2(quote), text3(differentQuote);
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:372:15: error: ‘text1’ was not declared in this scope
+  372 |     ASSERT_EQ(text1, text2);
+      |               ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:372:22: error: ‘text2’ was not declared in this scope
+  372 |     ASSERT_EQ(text1, text2);
+      |                      ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:373:15: error: ‘text1’ was not declared in this scope
+  373 |     ASSERT_NE(text1, text3);
+      |               ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:373:22: error: ‘text3’ was not declared in this scope
+  373 |     ASSERT_NE(text1, text3);
+      |                      ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:374:15: error: ‘text2’ was not declared in this scope
+  374 |     ASSERT_NE(text2, text3);
+      |               ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:374:22: error: ‘text3’ was not declared in this scope
+  374 |     ASSERT_NE(text2, text3);
+      |                      ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:363:16: error: unused variable ‘quote’ [-Werror=unused-variable]
+  363 |     const char quote[] = "Wydaje sie, ze zarowno wewnatrz poszczegolnych narodow, "
+      |                ^~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:367:16: error: unused variable ‘differentQuote’ [-Werror=unused-variable]
+  367 |     const char differentQuote[] = "Wydaje sie, ze zarowno wewnatrz poszczegolnych narodow, "
+      |                ^~~~~~~~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_joiningContainer_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:379:11: error: ‘MyString’ does not name a type
+  379 |     const MyString separator = ", ";
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:380:18: error: ‘MyString’ was not declared in this scope
+  380 |     const vector<MyString> polishExtinctAnimals =
+      |                  ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:380:26: error: template argument 1 is invalid
+  380 |     const vector<MyString> polishExtinctAnimals =
+      |                          ^
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:380:26: error: template argument 2 is invalid
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:380:28: error: scalar object ‘polishExtinctAnimals’ requires one element in initializer
+  380 |     const vector<MyString> polishExtinctAnimals =
+      |                            ^~~~~~~~~~~~~~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:386:11: error: ‘MyString’ does not name a type
+  386 |     const MyString polishExtinctAnimalsAsString = "tarpan, tur, drop zwyczajny, jaszczurka zielona, "
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:391:11: error: ‘MyString’ does not name a type
+  391 |     const MyString joinedText = separator.join(polishExtinctAnimals);
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:392:15: error: ‘polishExtinctAnimalsAsString’ was not declared in this scope
+  392 |     ASSERT_EQ(polishExtinctAnimalsAsString, joinedText);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:392:45: error: ‘joinedText’ was not declared in this scope
+  392 |     ASSERT_EQ(polishExtinctAnimalsAsString, joinedText);
+      |                                             ^~~~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_all_of_Test::TestBody()’:
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:398:11: error: ‘MyString’ does not name a type
+  398 |     const MyString onlyNumbers("03579");
+      |           ^~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:399:17: error: ‘onlyNumbers’ was not declared in this scope
+  399 |     EXPECT_TRUE(onlyNumbers.all_of(::isdigit));
+      |                 ^~~~~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:400:17: error: ‘onlyNumbers’ was not declared in this scope
+  400 |     EXPECT_TRUE(onlyNumbers.all_of(::isalnum));
+      |                 ^~~~~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:401:18: error: ‘onlyNumbers’ was not declared in this scope
+  401 |     EXPECT_FALSE(onlyNumbers.all_of(::isalpha));
+      |                  ^~~~~~~~~~~
+/tmp/tmpvc352xdt/student/tests/myStringTests.cpp:402:18: error: ‘onlyNumbers’ was not declared in this scope
+  402 |     EXPECT_FALSE(onlyNumbers.all_of(::isspace));
+      |                  ^~~~~~~~~~~
+cc1plus: all warnings being treated as errors
+make[3]: *** [tests/CMakeFiles/tests.dir/build.make:76: tests/CMakeFiles/tests.dir/myStringTests.cpp.o] Error 1
+make[2]: *** [CMakeFiles/Makefile2:454: tests/CMakeFiles/tests.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:461: tests/CMakeFiles/tests.dir/rule] Error 2
+make: *** [Makefile:312: tests] Error 2
