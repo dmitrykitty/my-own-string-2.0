@@ -1,0 +1,31 @@
+Running main() from /tmp/tmp9hxccsvg/student/tests/lib/googletest/src/gtest_main.cc
+[==========] Running 11 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 11 tests from MyStringTester
+[ RUN      ] MyStringTester.emptyStringConstruction_expectedSizeIsZero
+[       OK ] MyStringTester.emptyStringConstruction_expectedSizeIsZero (0 ms)
+[ RUN      ] MyStringTester.constructionFromConstChar_expectedTextCopied
+[       OK ] MyStringTester.constructionFromConstChar_expectedTextCopied (0 ms)
+[ RUN      ] MyStringTester.clear_expectedEmptyStringAfterClearing
+[       OK ] MyStringTester.clear_expectedEmptyStringAfterClearing (0 ms)
+[ RUN      ] MyStringTester.ostreamOperator_readTextShorterThanBufferSize_expectedTextInStream
+[       OK ] MyStringTester.ostreamOperator_readTextShorterThanBufferSize_expectedTextInStream (0 ms)
+[ RUN      ] MyStringTester.ostreamOperator_readTextEqualToBufferSize_expectedTextInStream
+[       OK ] MyStringTester.ostreamOperator_readTextEqualToBufferSize_expectedTextInStream (0 ms)
+[ RUN      ] MyStringTester.ostreamOperator_readTextLongerThanBufferSize_expectedTextInStream
+[       OK ] MyStringTester.ostreamOperator_readTextLongerThanBufferSize_expectedTextInStream (0 ms)
+[ RUN      ] MyStringTester.indexAccessOperator_expectedPossibilityToAccesElementsWithIndex
+[       OK ] MyStringTester.indexAccessOperator_expectedPossibilityToAccesElementsWithIndex (0 ms)
+[ RUN      ] MyStringTester.istreamOperator_expectedTextCopiedFromStreamToString
+[       OK ] MyStringTester.istreamOperator_expectedTextCopiedFromStreamToString (0 ms)
+[ RUN      ] MyStringTester.trimming_expectedSpacesRemoved
+[       OK ] MyStringTester.trimming_expectedSpacesRemoved (0 ms)
+[ RUN      ] MyStringTester.operatorPlusEqual_expectedTextConcatenation
+[       OK ] MyStringTester.operatorPlusEqual_expectedTextConcatenation (0 ms)
+[ RUN      ] MyStringTester.countingUniqueWords
+[       OK ] MyStringTester.countingUniqueWords (0 ms)
+[----------] 11 tests from MyStringTester (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test suite ran. (2 ms total)
+[  PASSED  ] 11 tests.

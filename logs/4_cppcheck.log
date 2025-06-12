@@ -1,0 +1,63 @@
+/tmp/tmp9hxccsvg/student/mystring.cpp:100:35: warning: Condition 'i<newSize' is always false [knownConditionTrueFalse]
+        for (std::size_t i = 0; i < newSize; ++i) {
+                                  ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:92:16: note: Assuming that condition 'end>begin' is not redundant
+    while (end > begin && std::isspace(static_cast<unsigned char>((*this)[end - 1]))) {
+               ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:96:31: note: Assignment 'newSize=end-begin', assigned value is less than 1
+    std::size_t newSize = end - begin;
+                              ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:100:35: note: Condition 'i<newSize' is always false
+        for (std::size_t i = 0; i < newSize; ++i) {
+                                  ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:106:15: warning: Condition 'size_<=initialBufferSize_' is always true [knownConditionTrueFalse]
+    if (size_ <= initialBufferSize_) {
+              ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:92:16: note: Assuming that condition 'end>begin' is not redundant
+    while (end > begin && std::isspace(static_cast<unsigned char>((*this)[end - 1]))) {
+               ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:96:31: note: Assignment 'newSize=end-begin', assigned value is less than 1
+    std::size_t newSize = end - begin;
+                              ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:104:13: note: Assignment 'size_=newSize', assigned value is less than 1
+    size_ = newSize;
+            ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:106:15: note: Condition 'size_<=initialBufferSize_' is always true
+    if (size_ <= initialBufferSize_) {
+              ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:108:19: warning: Condition 'size_<initialBufferSize_' is always true [knownConditionTrueFalse]
+        if (size_ < initialBufferSize_) {
+                  ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:92:16: note: Assuming that condition 'end>begin' is not redundant
+    while (end > begin && std::isspace(static_cast<unsigned char>((*this)[end - 1]))) {
+               ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:96:31: note: Assignment 'newSize=end-begin', assigned value is less than 1
+    std::size_t newSize = end - begin;
+                              ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:104:13: note: Assignment 'size_=newSize', assigned value is less than 1
+    size_ = newSize;
+            ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:108:19: note: Condition 'size_<initialBufferSize_' is always true
+        if (size_ < initialBufferSize_) {
+                  ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:80:17: warning: Local variable 'begin' shadows outer function [shadowFunction]
+    std::size_t begin = 0;
+                ^
+/tmp/tmp9hxccsvg/student/mystring.h:65:14: note: Shadowed declaration
+    iterator begin() { return {this, 0}; }
+             ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:80:17: note: Shadow variable
+    std::size_t begin = 0;
+                ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:81:17: warning: Local variable 'end' shadows outer function [shadowFunction]
+    std::size_t end = size_;
+                ^
+/tmp/tmp9hxccsvg/student/mystring.h:66:14: note: Shadowed declaration
+    iterator end() { return {this, size_}; }
+             ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:81:17: note: Shadow variable
+    std::size_t end = size_;
+                ^
+/tmp/tmp9hxccsvg/student/mystring.cpp:124:0: warning: The function 'getUniqueWords' is never used. [unusedFunction]
+std::set<MyString> MyString::getUniqueWords() const {
+^
