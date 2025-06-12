@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <cstring>
 #include <random>
+#include <ranges>
 
 MyString::MyString(const char* text) {
     size_ = std::strlen(text);
@@ -87,8 +88,14 @@ MyString& MyString::operator+=(char ch) {
     return *this;
 }
 
-bool MyString::operator<(const MyString& other) const {
-    return this->toString() < other.toString();
+std::strong_ordering MyString::operator<=>(const MyString& other) const {
+    std::size_t min_len = std::min(size_, other.size_);
+    for (std::size_t i = 0; i < min_len; ++i) {
+        std::strong_ordering cmp = (*this)[i] <=> other[i];
+        if (cmp != std::strong_ordering::equal)
+            return cmp;
+    }
+    return size_ <=> other.size_;
 }
 
 
@@ -212,10 +219,36 @@ auto makeRandomCharGenerator() {
 
 MyString MyString::generateRandomWord(size_t length) {
     if (length == 0)
-        return MyString();
+        return {};
 
     MyString randomWord(length, '\0');
     auto generator = makeRandomCharGenerator();
     std::generate_n(randomWord.begin(), length, generator);
     return randomWord;
 }
+
+bool MyString::startsWith(const MyString& txt) const {
+    MyString tmp = *this;
+    tmp.trim();
+
+    MyString res;
+    for (const auto ch: tmp) {
+        if (std::isalpha(static_cast<unsigned>(ch)))
+            res += ch;
+        else
+            break;
+    }
+    return  res == txt; ;
+}
+
+bool MyString::endsWith(const MyString& txt) const {
+    //return this->toString().ends_with(txt.toString());
+
+    for (int i = size_ - 1, j = txt.size_ - 1; j >= 0; --j, --i) {
+        if ((*this)[i] != txt[j]) {
+            return false;
+        }
+    }
+    return true;
+}
+

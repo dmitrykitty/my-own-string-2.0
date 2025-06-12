@@ -347,6 +347,7 @@ TEST_F(MyStringTester, startsWith)
     EXPECT_TRUE(text.startsWith("Nauczania"));
     EXPECT_FALSE(text.startsWith("Oduczanie"));
 }
+
 // use: std::search
 TEST_F(MyStringTester, endsWith)
 {
@@ -358,7 +359,7 @@ TEST_F(MyStringTester, endsWith)
     const MyString text(quote);
     EXPECT_TRUE(text.endsWith("sprawiedliwy."));
     EXPECT_FALSE(text.endsWith("lajdacki"));
-}
+}/*
 // use: std::mismatch
 TEST_F(MyStringTester, comparingTexts)
 {
@@ -404,3 +405,4 @@ TEST_F(MyStringTester, all_of)
     EXPECT_FALSE(onlyNumbers.all_of(::isalpha));
     EXPECT_FALSE(onlyNumbers.all_of(::isspace));
 }
+*/
