@@ -1,4 +1,4 @@
-/tmp/tmpxvg8wt7d/student/mystring.cpp:9:18:  [1] (buffer) strlen:Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).  
+/tmp/tmp2uavs4yk/student/mystring.cpp:9:18:  [1] (buffer) strlen:Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).  
     size_ = std::strlen(text);
-/tmp/tmpxvg8wt7d/student/mystring.cpp:95:42:  [1] (buffer) equal:Function does not check the second iterator for over-read conditions (CWE-126).  This function is often discouraged by most C++ coding standards in favor of its safer alternatives provided since C++14. Consider using a form of this function that checks the second iterator before potentially overflowing it. 
+/tmp/tmp2uavs4yk/student/mystring.cpp:102:42:  [1] (buffer) equal:Function does not check the second iterator for over-read conditions (CWE-126).  This function is often discouraged by most C++ coding standards in favor of its safer alternatives provided since C++14. Consider using a form of this function that checks the second iterator before potentially overflowing it. 
         if (cmp != std::strong_ordering::equal)

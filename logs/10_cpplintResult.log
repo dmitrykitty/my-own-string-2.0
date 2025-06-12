@@ -1,80 +1,80 @@
-make: Entering directory '/tmp/tmpxvg8wt7d/student/build'
-make[1]: Entering directory '/tmp/tmpxvg8wt7d/student/build'
-make[2]: Entering directory '/tmp/tmpxvg8wt7d/student/build'
-make[3]: Entering directory '/tmp/tmpxvg8wt7d/student/build'
-make[3]: Leaving directory '/tmp/tmpxvg8wt7d/student/build'
-make[3]: Entering directory '/tmp/tmpxvg8wt7d/student/build'
+make: Entering directory '/tmp/tmp2uavs4yk/student/build'
+make[1]: Entering directory '/tmp/tmp2uavs4yk/student/build'
+make[2]: Entering directory '/tmp/tmp2uavs4yk/student/build'
+make[3]: Entering directory '/tmp/tmp2uavs4yk/student/build'
+make[3]: Leaving directory '/tmp/tmp2uavs4yk/student/build'
+make[3]: Entering directory '/tmp/tmp2uavs4yk/student/build'
 [100%] Running cpplint to check for tabs and trailing whitespace
-/tmp/tmpxvg8wt7d/student/main.cpp:105:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/main.cpp:105:  At least two spaces is best between code and comments  [whitespace/comments] [2]
-/tmp/tmpxvg8wt7d/student/main.cpp:111:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
-/tmp/tmpxvg8wt7d/student/main.cpp:113:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/main.cpp:114:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
-/tmp/tmpxvg8wt7d/student/main.cpp:120:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
-/tmp/tmpxvg8wt7d/student/main.cpp:125:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
-/tmp/tmpxvg8wt7d/student/main.cpp:126:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/main.cpp:126:  Missing spaces around <=  [whitespace/operators] [3]
-/tmp/tmpxvg8wt7d/student/main.cpp:130:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
-/tmp/tmpxvg8wt7d/student/main.cpp:134:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/main.cpp:135:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
-/tmp/tmpxvg8wt7d/student/main.cpp:143:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
-/tmp/tmpxvg8wt7d/student/main.cpp:144:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/main.cpp:145:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/main.cpp:147:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/main.cpp:148:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/main.cpp:150:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/main.cpp:151:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/main.cpp:152:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:10:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:49:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:68:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:74:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:108:  Should have a space between // and comment  [whitespace/comments] [4]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:109:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:118:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:125:  Should have a space between // and comment  [whitespace/comments] [4]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:143:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:157:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:190:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:204:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:214:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:235:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:241:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
-/tmp/tmpxvg8wt7d/student/mystring.cpp:245:  Should have a space between // and comment  [whitespace/comments] [4]
-/tmp/tmpxvg8wt7d/student/mystring.h:13:  public: should be indented +1 space inside class MyString  [whitespace/indent] [3]
-/tmp/tmpxvg8wt7d/student/mystring.h:16:  private: should be indented +1 space inside class MyString  [whitespace/indent] [3]
-/tmp/tmpxvg8wt7d/student/mystring.h:22:  public: should be indented +1 space inside class MyString  [whitespace/indent] [3]
-/tmp/tmpxvg8wt7d/student/mystring.h:32:  public: should be indented +1 space inside class base_iterator  [whitespace/indent] [3]
-/tmp/tmpxvg8wt7d/student/mystring.h:34:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:35:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:36:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:40:  private: should be indented +1 space inside class base_iterator  [whitespace/indent] [3]
-/tmp/tmpxvg8wt7d/student/mystring.h:44:  public: should be indented +1 space inside class base_iterator  [whitespace/indent] [3]
-/tmp/tmpxvg8wt7d/student/mystring.h:45:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:72:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:73:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:75:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:76:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:77:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:80:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:91:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:92:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:109:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:110:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:111:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:112:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:137:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:148:  At least two spaces is best between code and comments  [whitespace/comments] [2]
-/tmp/tmpxvg8wt7d/student/mystring.h:148:  Should have a space between // and comment  [whitespace/comments] [4]
-Done processing /tmp/tmpxvg8wt7d/student/main.cpp
-Done processing /tmp/tmpxvg8wt7d/student/mystring.cpp
-Done processing /tmp/tmpxvg8wt7d/student/mystring.h
+/tmp/tmp2uavs4yk/student/main.cpp:105:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/main.cpp:105:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+/tmp/tmp2uavs4yk/student/main.cpp:111:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp2uavs4yk/student/main.cpp:113:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/main.cpp:114:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+/tmp/tmp2uavs4yk/student/main.cpp:120:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp2uavs4yk/student/main.cpp:125:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp2uavs4yk/student/main.cpp:126:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/main.cpp:126:  Missing spaces around <=  [whitespace/operators] [3]
+/tmp/tmp2uavs4yk/student/main.cpp:130:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp2uavs4yk/student/main.cpp:134:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/main.cpp:135:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp2uavs4yk/student/main.cpp:143:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp2uavs4yk/student/main.cpp:144:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/main.cpp:145:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/main.cpp:147:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/main.cpp:148:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/main.cpp:150:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/main.cpp:151:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/main.cpp:152:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:10:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:49:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:68:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:74:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:93:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp2uavs4yk/student/mystring.cpp:115:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp2uavs4yk/student/mystring.cpp:116:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:125:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:132:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp2uavs4yk/student/mystring.cpp:150:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:164:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:197:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:211:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:221:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.cpp:247:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp2uavs4yk/student/mystring.h:14:  public: should be indented +1 space inside class MyString  [whitespace/indent] [3]
+/tmp/tmp2uavs4yk/student/mystring.h:22:  private: should be indented +1 space inside class MyString  [whitespace/indent] [3]
+/tmp/tmp2uavs4yk/student/mystring.h:28:  public: should be indented +1 space inside class MyString  [whitespace/indent] [3]
+/tmp/tmp2uavs4yk/student/mystring.h:38:  public: should be indented +1 space inside class base_iterator  [whitespace/indent] [3]
+/tmp/tmp2uavs4yk/student/mystring.h:40:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:41:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:42:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:46:  private: should be indented +1 space inside class base_iterator  [whitespace/indent] [3]
+/tmp/tmp2uavs4yk/student/mystring.h:50:  public: should be indented +1 space inside class base_iterator  [whitespace/indent] [3]
+/tmp/tmp2uavs4yk/student/mystring.h:51:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:78:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:79:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:81:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:82:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:83:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:86:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:97:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:98:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:115:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:116:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:117:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:118:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:138:  Missing space before {  [whitespace/braces] [5]
+/tmp/tmp2uavs4yk/student/mystring.h:146:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:158:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+/tmp/tmp2uavs4yk/student/mystring.h:158:  Should have a space between // and comment  [whitespace/comments] [4]
+Done processing /tmp/tmp2uavs4yk/student/main.cpp
+Done processing /tmp/tmp2uavs4yk/student/mystring.cpp
+Done processing /tmp/tmp2uavs4yk/student/mystring.h
 Total errors found: 61
 make[3]: *** [CMakeFiles/cpplint.dir/build.make:71: CMakeFiles/cpplint] Error 1
-make[3]: Leaving directory '/tmp/tmpxvg8wt7d/student/build'
+make[3]: Leaving directory '/tmp/tmp2uavs4yk/student/build'
 make[2]: *** [CMakeFiles/Makefile2:375: CMakeFiles/cpplint.dir/all] Error 2
-make[2]: Leaving directory '/tmp/tmpxvg8wt7d/student/build'
+make[2]: Leaving directory '/tmp/tmp2uavs4yk/student/build'
 make[1]: *** [CMakeFiles/Makefile2:382: CMakeFiles/cpplint.dir/rule] Error 2
-make[1]: Leaving directory '/tmp/tmpxvg8wt7d/student/build'
+make[1]: Leaving directory '/tmp/tmp2uavs4yk/student/build'
 make: *** [Makefile:273: cpplint] Error 2
-make: Leaving directory '/tmp/tmpxvg8wt7d/student/build'
+make: Leaving directory '/tmp/tmp2uavs4yk/student/build'

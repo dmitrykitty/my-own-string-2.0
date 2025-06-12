@@ -1,789 +1,800 @@
-tests   268 27536275.639642:          1 cycles: 
-	    7f5b4182d290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+tests   268 27551783.967982:          1 cycles: 
+	    7f15d85ec290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
 
-tests   268 27536275.639656:          1 cycles: 
-	    7f5b4182d290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+tests   268 27551783.967995:          1 cycles: 
+	    7f15d85ec290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
 
-tests   268 27536275.639661:          3 cycles: 
-	    7f5b4182d290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+tests   268 27551783.968001:          3 cycles: 
+	    7f15d85ec290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
 
-tests   268 27536275.639667:         20 cycles: 
-	    7f5b4182d290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+tests   268 27551783.968007:         19 cycles: 
+	    7f15d85ec290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
 
-tests   268 27536275.639672:        133 cycles: 
-	    7f5b4182d290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+tests   268 27551783.968012:        125 cycles: 
+	    7f15d85ec290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
 
-tests   268 27536275.639678:        872 cycles: 
-	    7f5b4182d290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+tests   268 27551783.968018:        821 cycles: 
+	    7f15d85ec290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
 
-tests   268 27536275.639683:       5758 cycles: 
-	    7f5b4182d290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+tests   268 27551783.968023:       5317 cycles: 
+	    7f15d85ec290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
 
-tests   268 27536275.639693:      37826 cycles: 
-	    7f5b4182d290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+tests   268 27551783.968029:      34371 cycles: 
+	    7f15d85ec290 _start+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
 
-tests   268 27536275.639711:     157867 cycles: 
-	    7f5b4182c52c _dl_sysdep_start+0xec (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+tests   268 27551783.968048:     221638 cycles: 
+	    7f15d85ed071 _dl_start+0x41 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85ec298 _dl_start_user+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
 
-tests   268 27536275.639780:     401246 cycles: 
-	    7f5b41833b18 __GI___open64_nocancel+0x38 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+tests   268 27551783.968142:     557953 cycles: 
+	    7f15d85f29db __GI___close_nocancel+0xb (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+
+tests   268 27551783.968373:     674458 cycles: 
+	    7f15d85f71da memset+0x3a (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85d6601 _dl_map_object+0x1f1 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+
+tests   268 27551783.968651:     681097 cycles: 
+	    7f15d85f2d2b mprotect+0xb (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
 	              40 [unknown] ([unknown])
 
-tests   268 27536275.639945:     534151 cycles: 
-	    7f5b418175e5 _dl_map_object+0x1d5 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-
-tests   268 27536275.640163:     568375 cycles: 
-	    7f5b41823354 _dl_check_map_versions+0x564 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	             a48 [unknown] ([unknown])
-
-tests   268 27536275.640394:     578792 cycles: 
-	    7f5b4181914e _dl_lookup_symbol_x+0x7e (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b40f69c40 [unknown] ([unknown])
-	           c8840 [unknown] ([unknown])
-
-tests   268 27536275.640629:     584685 cycles: 
-	    7f5b4181914e _dl_lookup_symbol_x+0x7e (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b40f69c40 [unknown] ([unknown])
-	          122e90 [unknown] ([unknown])
-
-tests   268 27536275.640867:     589297 cycles: 
-	    7f5b4181914e _dl_lookup_symbol_x+0x7e (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41175e10 [unknown] ([unknown])
-	           54360 [unknown] ([unknown])
-
-tests   268 27536275.641109:     593255 cycles: 
-	    7f5b4181e340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41830a63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	              40 [unknown] ([unknown])
-
-tests   268 27536275.641353:     595658 cycles: 
-	    7f5b4181e340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41830a63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	              40 [unknown] ([unknown])
-
-tests   268 27536275.641597:     597393 cycles: 
-	    7f5b4181e340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41830a63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	              40 [unknown] ([unknown])
-
-tests   268 27536275.641842:     599143 cycles: 
-	    7f5b4181e340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41830a63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	              40 [unknown] ([unknown])
-
-tests   268 27536275.642087:     600735 cycles: 
-	    7f5b4181e340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41830a63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	              40 [unknown] ([unknown])
-
-tests   268 27536275.642332:     602378 cycles: 
-	    7f5b4181e318 _dl_relocate_object+0x5b8 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41830a63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	              40 [unknown] ([unknown])
-
-tests   268 27536275.642579:     604013 cycles: 
-	    7f5b4181e340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41830a63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	              40 [unknown] ([unknown])
-
-tests   268 27536275.642827:     604883 cycles: 
-	    7f5b4181e340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41830a63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	              40 [unknown] ([unknown])
-
-tests   268 27536275.643077:     589936 cycles: 
-	    7f5b4181e33d _dl_relocate_object+0x5dd (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41830a63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	              40 [unknown] ([unknown])
-
-tests   268 27536275.643319:     589855 cycles: 
-	    7f5b4181e340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41830a63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	              40 [unknown] ([unknown])
-
-tests   268 27536275.643559:     592266 cycles: 
-	    7f5b4181e340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41830a63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b4182c83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	              40 [unknown] ([unknown])
-
-tests   268 27536275.643800:     595284 cycles: 
-	    7f5b418354e8 strcmp+0x12c8 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-
-tests   268 27536275.644047:     598059 cycles: 
-	    7f5b411a4430 InitializeCommonInterceptors+0x0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	      1000000400 [unknown] ([unknown])
-
-tests   268 27536275.644292:     598895 cycles: 
-	    7f5b412534a0 __sanitizer::internal_memset+0x40 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.644536:     600603 cycles: 
-	    7f5b412534a0 __sanitizer::internal_memset+0x40 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.644782:     602280 cycles: 
-	    7f5b4124adb2 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x212 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.645027:     603508 cycles: 
-	    7f5b4124ad61 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x1c1 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.645276:     605077 cycles: 
-	    7f5b4124adb2 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x212 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.645522:     605502 cycles: 
-	    7f5b41811d40 _dl_exception_create_format+0x1a0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	765f3939636f7369 [unknown] ([unknown])
-
-tests   268 27536275.645773:     606759 cycles: 
-	    7f5b41254b7b __sanitizer::internal_munmap+0xb (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.646035:     606497 cycles: 
-	    7f5b41254c2f __sanitizer::internal_read+0xf (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	1163217cd63dfd00 [unknown] ([unknown])
-
-tests   268 27536275.646284:     603036 cycles: 
-	    7f5b41254b7b __sanitizer::internal_munmap+0xb (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.646531:     603073 cycles: 
-	    7f5b4124adb2 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x212 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.646778:     603959 cycles: 
-	    7f5b4124adb2 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x212 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.647027:     605466 cycles: 
-	    7f5b4180f084 [unknown] (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-
-tests   268 27536275.647274:     605573 cycles: 
-	    7f5b40fc5bf0 std::__cxx11::moneypunct<wchar_t, false>::_M_initialize_moneypunct+0x2d0 (/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
-	               1 [unknown] ([unknown])
-	    7f5b40fc6090 std::__cxx11::moneypunct<wchar_t, false>::~moneypunct+0x0 (/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
-	8948550018c8eb05 [unknown] ([unknown])
-
-tests   268 27536275.647521:     606675 cycles: 
-	    7f5b41254b64 __sanitizer::internal_mmap+0x24 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.647769:     607553 cycles: 
-	    7f5b41196864 __asan_register_globals.part.0+0x354 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	    5570be1ecee1 _sub_I_00099_1+0x26 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2ebb __libc_start_main@@GLIBC_2.34+0xfb (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.648016:     608101 cycles: 
-	    7f5b4074a06f __memset_avx2_unaligned_erms+0xef (/usr/lib/x86_64-linux-gnu/libc.so.6)
-	    5570be1ecee1 _sub_I_00099_1+0x26 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2ebb __libc_start_main@@GLIBC_2.34+0xfb (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.648265:     608957 cycles: 
-	    7f5b4074a0a0 __memset_avx2_unaligned_erms+0x120 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-	    5570be1ecee1 _sub_I_00099_1+0x26 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2ebb __libc_start_main@@GLIBC_2.34+0xfb (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.648514:     609368 cycles: 
-	    7f5b41186b82 __sanitizer::SizeClassAllocator64<__asan::AP64<__sanitizer::LocalAddressSpaceView> >::PopulateFreeArray+0x1c2 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.968928:     672612 cycles: 
+	    7f15d85d7240 check_match+0x0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
 	               0 [unknown] ([unknown])
 
-tests   268 27536275.648767:     609647 cycles: 
-	    5570be1c111c testing::UnitTest::UnitTest+0x0 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ff324 testing::internal::GetUnitTestImpl+0x12 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17abc9 testing::internal::MakeAndRegisterTestInfo+0x2ff (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0f37d9 __static_initialization_and_destruction_0+0x7b3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0f8f31 _GLOBAL__sub_I__ZN62MyStringTester_emptyStringConstruction_expectedSizeIsZero_Test10test_info_E+0x1c (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2ebb __libc_start_main@@GLIBC_2.34+0xfb (/usr/lib/x86_64-linux-gnu/libc.so.6)
+tests   268 27551783.969206:     664472 cycles: 
+	    7f15d85f2d2b mprotect+0xb (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
 
-tests   268 27536275.649017:     608884 cycles: 
-	    7f5b4074a04a __memset_avx2_unaligned_erms+0xca (/usr/lib/x86_64-linux-gnu/libc.so.6)
+tests   268 27551783.969478:     656112 cycles: 
+	    7f15d85dd340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.969746:     649302 cycles: 
+	    7f15d85dd340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.970010:     644011 cycles: 
+	    7f15d85dd340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.970273:     639685 cycles: 
+	    7f15d85dd340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.970533:     635724 cycles: 
+	    7f15d85dd340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.970794:     632621 cycles: 
+	    7f15d85dd318 _dl_relocate_object+0x5b8 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.971059:     603556 cycles: 
+	    7f15d85dd340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.971306:     599313 cycles: 
+	    7f15d85dd340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.971553:     600188 cycles: 
+	    7f15d85dd334 _dl_relocate_object+0x5d4 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.971798:     601238 cycles: 
+	    7f15d85dd31c _dl_relocate_object+0x5bc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.972043:     602690 cycles: 
+	    7f15d85dd340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.972292:     604119 cycles: 
+	    7f15d85dd340 _dl_relocate_object+0x5e0 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.972539:     604545 cycles: 
+	    7f15d85f6fef memmove+0x3f (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85efa63 dl_main+0x2183 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	    7f15d85eb83c _dl_sysdep_start+0x3fc (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+	              40 [unknown] ([unknown])
+
+tests   268 27551783.972790:     605525 cycles: 
+	    7f15d8013c2f __sanitizer::internal_read+0xf (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
+
+tests   268 27551783.973038:     605270 cycles: 
+	    7f15d80124a0 __sanitizer::internal_memset+0x40 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.973285:     605800 cycles: 
+	    7f15d80124a0 __sanitizer::internal_memset+0x40 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.973532:     606857 cycles: 
+	    7f15d8009db2 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x212 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.973778:     607780 cycles: 
+	    7f15d8009d61 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x1c1 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.974027:     608788 cycles: 
+	    7f15d8013b7b __sanitizer::internal_munmap+0xb (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.974276:     609199 cycles: 
+	    7f15d8009db2 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x212 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.974536:     609483 cycles: 
+	    7f15d8013c2f __sanitizer::internal_read+0xf (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
+
+tests   268 27551783.974792:     606653 cycles: 
+	    7f15d8013c2f __sanitizer::internal_read+0xf (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
+
+tests   268 27551783.975043:     605042 cycles: 
+	    7f15d8009d61 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x1c1 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.975290:     604674 cycles: 
+	    7f15d8009db2 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x212 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.975538:     605626 cycles: 
+	    7f15d8009db2 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x212 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.975783:     606330 cycles: 
+	    7f15d8009d25 __sanitizer::SizeClassAllocator32<__sanitizer::AP32>::PopulateFreeList+0x185 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.976032:     607601 cycles: 
+	    7f15d750904a __memset_avx2_unaligned_erms+0xca (/usr/lib/x86_64-linux-gnu/libc.so.6)
 	               0 [unknown] ([unknown])
 
-tests   268 27536275.649267:     608853 cycles: 
-	    7f5b4074a04a __memset_avx2_unaligned_erms+0xca (/usr/lib/x86_64-linux-gnu/libc.so.6)
+tests   268 27551783.976280:     608136 cycles: 
+	    55a73cfb2374 _sub_I_00099_1+0x4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+
+tests   268 27551783.976528:     608714 cycles: 
+	    7f15d8013b64 __sanitizer::internal_mmap+0x24 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.976776:     609197 cycles: 
+	    7f15d8013b64 __sanitizer::internal_mmap+0x24 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.977024:     609873 cycles: 
+	    7f15d7508f88 __memset_avx2_unaligned_erms+0x8 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+	    55a73d0ae8df _sub_I_00099_1+0x26 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391ebb __libc_start_main@@GLIBC_2.34+0xfb (/usr/lib/x86_64-linux-gnu/libc.so.6)
+
+tests   268 27551783.977274:     610511 cycles: 
+	    7f15d750904a __memset_avx2_unaligned_erms+0xca (/usr/lib/x86_64-linux-gnu/libc.so.6)
+	    55a73d0ae8df _sub_I_00099_1+0x26 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391ebb __libc_start_main@@GLIBC_2.34+0xfb (/usr/lib/x86_64-linux-gnu/libc.so.6)
+
+tests   268 27551783.977523:     610650 cycles: 
+	    55a73cfc37f9 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_S_copy_chars+0x0 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfbb6a6 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >+0x15e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfac0d0 __static_initialization_and_destruction_0+0x7ae (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfb234b _GLOBAL__sub_I__ZN62MyStringTester_emptyStringConstruction_expectedSizeIsZero_Test10test_info_E+0x1c (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391ebb __libc_start_main@@GLIBC_2.34+0xfb (/usr/lib/x86_64-linux-gnu/libc.so.6)
+
+tests   268 27551783.977777:     610694 cycles: 
+	    7f15d75d08de __sanitizer::internal_close+0xe (/usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0)
+
+tests   268 27551783.978027:     609705 cycles: 
+	    7f15d7f503be __asan_stack_malloc_3+0xce (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.978278:     609546 cycles: 
+	    55a73d17a4c4 std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::cbegin+0x4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d1746c5 std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::insert+0x15b (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d16c7ed std::insert_iterator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >::operator=+0x28d (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d1636cf std::__copy_move<true, false, std::random_access_iterator_tag>::__copy_m<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::insert_iterator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >+0x17e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d15564c std::__copy_move_a2<true, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::insert_iterator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >+0x106 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d13df72 std::__copy_move_a1<true, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::insert_iterator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >+0xdb (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d11806f std::__copy_move_a<true, __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::insert_iterator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >+0x147 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0eba84 std::move<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::insert_iterator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >+0x126 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d01c08d testing::internal::(anonymous namespace)::UnitTestFilter::UnitTestFilter+0x52b (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08aba3 testing::internal::UnitTestImpl::GetTestSuite+0xa1b (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0bf288 testing::internal::UnitTestImpl::AddTestInfo+0x61a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03c6e1 testing::internal::MakeAndRegisterTestInfo+0x419 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfac17d __static_initialization_and_destruction_0+0x85b (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfb234b _GLOBAL__sub_I__ZN62MyStringTester_emptyStringConstruction_expectedSizeIsZero_Test10test_info_E+0x1c (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391ebb __libc_start_main@@GLIBC_2.34+0xfb (/usr/lib/x86_64-linux-gnu/libc.so.6)
+
+tests   268 27551783.978528:     609436 cycles: 
+	    7f15d801e9a6 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x176 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.978777:     609346 cycles: 
+	    55a73d14838f std::construct_at<testing::TestInfo*, testing::TestInfo* const&>+0xf3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0faf1b std::vector<testing::TestInfo*, std::allocator<testing::TestInfo*> >::push_back+0x229 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0414a6 testing::TestSuite::AddTestInfo+0x152 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0bf394 testing::internal::UnitTestImpl::AddTestInfo+0x726 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03c6e1 testing::internal::MakeAndRegisterTestInfo+0x419 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfae7b0 __static_initialization_and_destruction_0+0x2e8e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfb234b _GLOBAL__sub_I__ZN62MyStringTester_emptyStringConstruction_expectedSizeIsZero_Test10test_info_E+0x1c (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391ebb __libc_start_main@@GLIBC_2.34+0xfb (/usr/lib/x86_64-linux-gnu/libc.so.6)
+
+tests   268 27551783.979066:     609620 cycles: 
+	    7f15d8013b64 __sanitizer::internal_mmap+0x24 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.979379:     599416 cycles: 
+	    7f15d801e9a6 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x176 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.979685:     584285 cycles: 
+	    7f15d801e910 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0xe0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.979983:     570984 cycles: 
+	    7f15d7f4f08f __asan_stack_malloc_0+0x9f (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
 	               0 [unknown] ([unknown])
 
-tests   268 27536275.649518:     608745 cycles: 
-	    7f5b4125f9a6 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x176 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.980276:     559358 cycles: 
+	    55a73cfb3209 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_data+0x1b (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfbf2f5 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_is_local+0x45 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfbc05e std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::capacity+0x44 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfddceb std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::push_back+0x135 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfdb933 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator+=+0x4f (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03415d testing::internal::StringStreamToString+0x34b (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d02639d testing::Message::GetString[abi:cxx11]+0x147 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d00c001 testing::internal::FlagToEnvVar+0x427 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d00cdcf testing::internal::Int32FromGTestEnv+0x15c (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0ae270 __static_initialization_and_destruction_0+0x84f (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0ae894 _GLOBAL__sub_I__ZN7testing15AssertionResultC2ERKS0_+0x1c (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391ebb __libc_start_main@@GLIBC_2.34+0xfb (/usr/lib/x86_64-linux-gnu/libc.so.6)
 
-tests   268 27536275.649767:     608527 cycles: 
-	    7f5b4125f910 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0xe0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.980561:     549103 cycles: 
+	    7f15d801e910 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0xe0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   268 27536275.650015:     608852 cycles: 
-	    7f5b41822c64 _dl_runtime_resolve_xsave+0x4 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    7f5b41150478 [unknown] ([unknown])
-	    7f5b4103bc90 non-virtual thunk to std::__cxx11::basic_stringstream<char, std::char_traits<char>, std::allocator<char> >::~basic_stringstream()+0x0 (/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
-	48fb89485300116b [unknown] ([unknown])
+tests   268 27551783.980842:     540694 cycles: 
+	    7f15d7dfb000 std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::_M_pbump+0x0 (/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
 
-tests   268 27536275.650263:     609402 cycles: 
-	    7f5b411842a9 __asan::Allocator::QuarantineChunk+0x69 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.981119:     533285 cycles: 
+	    7f15d7f4f6b0 __asan_stack_malloc_1+0xc0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.981392:     526733 cycles: 
+	    7f15d7f4f6a2 __asan_stack_malloc_1+0xb2 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.981663:     521324 cycles: 
+	    55a73cfddc94 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::push_back+0xde (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfdb933 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator+=+0x4f (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03415d testing::internal::StringStreamToString+0x34b (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d02639d testing::Message::GetString[abi:cxx11]+0x147 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0dcfcd testing::internal::StreamableToString<int>+0x18b (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d044d60 testing::FormatCountableNoun+0x170 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d047278 testing::internal::PrettyUnitTestResultPrinter::OnTestCaseStart+0x24e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d04e900 testing::internal::TestEventRepeater::OnTestCaseStart+0x426 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0421c6 testing::TestSuite::Run+0x9e6 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+
+tests   268 27551783.981930:     516303 cycles: 
+	    7f15d75c54a3 isDerivedFromAtOffset+0x23 (/usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0)
+	    55a73d2163f0 [unknown] ([unknown])
+	    7f15d7d61570 __cxxabiv1::__class_type_info::~__class_type_info+0x0 (/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
+	4810c08348001b04 [unknown] ([unknown])
+
+tests   268 27551783.982195:     512211 cycles: 
+	    7f15d801e876 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x46 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.982458:     508561 cycles: 
+	    7f15d75d08de __sanitizer::internal_close+0xe (/usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0)
+
+tests   268 27551783.982720:     505332 cycles: 
+	    7f15d750904a __memset_avx2_unaligned_erms+0xca (/usr/lib/x86_64-linux-gnu/libc.so.6)
 	               0 [unknown] ([unknown])
+
+tests   268 27551783.982984:     500921 cycles: 
+	    55a73d0c00cd testing::internal::UnitTestImpl::catch_exceptions+0x61 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f94c8 testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::TestFactoryBase, testing::Test*>+0x1f6 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e05c testing::TestInfo::Run+0xb8c (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+
+tests   268 27551783.983243:     497588 cycles: 
+	    7f15d801e9a6 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x176 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.983499:     495540 cycles: 
+	    7f15d801e9a6 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x176 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.983754:     493982 cycles: 
+	    7f15d7f4f093 __asan_stack_malloc_0+0xa3 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
+
+tests   268 27551783.984008:     492861 cycles: 
+	    7f15d7f4effa __asan_stack_malloc_0+0xa (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	    55a73cfe113e std::_Rb_tree<MyString, MyString, std::_Identity<MyString>, std::less<MyString>, std::allocator<MyString> >::_M_get_insert_unique_pos+0x2ce (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfde388 std::_Rb_tree<MyString, MyString, std::_Identity<MyString>, std::less<MyString>, std::allocator<MyString> >::_M_insert_unique<MyString const&>+0x176 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfdbffa std::set<MyString, std::less<MyString>, std::allocator<MyString> >::insert+0x168 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7775 MyString::getUniqueWords+0x353 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfa449f MyStringTester_countingUniqueWords_Test::TestBody+0x399 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d123d80 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f8274 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03a3ec testing::Test::Run+0x65a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e1b9 testing::TestInfo::Run+0xce9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+
+tests   268 27551783.984261:     491753 cycles: 
+	    7f15d7f4f0cb __asan_stack_malloc_0+0xdb (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
+
+tests   268 27551783.984515:     491065 cycles: 
+	    7f15d801e9a6 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x176 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.984766:     490214 cycles: 
+	    7f15d802ca61 __sanitizer::DTLS_on_tls_get_addr+0xf1 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 	               0 [unknown] ([unknown])
-	    7f5b41249ea0 __sanitizer::ThreadContextBase::OnJoined+0x0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	900000000000841f [unknown] ([unknown])
+	             70d [unknown] ([unknown])
 
-tests   268 27536275.650514:     609971 cycles: 
-	    7f5b4125f9a6 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x176 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.985016:     489940 cycles: 
+	    55a73cfb75c0 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_set_length+0x210 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfdb3c3 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::clear+0x49 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd43ab MyString::clear+0x23b (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7c1d MyString::countWordsUsageIgnoringCases() const::{lambda()#1}::operator()+0x2a9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7fba MyString::countWordsUsageIgnoringCases+0x392 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfa4c09 MyStringTester_countingWordsNumbersInText_Test::TestBody+0x323 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d123d80 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f8274 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03a3ec testing::Test::Run+0x65a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e1b9 testing::TestInfo::Run+0xce9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
 
-tests   268 27536275.650763:     609779 cycles: 
-	    7f5b4125f910 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0xe0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.985267:     489809 cycles: 
+	    7f15d7f4f067 __asan_stack_malloc_0+0x77 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
+	966951eb41084b00 [unknown] ([unknown])
+	    55a73cfdc332 std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::operator[]+0x14c (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7b29 MyString::countWordsUsageIgnoringCases() const::{lambda()#1}::operator()+0x1b5 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7fba MyString::countWordsUsageIgnoringCases+0x392 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfa4c09 MyStringTester_countingWordsNumbersInText_Test::TestBody+0x323 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d123d80 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f8274 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03a3ec testing::Test::Run+0x65a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e1b9 testing::TestInfo::Run+0xce9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
 
-tests   268 27536275.651016:     610155 cycles: 
-	    7f5b41254b64 __sanitizer::internal_mmap+0x24 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.985517:     489712 cycles: 
+	    55a73cfc29bc std::less<MyString>::operator()+0x166 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfe5385 std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::_M_lower_bound+0x125 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfe20bf std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::lower_bound+0xe9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfde9eb std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::lower_bound+0x9d (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfdc332 std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::operator[]+0x14c (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7b29 MyString::countWordsUsageIgnoringCases() const::{lambda()#1}::operator()+0x1b5 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7fba MyString::countWordsUsageIgnoringCases+0x392 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfa4c09 MyStringTester_countingWordsNumbersInText_Test::TestBody+0x323 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d123d80 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f8274 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03a3ec testing::Test::Run+0x65a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e1b9 testing::TestInfo::Run+0xce9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
 
-tests   268 27536275.651267:     609196 cycles: 
-	    7f5b4125f9a6 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x176 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.651516:     608934 cycles: 
-	    7f5b418251e9 __tls_get_addr+0x19 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    5570be172618 testing::internal::StringStreamToString+0x204 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be16499f testing::Message::GetString[abi:cxx11]+0x147 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be272ad5 testing::internal::StreamableToString<char*>+0x18b (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be246787 testing::internal::InitGoogleTestImpl<char>+0x246 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1d90e8 testing::InitGoogleTest+0x27 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a3 main+0xd2 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.651765:     609225 cycles: 
-	    7f5b41190c5a __asan_stack_malloc_2+0x1a (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	    5570be1de977 std::any_of<__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, testing::internal::(anonymous namespace)::UnitTestFilter::MatchesName(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const::{lambda(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)#1}>+0xec (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be15affb testing::internal::(anonymous namespace)::UnitTestFilter::MatchesName+0x4d3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be15c64e testing::internal::(anonymous namespace)::PositiveAndNegativeUnitTestFilter::MatchesName+0x9c (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be15c4c4 testing::internal::(anonymous namespace)::PositiveAndNegativeUnitTestFilter::MatchesTest+0x2a4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1d14a8 testing::internal::UnitTestImpl::FilterTests+0xa04 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ca4c9 testing::internal::UnitTestImpl::RunAllTests+0x48d (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.652015:     609345 cycles: 
-	    7f5b4118fff5 __asan_stack_malloc_0+0x5 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	    5570be22c9ab testing::internal::CountIf<std::vector<testing::TestSuite*, std::allocator<testing::TestSuite*> >, bool (*)(testing::TestSuite const*)>+0x23b (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be16276d testing::internal::UnitTestImpl::test_suite_to_run_count+0xfd (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1b91b5 testing::UnitTest::test_suite_to_run_count+0x225 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be185172 testing::internal::PrettyUnitTestResultPrinter::OnTestIterationStart+0x54e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be190688 testing::internal::TestEventRepeater::OnTestIterationStart+0x404 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1cbb53 testing::internal::UnitTestImpl::RunAllTests+0x1b17 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.652266:     609400 cycles: 
-	    7f5b406be07d __pipe+0xd (/usr/lib/x86_64-linux-gnu/libc.so.6)
-	    5570be386dc8 [unknown] ([unknown])
-
-tests   268 27536275.652516:     609143 cycles: 
-	    7f5b41246340 __asan::GetMallocContextSize+0x0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	    5570be10a29b std::__new_allocator<char>::deallocate+0x2b (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be104f3e std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_destroy+0x130 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be103143 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose+0xff (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0fefcb std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string+0x45 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0fc282 MyString::~MyString+0x92 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0e61e4 MyStringTester_clear_expectedEmptyStringAfterClearing_Test::TestBody+0xdf6 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.652766:     609095 cycles: 
-	    7f5b41187ba9 __asan::Allocator::Allocate+0x769 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.653015:     609286 cycles: 
-	    7f5b418251e9 __tls_get_addr+0x19 (/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
-	    5570be105aac testing::internal::CmpHelperEQ<char, char>+0x136 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be101880 testing::internal::EqHelper::Compare<char, char, (void*)0>+0x98 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0e83c1 MyStringTester_indexAccessOperator_expectedPossibilityToAccesElementsWithIndex_Test::TestBody+0x381 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.653265:     609352 cycles: 
-	    7f5b41239b6d operator new+0x8d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	    5570be111c59 testing::internal::TestFactoryImpl<MyStringTester_istreamOperator_expectedTextCopiedFromStreamToString_Test>::CreateTest+0x1f (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2649d8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::TestFactoryBase, testing::Test*>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2396a0 testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::TestFactoryBase, testing::Test*>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c65e testing::TestInfo::Run+0xb8c (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.653516:     609362 cycles: 
-	    5570be249843 std::chrono::operator-<long, std::ratio<1l, 1000000000l>, long, std::ratio<1l, 1000000000l> >+0x278 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be22cc6e std::chrono::operator-<std::chrono::_V2::system_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >+0x1cd (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be163539 testing::internal::GetTimeInMillis+0x199 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c461 testing::TestInfo::Run+0x98f (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.653765:     609351 cycles: 
-	    5570be11a8b3 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator[]+0x5 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1164d9 MyString::trim+0x437 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0eb833 MyStringTester_trimming_expectedSpacesRemoved_Test::TestBody+0x1a1b (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.654015:     609438 cycles: 
-	    7f5b405e30bc tolower+0x2c (/usr/lib/x86_64-linux-gnu/libc.so.6)
-	    5570be116e6f MyString::getUniqueWords+0x151 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0ed49f MyStringTester_countingUniqueWords_Test::TestBody+0x399 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.654264:     609480 cycles: 
-	    7f5b4121bfb0 GetInterceptorMetadata+0x20 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.654514:     609694 cycles: 
-	    7f5b4118763d __asan::Allocator::Allocate+0x1fd (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.654763:     609671 cycles: 
-	    7f5b411906c7 __asan_stack_malloc_1+0xd7 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.655016:     609844 cycles: 
-	    5570be118e44 std::operator==+0xaa (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be115de6 MyString::operator<=>+0x51a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be10631c std::less<MyString>::operator()+0xf4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be123ac5 std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::_M_lower_bound+0x125 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be120a1d std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::lower_bound+0xe9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be11dfb3 std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::lower_bound+0x9d (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be11bc54 std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::operator[]+0x14c (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be117425 MyString::countWordsUsageIgnoringCases() const::{lambda()#1}::operator()+0x1b5 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1178b6 MyString::countWordsUsageIgnoringCases+0x392 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0edc09 MyStringTester_countingWordsNumbersInText_Test::TestBody+0x323 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.655269:     609039 cycles: 
-	    7f5b4119008f __asan_stack_malloc_0+0x9f (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	1163217cd63dfd00 [unknown] ([unknown])
-	      617a006e6f [unknown] ([unknown])
-
-tests   268 27536275.655508:     608173 cycles: 
-	    5570be11a92e std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator[]+0x80 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be115030 MyString::operator[]+0x1e2 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be101f1f MyString::base_iterator<false>::operator*+0x139 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be117822 MyString::countWordsUsageIgnoringCases+0x2fe (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0edc09 MyStringTester_countingWordsNumbersInText_Test::TestBody+0x323 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.655746:     611750 cycles: 
-	    5570be114ed6 MyString::operator[]+0x88 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be101f1f MyString::base_iterator<false>::operator*+0x139 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be117822 MyString::countWordsUsageIgnoringCases+0x2fe (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0edc09 MyStringTester_countingWordsNumbersInText_Test::TestBody+0x323 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
-
-tests   268 27536275.655985:     615517 cycles: 
-	    7f5b4126d9ce __sanitizer::DTLS_on_tls_get_addr+0x5e (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.985767:     489595 cycles: 
+	    7f15d7f62e9e __interceptor___tls_get_addr+0x5e (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 	               0 [unknown] ([unknown])
-	             ef6 [unknown] ([unknown])
+	             bf3 [unknown] ([unknown])
 
-tests   268 27536275.656246:     618904 cycles: 
-	    7f5b41254b64 __sanitizer::internal_mmap+0x24 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.986018:     489658 cycles: 
+	    7f15d7f4f6b0 __asan_stack_malloc_1+0xc0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   268 27536275.656499:     615764 cycles: 
-	    5570be11a9b5 std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator[]+0x107 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be115030 MyString::operator[]+0x1e2 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be101f1f MyString::base_iterator<false>::operator*+0x139 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be117822 MyString::countWordsUsageIgnoringCases+0x2fe (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0eef92 MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody+0x316 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+tests   268 27551783.986274:     489380 cycles: 
+	    7f15d7f4f6b0 __asan_stack_malloc_1+0xc0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   268 27536275.656750:     614820 cycles: 
-	    5570be1158eb MyString::operator<=>+0x1f (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be10631c std::less<MyString>::operator()+0xf4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1215bc std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::_M_get_insert_hint_unique_pos+0x5cc (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be11e59c std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<MyString const&>, std::tuple<> >+0x28a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be11bfd8 std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::operator[]+0x4d0 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be117425 MyString::countWordsUsageIgnoringCases() const::{lambda()#1}::operator()+0x1b5 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1178b6 MyString::countWordsUsageIgnoringCases+0x392 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0eef92 MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody+0x316 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+tests   268 27551783.986526:     487942 cycles: 
+	    7f15d75c565f __ubsan::checkDynamicType+0xdf (/usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0)
 
-tests   268 27536275.657001:     614427 cycles: 
-	    7f5b411906b0 __asan_stack_malloc_1+0xc0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.986777:     487544 cycles: 
+	    55a73cfbd826 MyString::base_iterator<false>::operator+++0x86 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7334 MyString::toLower+0x276 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7d76 MyString::countWordsUsageIgnoringCases+0x14e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfa5f92 MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody+0x316 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d123d80 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f8274 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03a3ec testing::Test::Run+0x65a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e1b9 testing::TestInfo::Run+0xce9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
 
-tests   268 27536275.657251:     614260 cycles: 
-	    5570be0fb783 MyString::empty+0x8f (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1172fc MyString::countWordsUsageIgnoringCases() const::{lambda()#1}::operator()+0x8c (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1178b6 MyString::countWordsUsageIgnoringCases+0x392 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0eef92 MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody+0x316 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+tests   268 27551783.987039:     486997 cycles: 
+	    7f15d7f4f6b0 __asan_stack_malloc_1+0xc0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   268 27536275.657501:     614192 cycles: 
-	    7f5b4126d982 __sanitizer::DTLS_on_tls_get_addr+0x12 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.987290:     484326 cycles: 
+	    7f15d7f4f08f __asan_stack_malloc_0+0x9f (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
+	966951eb41084b00 [unknown] ([unknown])
+	    55a73cfdc332 std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::operator[]+0x14c (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7b29 MyString::countWordsUsageIgnoringCases() const::{lambda()#1}::operator()+0x1b5 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7fba MyString::countWordsUsageIgnoringCases+0x392 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfa5f92 MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody+0x316 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d123d80 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f8274 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03a3ec testing::Test::Run+0x65a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e1b9 testing::TestInfo::Run+0xce9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+
+tests   268 27551783.987538:     483950 cycles: 
+	    7f15d7f62e8b __interceptor___tls_get_addr+0x4b (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 	               0 [unknown] ([unknown])
-	            16b3 [unknown] ([unknown])
+	            1316 [unknown] ([unknown])
 
-tests   268 27536275.657752:     614214 cycles: 
-	    7f5b411906c7 __asan_stack_malloc_1+0xd7 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.987785:     484624 cycles: 
+	    55a73cfd560f MyString::operator[]+0x1cf (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfbd62d MyString::base_iterator<false>::operator*+0x139 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7f26 MyString::countWordsUsageIgnoringCases+0x2fe (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfa5f92 MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody+0x316 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d123d80 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f8274 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03a3ec testing::Test::Run+0x65a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e1b9 testing::TestInfo::Run+0xce9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
 
-tests   268 27536275.658001:     614031 cycles: 
-	    7f5b41190093 __asan_stack_malloc_0+0xa3 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	1163217cd63dfd00 [unknown] ([unknown])
-	      796e6f7a00 [unknown] ([unknown])
+tests   268 27551783.988032:     485308 cycles: 
+	    7f15d7d7c270 std::_Rb_tree_decrement+0x0 (/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.32)
+	    55a73cfe2f1f std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::_M_get_insert_hint_unique_pos+0x88d (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfdefd4 std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<MyString const&>, std::tuple<> >+0x28a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfdc6b6 std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::operator[]+0x4d0 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7b29 MyString::countWordsUsageIgnoringCases() const::{lambda()#1}::operator()+0x1b5 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7fba MyString::countWordsUsageIgnoringCases+0x392 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfa5f92 MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody+0x316 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d123d80 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f8274 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03a3ec testing::Test::Run+0x65a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e1b9 testing::TestInfo::Run+0xce9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
 
-tests   268 27536275.658251:     614205 cycles: 
-	    5570be11b572 MyString::base_iterator<false>::operator!=+0x0 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0eef92 MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody+0x316 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+tests   268 27551783.988280:     485884 cycles: 
+	    7f15d7f62e9e __interceptor___tls_get_addr+0x5e (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	               0 [unknown] ([unknown])
+	            175a [unknown] ([unknown])
 
-tests   268 27536275.658502:     614164 cycles: 
-	    5570be115db3 MyString::operator<=>+0x4e7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be10631c std::less<MyString>::operator()+0xf4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be123ac5 std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::_M_lower_bound+0x125 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be120a1d std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::lower_bound+0xe9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be11dfb3 std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::lower_bound+0x9d (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be11bc54 std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::operator[]+0x14c (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be117425 MyString::countWordsUsageIgnoringCases() const::{lambda()#1}::operator()+0x1b5 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1178b6 MyString::countWordsUsageIgnoringCases+0x392 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0eef92 MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody+0x316 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+tests   268 27551783.988528:     486450 cycles: 
+	    7f15d7f4f0cf __asan_stack_malloc_0+0xdf (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
+	               0 [unknown] ([unknown])
 
-tests   268 27536275.658753:     614036 cycles: 
-	    7f5b4125f910 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0xe0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.988778:     486973 cycles: 
+	    7f15d7f4f6b0 __asan_stack_malloc_1+0xc0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   268 27536275.659009:     613799 cycles: 
-	    5570be125452 std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand+0x462 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be122a30 std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::operator()+0xd2 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1228ac std::uniform_int_distribution<unsigned long>::_S_nd<unsigned long, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>, unsigned int>+0x4a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be11ede4 std::uniform_int_distribution<unsigned long>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >+0x190 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be11c6e8 std::uniform_int_distribution<unsigned long>::operator()<std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul> >+0xa4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be117fe5 makeRandomCharGenerator()::{lambda()#1}::operator()+0x237 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be118c54 std::generate_n<MyString::base_iterator<false>, unsigned long, makeRandomCharGenerator()::{lambda()#1}>+0x104 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be118348 MyString::generateRandomWord+0x1dc (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be0f0c70 MyStringTester_randomWordGeneration_Test::TestBody+0x1e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2642e8 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be238424 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1789ee testing::Test::Run+0x65a (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be17c7bb testing::TestInfo::Run+0xce9 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be181066 testing::TestSuite::Run+0x1284 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1ccb7a testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be26b13e testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be23e56b testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be1befe8 testing::UnitTest::Run+0x4e4 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb35b RUN_ALL_TESTS+0x114 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    5570be2cb1a8 main+0xd7 (/tmp/tmpxvg8wt7d/student/build/bin/tests)
-	    7f5b405d2d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+tests   268 27551783.989027:     487012 cycles: 
+	    7f15d7f4fd06 __asan_stack_malloc_2+0xc6 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   268 27536275.659261:     612080 cycles: 
-	    7f5b4125f9a6 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x176 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.989276:     487319 cycles: 
+	    55a73cfd654e MyString::operator<=>+0x57e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfc294a std::less<MyString>::operator()+0xf4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfe5385 std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::_M_lower_bound+0x125 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfe20bf std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::lower_bound+0xe9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfde9eb std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::lower_bound+0x9d (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfdc332 std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::operator[]+0x14c (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7b29 MyString::countWordsUsageIgnoringCases() const::{lambda()#1}::operator()+0x1b5 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7fba MyString::countWordsUsageIgnoringCases+0x392 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfa5f92 MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody+0x316 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d123d80 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f8274 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03a3ec testing::Test::Run+0x65a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e1b9 testing::TestInfo::Run+0xce9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
 
-tests   268 27536275.659512:     611537 cycles: 
-	    7f5b4125f9a6 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x176 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.989525:     487545 cycles: 
+	    55a73cfd988a std::operator==+0x134 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd64ea MyString::operator<=>+0x51a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfc294a std::less<MyString>::operator()+0xf4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfe5385 std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::_M_lower_bound+0x125 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfe20bf std::_Rb_tree<MyString, std::pair<MyString const, unsigned long>, std::_Select1st<std::pair<MyString const, unsigned long> >, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::lower_bound+0xe9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfde9eb std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::lower_bound+0x9d (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfdc332 std::map<MyString, unsigned long, std::less<MyString>, std::allocator<std::pair<MyString const, unsigned long> > >::operator[]+0x14c (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7b29 MyString::countWordsUsageIgnoringCases() const::{lambda()#1}::operator()+0x1b5 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd7fba MyString::countWordsUsageIgnoringCases+0x392 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfa5f92 MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody+0x316 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d123d80 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f8274 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03a3ec testing::Test::Run+0x65a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e1b9 testing::TestInfo::Run+0xce9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
 
-tests   268 27536275.659761:     611299 cycles: 
-	    7f5b4119603e __asan_unregister_globals+0x10e (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.989774:     487683 cycles: 
+	    7f15d7fadabb printf_common+0xab (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	    7f15d7fae8d5 __interceptor_vprintf+0xc5 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	      205d204b4f [unknown] ([unknown])
+
+tests   268 27551783.990026:     487912 cycles: 
+	    55a73cfe6899 std::__detail::_Mod<unsigned long, 624ul, 1ul, 0ul, true, true>::__calc+0x3a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfe3e13 std::__detail::__mod<unsigned long, 624ul, 1ul, 0ul>+0x24 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfdf32f std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::seed+0x167 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfdc915 std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::mersenne_twister_engine+0x4f (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd865c makeRandomCharGenerator()::{lambda()#1}::operator()+0x1aa (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd9610 std::generate_n<MyString::base_iterator<false>, unsigned long, makeRandomCharGenerator()::{lambda()#1}>+0x104 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfd8a4c MyString::generateRandomWord+0x1dc (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73cfa7c70 MyStringTester_randomWordGeneration_Test::TestBody+0x1e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d123d80 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::Test, void>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0f8274 testing::internal::HandleExceptionsInMethodIfSupported<testing::Test, void>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03a3ec testing::Test::Run+0x65a (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d03e1b9 testing::TestInfo::Run+0xce9 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d042a64 testing::TestSuite::Run+0x1284 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d08e578 testing::internal::UnitTestImpl::RunAllTests+0x2b3e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d12abd6 testing::internal::HandleSehExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x3f3 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0fe3bb testing::internal::HandleExceptionsInMethodIfSupported<testing::internal::UnitTestImpl, bool>+0x21e (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d0809e6 testing::UnitTest::Run+0x4e4 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18adb5 RUN_ALL_TESTS+0x114 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    55a73d18ac02 main+0xd7 (/tmp/tmp2uavs4yk/student/build/bin/tests)
+	    7f15d7391d90 __libc_start_call_main+0x80 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+
+tests   268 27551783.990277:     487542 cycles: 
+	    7f15d75d08de __sanitizer::internal_close+0xe (/usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0)
+
+tests   268 27551783.990528:     487225 cycles: 
+	    7f15d75c55b4 __ubsan::checkDynamicType+0x34 (/usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0)
+
+tests   268 27551783.990780:     487016 cycles: 
+	    7f15d75d0972 __sanitizer::internal_write+0x12 (/usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0)
+	    55a73d24aa68 [unknown] ([unknown])
+
+tests   268 27551783.991035:     486506 cycles: 
+	    7f15d801e9a6 __sanitizer::StackDepotBase<__sanitizer::StackDepotNode, 1, 20>::Put+0x176 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   268 27551783.991287:     485286 cycles: 
+	    7f15d7f550f5 __asan_unregister_globals+0x1c5 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 	              28 [unknown] ([unknown])
 	       90000071c [unknown] ([unknown])
-	6437747738677678 [unknown] ([unknown])
+	6b79347376617532 [unknown] ([unknown])
 
-tests   268 27536275.660098:     611322 cycles: 
-	    7f5b412562ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.991535:     484871 cycles: 
+	    7f15d7f550d8 __asan_unregister_globals+0x1a8 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	              20 [unknown] ([unknown])
+	      36000000ea [unknown] ([unknown])
+	2b2b632f6564756c [unknown] ([unknown])
 
-tests   269 27536275.660149:          1 cycles: 
-	    7f5b412562ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   268 27551783.991784:     485375 cycles: 
+	    7f15d7470c9b __sched_yield+0xb (/usr/lib/x86_64-linux-gnu/libc.so.6)
 
-tests   269 27536275.660163:          1 cycles: 
-	    7f5b412562ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.991829:          1 cycles: 
+	    7f15d80152ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.660170:          3 cycles: 
-	    7f5b412562ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.991846:          1 cycles: 
+	    7f15d80152ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.660177:         17 cycles: 
-	    7f5b412562ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.991857:          3 cycles: 
+	    7f15d80152ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.660184:         93 cycles: 
-	    7f5b412562ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.991868:         11 cycles: 
+	    7f15d80152ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.660191:        506 cycles: 
-	    7f5b412562ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.991879:         41 cycles: 
+	    7f15d80152ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.660198:       2745 cycles: 
-	    7f5b412562ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.991891:        152 cycles: 
+	    7f15d80152ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.660205:      14791 cycles: 
-	    7f5b412562ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.991902:        560 cycles: 
+	    7f15d80152ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.660217:      80184 cycles: 
-	    7f5b412635d0 __sanitizer::TracerThread+0x50 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.991913:       2061 cycles: 
+	    7f15d80152ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.660262:     278592 cycles: 
-	    7f5b41254b64 __sanitizer::internal_mmap+0x24 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.991924:       7536 cycles: 
+	    7f15d80152ed __sanitizer::internal_clone+0x3d (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   268 27536275.660346:     591710 cycles: 
-	    7f5b406b1c9b __sched_yield+0xb (/usr/lib/x86_64-linux-gnu/libc.so.6)
+tests   269 27551783.991939:      27759 cycles: 
+	    7f15d801439b __sanitizer::internal_prctl+0x1b (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.660430:     433818 cycles: 
-	    7f5b41254b7b __sanitizer::internal_munmap+0xb (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.991968:      83393 cycles: 
+	    7f15d8013b64 __sanitizer::internal_mmap+0x24 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.660651:     460770 cycles: 
-	    7f5b41182969 __lsan::GetUserBegin+0x79 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	1163217cd63dfd00 [unknown] ([unknown])
+tests   268 27551783.992032:     485596 cycles: 
+	    7f15d7470c9b __sched_yield+0xb (/usr/lib/x86_64-linux-gnu/libc.so.6)
 
-tests   269 27536275.660886:     468103 cycles: 
-	    7f5b41182ba0 __lsan::LsanMetadata::LsanMetadata+0x0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	1163217cd63dfd00 [unknown] ([unknown])
+tests   269 27551783.992047:     162034 cycles: 
+	    7f15d8014b25 __sanitizer::ThreadLister::ListThreads+0x45 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	    7f15d6f4e000 [unknown] ([unknown])
 
-tests   269 27536275.661125:     471909 cycles: 
-	    7f5b41270757 __lsan::ScanRangeForPointers+0x97 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.992192:     206042 cycles: 
+	    7f15d8013c2f __sanitizer::internal_read+0xf (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
 
-tests   269 27536275.661365:     474716 cycles: 
-	    7f5b41270765 __lsan::ScanRangeForPointers+0xa5 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.992372:     224647 cycles: 
+	    7f15d8013b64 __sanitizer::internal_mmap+0x24 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.661608:     477007 cycles: 
-	    7f5b41270765 __lsan::ScanRangeForPointers+0xa5 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.992567:     235635 cycles: 
+	    7f15d7f419a2 __lsan::GetUserBegin+0xb2 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
 
-tests   269 27536275.661851:     478917 cycles: 
-	    7f5b41270743 __lsan::ScanRangeForPointers+0x83 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.992772:     243833 cycles: 
+	    7f15d7f419a2 __lsan::GetUserBegin+0xb2 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
 
-tests   269 27536275.662095:     480614 cycles: 
-	    7f5b411825f0 __lsan::PointsIntoChunk+0x0 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.992984:     250604 cycles: 
+	    7f15d7f419a2 __lsan::GetUserBegin+0xb2 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
 
-tests   269 27536275.662341:     482126 cycles: 
-	    7f5b41270743 __lsan::ScanRangeForPointers+0x83 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.993201:     256242 cycles: 
+	    7f15d7f419a2 __lsan::GetUserBegin+0xb2 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	966951eb41084b00 [unknown] ([unknown])
 
-tests   269 27536275.662589:     483068 cycles: 
-	    7f5b4118271f __lsan::PointsIntoChunk+0x12f (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.993422:     261068 cycles: 
+	    7f15d802f7e3 __lsan::ScanRangeForPointers+0x123 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.662849:     462942 cycles: 
-	    7f5b41270743 __lsan::ScanRangeForPointers+0x83 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.993648:     265303 cycles: 
+	    7f15d802f743 __lsan::ScanRangeForPointers+0x83 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.663085:     460873 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.993876:     268943 cycles: 
+	    7f15d7f41712 __lsan::PointsIntoChunk+0x122 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.663320:     464073 cycles: 
-	    7f5b412707e0 __lsan::ScanRangeForPointers+0x120 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.994108:     272076 cycles: 
+	    7f15d7f4160e __lsan::PointsIntoChunk+0x1e (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.663559:     467788 cycles: 
-	    7f5b41270743 __lsan::ScanRangeForPointers+0x83 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.994342:     274815 cycles: 
+	    7f15d802f757 __lsan::ScanRangeForPointers+0x97 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.663797:     470572 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.994578:     277184 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.664038:     473426 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.994832:     270346 cycles: 
+	    7f15d802f743 __lsan::ScanRangeForPointers+0x83 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.664279:     475752 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.994959:     269839 cycles: 
+	    7f15d802f743 __lsan::ScanRangeForPointers+0x83 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.664521:     477944 cycles: 
-	    7f5b412707e0 __lsan::ScanRangeForPointers+0x120 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.995071:     302154 cycles: 
+	    7f15d802f750 __lsan::ScanRangeForPointers+0x90 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.664765:     479868 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.995208:     348959 cycles: 
+	    7f15d802f750 __lsan::ScanRangeForPointers+0x90 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.665010:     481305 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.995340:     384885 cycles: 
+	    7f15d802f7e0 __lsan::ScanRangeForPointers+0x120 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.665256:     482638 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.995486:     427471 cycles: 
+	    7f15d802f7e0 __lsan::ScanRangeForPointers+0x120 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.665502:     483657 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.995648:     465504 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.665749:     484680 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.995825:     497145 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.665995:     485391 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.996013:     522966 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.666242:     486234 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.996210:     544707 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.666490:     487014 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.996415:     562978 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.666739:     487444 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.996627:     578311 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.666991:     491466 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.996845:     591061 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.667241:     491004 cycles: 
-	    7f5b41270740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.997067:     602027 cycles: 
+	    7f15d802f7e0 __lsan::ScanRangeForPointers+0x120 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.667491:     490926 cycles: 
-	    7f5b4118ff38 __asan::FakeStack::ForEachFakeFrame+0x78 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	               0 [unknown] ([unknown])
+tests   269 27551783.997293:     611475 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.667741:     490844 cycles: 
-	    7f5b41182ce0 __lsan::ForEachChunk+0x90 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-	    619000000070 [unknown] ([unknown])
+tests   269 27551783.997524:     619541 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 
-tests   269 27536275.667991:     490851 cycles: 
-	    7f5b4118295c __lsan::GetUserBegin+0x6c (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+tests   269 27551783.997757:     626246 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   269 27551783.997993:     631747 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   269 27551783.998231:     636416 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   269 27551783.998471:     640501 cycles: 
+	    7f15d802f740 __lsan::ScanRangeForPointers+0x80 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+
+tests   269 27551783.998712:     643926 cycles: 
+	    7f15d7f4ef38 __asan::FakeStack::ForEachFakeFrame+0x78 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	            2476 [unknown] ([unknown])
+
+tests   269 27551783.998980:     649131 cycles: 
+	    7f15d7f41ce0 __lsan::ForEachChunk+0x90 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
 	               2 [unknown] ([unknown])
 
-tests   268 27536275.668286:          1 cycles: 
-	    7f5b412552e7 __sanitizer::internal_waitpid+0x17 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.668294:          1 cycles: 
-	    7f5b412552e7 __sanitizer::internal_waitpid+0x17 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.668300:          5 cycles: 
-	    7f5b412552e7 __sanitizer::internal_waitpid+0x17 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.668305:         32 cycles: 
-	    7f5b412552e7 __sanitizer::internal_waitpid+0x17 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.668311:        209 cycles: 
-	    7f5b412552e7 __sanitizer::internal_waitpid+0x17 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.668316:       1366 cycles: 
-	    7f5b412552e7 __sanitizer::internal_waitpid+0x17 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.668322:       8846 cycles: 
-	    7f5b412552e7 __sanitizer::internal_waitpid+0x17 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.668340:      57326 cycles: 
-	    7f5b41254b7b __sanitizer::internal_munmap+0xb (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
-
-tests   268 27536275.668369:     148748 cycles: 
-	    7f5b40845834 _fini+0x0 (/usr/lib/x86_64-linux-gnu/libubsan.so.1.0.0)
-	    7f5b405ee495 __run_exit_handlers+0x105 (/usr/lib/x86_64-linux-gnu/libc.so.6)
+tests   269 27551783.999252:     643717 cycles: 
+	    7f15d7f419c8 __lsan::GetUserBegin+0xd8 (/usr/lib/x86_64-linux-gnu/libasan.so.8.0.0)
+	    6210000000f0 [unknown] ([unknown])
 

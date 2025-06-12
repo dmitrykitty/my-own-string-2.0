@@ -6,24 +6,24 @@ Consolidate compiler generated dependencies of target tests
 [ 87%] Built target tests
 [100%] Running perf stat and explaining results
 
- Performance counter stats for '/tmp/tmpxvg8wt7d/student/build/bin/tests':
+ Performance counter stats for '/tmp/tmp2uavs4yk/student/build/bin/tests':
 
-        68,388,140      cycles                    #    2.659 GHz                      (68.95%)
-        95,497,765      instructions              #    1.40  insn per cycle           (84.47%)
-           414,937      cache-references          #   16.132 M/sec                    (84.47%)
-            95,877      cache-misses              #   23.106 % of all cache refs      (77.40%)
-        18,186,784      branches                  #  707.056 M/sec                    (84.48%)
-           112,414      branch-misses             #    0.62% of all branches          (87.37%)
-             6,256      faults                    #  243.217 K/sec                  
-             25.72 msec task-clock                #    0.984 CPUs utilized          
-                 3      context-switches          #  116.632 /sec                   
+        59,180,118      cycles                    #    1.783 GHz                      (67.08%)
+        95,307,848      instructions              #    1.61  insn per cycle           (87.96%)
+           484,404      cache-references          #   14.595 M/sec                    (87.96%)
+            89,047      cache-misses              #   18.383 % of all cache refs      (87.96%)
+        20,108,357      branches                  #  605.862 M/sec                    (87.96%)
+           105,700      branch-misses             #    0.53% of all branches          (75.83%)
+             6,320      faults                    #  190.421 K/sec                  
+             33.19 msec task-clock                #    0.990 CPUs utilized          
+                 3      context-switches          #   90.390 /sec                   
                  0      cpu-migrations            #    0.000 /sec                   
-             6,256      page-faults               #  243.217 K/sec                  
+             6,320      page-faults               #  190.421 K/sec                  
 
-       0.026140139 seconds time elapsed
+       0.033510072 seconds time elapsed
 
-       0.018304000 seconds user
-       0.008146000 seconds sys
+       0.016345000 seconds user
+       0.017432000 seconds sys
 
 
 ======================

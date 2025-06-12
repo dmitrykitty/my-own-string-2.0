@@ -16,24 +16,24 @@
 -- Looking for __ubsan_handle_add_overflow in ubsan - found
 -- Sanitizers (AddressSanitizer + UndefinedBehaviorSanitizer) są dostępne
 -- Znaleziono include-what-you-use: /usr/bin/include-what-you-use
--- Używany mapping IWYU: /tmp/tmpxvg8wt7d/student/tests/include-what-you-use_exceptions.imp
-Katalog do zbudowanego projektu: /tmp/tmpxvg8wt7d/student/build
- + Znaleziono nagłówki: /tmp/tmpxvg8wt7d/student/mystring.h
- + Znaleziono źródła: /tmp/tmpxvg8wt7d/student/main.cpp;/tmp/tmpxvg8wt7d/student/mystring.cpp
- + Znaleziono źródła bez main.cpp: /tmp/tmpxvg8wt7d/student/mystring.cpp
+-- Używany mapping IWYU: /tmp/tmp2uavs4yk/student/tests/include-what-you-use_exceptions.imp
+Katalog do zbudowanego projektu: /tmp/tmp2uavs4yk/student/build
+ + Znaleziono nagłówki: /tmp/tmp2uavs4yk/student/mystring.h
+ + Znaleziono źródła: /tmp/tmp2uavs4yk/student/main.cpp;/tmp/tmp2uavs4yk/student/mystring.cpp
+ + Znaleziono źródła bez main.cpp: /tmp/tmp2uavs4yk/student/mystring.cpp
 	* valgrind found: /usr/bin/valgrind
 	* cppcheck found: /usr/local/bin/cppcheck
-	+ adding command found: `cpplint` which would check trailing whitespaces and tabs in files: /tmp/tmpxvg8wt7d/student/mystring.h and /tmp/tmpxvg8wt7d/student/main.cpp;/tmp/tmpxvg8wt7d/student/mystring.cpp
-	+ adding command found: `clang-tidy` to run static analysis on source files: /tmp/tmpxvg8wt7d/student/main.cpp;/tmp/tmpxvg8wt7d/student/mystring.cpp and /tmp/tmpxvg8wt7d/student/mystring.h
-	+ adding command found: `flawfinder` to perform security analysis on files: /tmp/tmpxvg8wt7d/student/main.cpp;/tmp/tmpxvg8wt7d/student/mystring.cpp and /tmp/tmpxvg8wt7d/student/mystring.h
+	+ adding command found: `cpplint` which would check trailing whitespaces and tabs in files: /tmp/tmp2uavs4yk/student/mystring.h and /tmp/tmp2uavs4yk/student/main.cpp;/tmp/tmp2uavs4yk/student/mystring.cpp
+	+ adding command found: `clang-tidy` to run static analysis on source files: /tmp/tmp2uavs4yk/student/main.cpp;/tmp/tmp2uavs4yk/student/mystring.cpp and /tmp/tmp2uavs4yk/student/mystring.h
+	+ adding command found: `flawfinder` to perform security analysis on files: /tmp/tmp2uavs4yk/student/main.cpp;/tmp/tmp2uavs4yk/student/mystring.cpp and /tmp/tmp2uavs4yk/student/mystring.h
 -- Looking for pthread.h
 -- Looking for pthread.h - found
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
 -- Found Threads: TRUE  
- + Znaleziono pliki testów: /tmp/tmpxvg8wt7d/student/tests/myStringTests.cpp
+ + Znaleziono pliki testów: /tmp/tmp2uavs4yk/student/tests/myStringTests.cpp
  + katalog nagłówków: 
 	* perf found: /usr/bin/perf, so adding command: 'perf_stats_tests'
 -- Configuring done
 -- Generating done
--- Build files have been written to: /tmp/tmpxvg8wt7d/student/build
+-- Build files have been written to: /tmp/tmp2uavs4yk/student/build
