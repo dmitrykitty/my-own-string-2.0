@@ -7,11 +7,17 @@
 #include <set>
 #include <compare>
 #include <iterator>
+#include <vector>
 
 
 class MyString {
 public:
     static constexpr int initialBufferSize_ = 20;
+    using value_type = char;
+    using reference = char&;
+    using const_reference = const char&;
+    using size_type = std::size_t;
+
 
 private:
     std::array<char, 20> smallText_{};
@@ -129,6 +135,9 @@ public:
     const char& operator[](std::size_t index) const;
 
     MyString& operator+=(char ch);
+    void push_back(char ch){ *this += ch; }
+    MyString& operator+=(const MyString& other);
+
 
     bool operator==(const MyString& other) const = default;
     std::strong_ordering operator<=>(const MyString&) const;
@@ -137,7 +146,8 @@ public:
     [[nodiscard]] std::map<MyString, size_t>  countWordsUsageIgnoringCases()const;
     static MyString generateRandomWord(size_t length);
     [[nodiscard]] bool startsWith(const MyString&) const;
-    bool endsWith(const MyString&) const;
+    [[nodiscard]] bool endsWith(const MyString&) const;
+    MyString join(const std::vector<MyString> &texts) const;
 
     void trim();
 

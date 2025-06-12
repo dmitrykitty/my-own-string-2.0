@@ -359,7 +359,7 @@ TEST_F(MyStringTester, endsWith)
     const MyString text(quote);
     EXPECT_TRUE(text.endsWith("sprawiedliwy."));
     EXPECT_FALSE(text.endsWith("lajdacki"));
-}/*
+}
 // use: std::mismatch
 TEST_F(MyStringTester, comparingTexts)
 {
@@ -377,6 +377,7 @@ TEST_F(MyStringTester, comparingTexts)
     ASSERT_NE(text1, text3);
     ASSERT_NE(text2, text3);
 }
+
 // use: std::copy, std::back_inserter
 TEST_F(MyStringTester, joiningContainer)
 {
@@ -395,7 +396,7 @@ TEST_F(MyStringTester, joiningContainer)
     const MyString joinedText = separator.join(polishExtinctAnimals);
     ASSERT_EQ(polishExtinctAnimalsAsString, joinedText);
 }
-
+/*
 // use: std::all_of
 TEST_F(MyStringTester, all_of)
 {

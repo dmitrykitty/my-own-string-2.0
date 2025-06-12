@@ -88,6 +88,13 @@ MyString& MyString::operator+=(char ch) {
     return *this;
 }
 
+MyString& MyString::operator+=(const MyString& other) {
+    std::copy(other.begin(), other.end(), std::back_inserter(*this));
+    //back_inserter uzywa wielokrotnie (push_back(value_type))
+    return *this;
+}
+
+
 std::strong_ordering MyString::operator<=>(const MyString& other) const {
     std::size_t min_len = std::min(size_, other.size_);
     for (std::size_t i = 0; i < min_len; ++i) {
@@ -228,17 +235,12 @@ MyString MyString::generateRandomWord(size_t length) {
 }
 
 bool MyString::startsWith(const MyString& txt) const {
-    MyString tmp = *this;
-    tmp.trim();
-
-    MyString res;
-    for (const auto ch: tmp) {
-        if (std::isalpha(static_cast<unsigned>(ch)))
-            res += ch;
-        else
-            break;
+    for (std::size_t i = 0, j = 0; j < txt.size_; ++j, ++i) {
+        if ((*this)[i] != txt[j]) {
+            return false;
+        }
     }
-    return  res == txt; ;
+    return true;
 }
 
 bool MyString::endsWith(const MyString& txt) const {
@@ -252,3 +254,21 @@ bool MyString::endsWith(const MyString& txt) const {
     return true;
 }
 
+MyString MyString::join(const std::vector<MyString>& texts) const {
+    if (texts.empty())
+        return {};
+
+    auto it = std::begin(texts), end = std::end(texts);
+    MyString result;
+    result += *it;
+    ++it;
+
+    while (it != end) {
+        result += *this;
+        result += *it;
+        ++it;
+    }
+    result.bigText_.shrink_to_fit();
+    result.capacity_ = result.bigText_.capacity() + initialBufferSize_;
+    return result;
+}
