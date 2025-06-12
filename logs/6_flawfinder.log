@@ -1,2 +1,2 @@
-/tmp/tmpregcwhni/student/mystring.cpp:7:18:  [1] (buffer) strlen:Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).  
+/tmp/tmppqy0xs2g/student/mystring.cpp:8:18:  [1] (buffer) strlen:Does not handle strings that are not \0-terminated; if given one it may perform an over-read (it could cause a crash if unprotected) (CWE-126).  
     size_ = std::strlen(text);

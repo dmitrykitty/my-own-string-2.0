@@ -1,69 +1,72 @@
-/tmp/tmpregcwhni/student/mystring.h:23:5: warning: Class 'MyString' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+/tmp/tmppqy0xs2g/student/mystring.h:23:5: warning: Class 'MyString' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
     MyString(const char* text);
     ^
-/tmp/tmpregcwhni/student/mystring.cpp:104:35: warning: Condition 'i<newSize' is always false [knownConditionTrueFalse]
+/tmp/tmppqy0xs2g/student/mystring.cpp:119:35: warning: Condition 'i<newSize' is always false [knownConditionTrueFalse]
         for (std::size_t i = 0; i < newSize; ++i) {
                                   ^
-/tmp/tmpregcwhni/student/mystring.cpp:96:16: note: Assuming that condition 'end>begin' is not redundant
+/tmp/tmppqy0xs2g/student/mystring.cpp:111:16: note: Assuming that condition 'end>begin' is not redundant
     while (end > begin && std::isspace(static_cast<unsigned char>((*this)[end - 1]))) {
                ^
-/tmp/tmpregcwhni/student/mystring.cpp:100:31: note: Assignment 'newSize=end-begin', assigned value is less than 1
+/tmp/tmppqy0xs2g/student/mystring.cpp:115:31: note: Assignment 'newSize=end-begin', assigned value is less than 1
     std::size_t newSize = end - begin;
                               ^
-/tmp/tmpregcwhni/student/mystring.cpp:104:35: note: Condition 'i<newSize' is always false
+/tmp/tmppqy0xs2g/student/mystring.cpp:119:35: note: Condition 'i<newSize' is always false
         for (std::size_t i = 0; i < newSize; ++i) {
                                   ^
-/tmp/tmpregcwhni/student/mystring.cpp:110:15: warning: Condition 'size_<=initialBufferSize_' is always true [knownConditionTrueFalse]
+/tmp/tmppqy0xs2g/student/mystring.cpp:125:15: warning: Condition 'size_<=initialBufferSize_' is always true [knownConditionTrueFalse]
     if (size_ <= initialBufferSize_) {
               ^
-/tmp/tmpregcwhni/student/mystring.cpp:96:16: note: Assuming that condition 'end>begin' is not redundant
+/tmp/tmppqy0xs2g/student/mystring.cpp:111:16: note: Assuming that condition 'end>begin' is not redundant
     while (end > begin && std::isspace(static_cast<unsigned char>((*this)[end - 1]))) {
                ^
-/tmp/tmpregcwhni/student/mystring.cpp:100:31: note: Assignment 'newSize=end-begin', assigned value is less than 1
+/tmp/tmppqy0xs2g/student/mystring.cpp:115:31: note: Assignment 'newSize=end-begin', assigned value is less than 1
     std::size_t newSize = end - begin;
                               ^
-/tmp/tmpregcwhni/student/mystring.cpp:108:13: note: Assignment 'size_=newSize', assigned value is less than 1
+/tmp/tmppqy0xs2g/student/mystring.cpp:123:13: note: Assignment 'size_=newSize', assigned value is less than 1
     size_ = newSize;
             ^
-/tmp/tmpregcwhni/student/mystring.cpp:110:15: note: Condition 'size_<=initialBufferSize_' is always true
+/tmp/tmppqy0xs2g/student/mystring.cpp:125:15: note: Condition 'size_<=initialBufferSize_' is always true
     if (size_ <= initialBufferSize_) {
               ^
-/tmp/tmpregcwhni/student/mystring.cpp:112:19: warning: Condition 'size_<initialBufferSize_' is always true [knownConditionTrueFalse]
+/tmp/tmppqy0xs2g/student/mystring.cpp:127:19: warning: Condition 'size_<initialBufferSize_' is always true [knownConditionTrueFalse]
         if (size_ < initialBufferSize_) {
                   ^
-/tmp/tmpregcwhni/student/mystring.cpp:96:16: note: Assuming that condition 'end>begin' is not redundant
+/tmp/tmppqy0xs2g/student/mystring.cpp:111:16: note: Assuming that condition 'end>begin' is not redundant
     while (end > begin && std::isspace(static_cast<unsigned char>((*this)[end - 1]))) {
                ^
-/tmp/tmpregcwhni/student/mystring.cpp:100:31: note: Assignment 'newSize=end-begin', assigned value is less than 1
+/tmp/tmppqy0xs2g/student/mystring.cpp:115:31: note: Assignment 'newSize=end-begin', assigned value is less than 1
     std::size_t newSize = end - begin;
                               ^
-/tmp/tmpregcwhni/student/mystring.cpp:108:13: note: Assignment 'size_=newSize', assigned value is less than 1
+/tmp/tmppqy0xs2g/student/mystring.cpp:123:13: note: Assignment 'size_=newSize', assigned value is less than 1
     size_ = newSize;
             ^
-/tmp/tmpregcwhni/student/mystring.cpp:112:19: note: Condition 'size_<initialBufferSize_' is always true
+/tmp/tmppqy0xs2g/student/mystring.cpp:127:19: note: Condition 'size_<initialBufferSize_' is always true
         if (size_ < initialBufferSize_) {
                   ^
-/tmp/tmpregcwhni/student/mystring.cpp:84:17: warning: Local variable 'begin' shadows outer function [shadowFunction]
+/tmp/tmppqy0xs2g/student/mystring.cpp:99:17: warning: Local variable 'begin' shadows outer function [shadowFunction]
     std::size_t begin = 0;
                 ^
-/tmp/tmpregcwhni/student/mystring.h:66:14: note: Shadowed declaration
+/tmp/tmppqy0xs2g/student/mystring.h:67:14: note: Shadowed declaration
     iterator begin() { return {this, 0}; }
              ^
-/tmp/tmpregcwhni/student/mystring.cpp:84:17: note: Shadow variable
+/tmp/tmppqy0xs2g/student/mystring.cpp:99:17: note: Shadow variable
     std::size_t begin = 0;
                 ^
-/tmp/tmpregcwhni/student/mystring.cpp:85:17: warning: Local variable 'end' shadows outer function [shadowFunction]
+/tmp/tmppqy0xs2g/student/mystring.cpp:100:17: warning: Local variable 'end' shadows outer function [shadowFunction]
     std::size_t end = size_;
                 ^
-/tmp/tmpregcwhni/student/mystring.h:67:14: note: Shadowed declaration
+/tmp/tmppqy0xs2g/student/mystring.h:68:14: note: Shadowed declaration
     iterator end() { return {this, size_}; }
              ^
-/tmp/tmpregcwhni/student/mystring.cpp:85:17: note: Shadow variable
+/tmp/tmppqy0xs2g/student/mystring.cpp:100:17: note: Shadow variable
     std::size_t end = size_;
                 ^
-/tmp/tmpregcwhni/student/mystring.cpp:128:0: warning: The function 'getUniqueWords' is never used. [unusedFunction]
+/tmp/tmppqy0xs2g/student/mystring.cpp:143:0: warning: The function 'getUniqueWords' is never used. [unusedFunction]
 std::set<MyString> MyString::getUniqueWords() const {
 ^
-/tmp/tmpregcwhni/student/mystring.cpp:153:0: warning: The function 'countWordsUsageIgnoringCases' is never used. [unusedFunction]
+/tmp/tmppqy0xs2g/student/mystring.cpp:168:0: warning: The function 'countWordsUsageIgnoringCases' is never used. [unusedFunction]
 std::map<MyString, size_t> MyString::countWordsUsageIgnoringCases() const {
+^
+/tmp/tmppqy0xs2g/student/mystring.cpp:213:0: warning: The function 'generateRandomWord' is never used. [unusedFunction]
+MyString MyString::generateRandomWord(size_t length) {
 ^
