@@ -1,7 +1,7 @@
-Running main() from /tmp/tmp9hxccsvg/student/tests/lib/googletest/src/gtest_main.cc
-[==========] Running 11 tests from 1 test suite.
+Running main() from /tmp/tmpregcwhni/student/tests/lib/googletest/src/gtest_main.cc
+[==========] Running 14 tests from 1 test suite.
 [----------] Global test environment set-up.
-[----------] 11 tests from MyStringTester
+[----------] 14 tests from MyStringTester
 [ RUN      ] MyStringTester.emptyStringConstruction_expectedSizeIsZero
 [       OK ] MyStringTester.emptyStringConstruction_expectedSizeIsZero (0 ms)
 [ RUN      ] MyStringTester.constructionFromConstChar_expectedTextCopied
@@ -24,8 +24,14 @@ Running main() from /tmp/tmp9hxccsvg/student/tests/lib/googletest/src/gtest_main
 [       OK ] MyStringTester.operatorPlusEqual_expectedTextConcatenation (0 ms)
 [ RUN      ] MyStringTester.countingUniqueWords
 [       OK ] MyStringTester.countingUniqueWords (0 ms)
-[----------] 11 tests from MyStringTester (2 ms total)
+[ RUN      ] MyStringTester.countingWordsNumbersInText
+[       OK ] MyStringTester.countingWordsNumbersInText (5 ms)
+[ RUN      ] MyStringTester.countingWordsNumbersInTextIgnoringWordCases
+[       OK ] MyStringTester.countingWordsNumbersInTextIgnoringWordCases (7 ms)
+[ RUN      ] MyStringTester.wordsIntoLowerCase
+[       OK ] MyStringTester.wordsIntoLowerCase (0 ms)
+[----------] 14 tests from MyStringTester (16 ms total)
 
 [----------] Global test environment tear-down
-[==========] 11 tests from 1 test suite ran. (2 ms total)
-[  PASSED  ] 11 tests.
+[==========] 14 tests from 1 test suite ran. (16 ms total)
+[  PASSED  ] 14 tests.

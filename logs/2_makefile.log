@@ -4,7 +4,7 @@
 [ 42%] Building CXX object tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 [ 57%] Linking CXX static library ../../../lib/libgtest_main.a
 [ 57%] Built target gtest_main
-[ 71%] Building CXX object tests/CMakeFiles/tests.dir/myStringTests.cpp.o
+[ 85%] Building CXX object tests/CMakeFiles/tests.dir/myStringTests.cpp.o
 [ 85%] Building CXX object tests/CMakeFiles/tests.dir/__/mystring.cpp.o
 [100%] Linking CXX executable ../bin/tests
 [100%] Built target tests
