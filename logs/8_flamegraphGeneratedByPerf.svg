@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="470" onload="init(evt)" viewBox="0 0 1200 470" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="550" onload="init(evt)" viewBox="0 0 1200 550" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -422,477 +422,945 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="470.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="550.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >Flame Graph</text>
-<text id="details" x="10.00" y="453" > </text>
+<text id="details" x="10.00" y="533" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="453" > </text>
+<text id="matched" x="1090.00" y="533" > </text>
 <g id="frames">
 <g >
-<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::push_back (460,636 samples, 0.88%)</title><rect x="474.1" y="293" width="10.4" height="15.0" fill="rgb(225,94,22)" rx="2" ry="2" />
-<text  x="477.12" y="303.5" ></text>
+<title>std::__ptr_traits_ptr_to&lt;char const*, char const, false&gt;::pointer_to (610,276 samples, 0.66%)</title><rect x="676.5" y="37" width="7.8" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
+<text  x="679.53" y="47.5" ></text>
 </g>
 <g >
-<title>MyString::operator&lt; (1,157,390 samples, 2.22%)</title><rect x="392.4" y="101" width="26.2" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
-<text  x="395.42" y="111.5" >M..</text>
+<title>std::construct_at&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt;, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, testing::TestSuite* const&amp;&gt; (609,619 samples, 0.66%)</title><rect x="723.4" y="293" width="7.8" height="15.0" fill="rgb(229,113,27)" rx="2" ry="2" />
+<text  x="726.40" y="303.5" ></text>
 </g>
 <g >
-<title>[unknown] (15,882,300 samples, 30.42%)</title><rect x="10.0" y="389" width="359.0" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
-<text  x="13.00" y="399.5" >[unknown]</text>
+<title>main (27,577,153 samples, 29.95%)</title><rect x="362.2" y="453" width="353.4" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
+<text  x="365.20" y="463.5" >main</text>
 </g>
 <g >
-<title>__sched_yield (1,193,581 samples, 2.29%)</title><rect x="1098.7" y="389" width="27.0" height="15.0" fill="rgb(213,40,9)" rx="2" ry="2" />
-<text  x="1101.75" y="399.5" >_..</text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_local_data (689,521 samples, 0.75%)</title><rect x="516.1" y="53" width="8.9" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
+<text  x="519.12" y="63.5" ></text>
 </g>
 <g >
-<title>__lsan::CollectIgnoredCb (263,009 samples, 0.50%)</title><rect x="55.4" y="373" width="6.0" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
-<text  x="58.42" y="383.5" ></text>
+<title>__sanitizer::LowLevelAllocator::Allocate (608,840 samples, 0.66%)</title><rect x="770.2" y="437" width="7.8" height="15.0" fill="rgb(240,163,39)" rx="2" ry="2" />
+<text  x="773.24" y="447.5" ></text>
 </g>
 <g >
-<title>std::less&lt;MyString&gt;::operator (1,157,390 samples, 2.22%)</title><rect x="392.4" y="117" width="26.2" height="15.0" fill="rgb(238,154,36)" rx="2" ry="2" />
-<text  x="395.42" y="127.5" >s..</text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_local_data (615,036 samples, 0.67%)</title><rect x="386.0" y="69" width="7.9" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
+<text  x="389.03" y="79.5" ></text>
 </g>
 <g >
-<title>__sanitizer::internal_madvise (592,828 samples, 1.14%)</title><rect x="10.0" y="341" width="13.4" height="15.0" fill="rgb(235,140,33)" rx="2" ry="2" />
-<text  x="13.00" y="351.5" ></text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_dispose (620,077 samples, 0.67%)</title><rect x="549.0" y="117" width="7.9" height="15.0" fill="rgb(251,215,51)" rx="2" ry="2" />
+<text  x="552.00" y="127.5" ></text>
 </g>
 <g >
-<title>__sanitizer::BufferedStackTrace::UnwindFast (587,399 samples, 1.13%)</title><rect x="355.7" y="341" width="13.3" height="15.0" fill="rgb(212,33,8)" rx="2" ry="2" />
-<text  x="358.69" y="351.5" ></text>
+<title>std::less&lt;MyString&gt;::operator (1,217,998 samples, 1.32%)</title><rect x="606.3" y="181" width="15.6" height="15.0" fill="rgb(238,154,36)" rx="2" ry="2" />
+<text  x="609.31" y="191.5" ></text>
 </g>
 <g >
-<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::push_back (1,157,390 samples, 2.22%)</title><rect x="392.4" y="53" width="26.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="395.42" y="63.5" >s..</text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_is_local (615,036 samples, 0.67%)</title><rect x="386.0" y="85" width="7.9" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
+<text  x="389.03" y="95.5" ></text>
 </g>
 <g >
-<title>mmap64 (800,852 samples, 1.53%)</title><rect x="1155.9" y="373" width="18.1" height="15.0" fill="rgb(220,70,16)" rx="2" ry="2" />
-<text  x="1158.92" y="383.5" ></text>
+<title>testing::internal::StringStreamToString (608,667 samples, 0.66%)</title><rect x="731.2" y="373" width="7.8" height="15.0" fill="rgb(237,149,35)" rx="2" ry="2" />
+<text  x="734.21" y="383.5" ></text>
 </g>
 <g >
-<title>do_lookup_x (854,787 samples, 1.64%)</title><rect x="336.4" y="373" width="19.3" height="15.0" fill="rgb(245,187,44)" rx="2" ry="2" />
-<text  x="339.37" y="383.5" ></text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::data (631,845 samples, 0.69%)</title><rect x="565.7" y="101" width="8.1" height="15.0" fill="rgb(231,120,28)" rx="2" ry="2" />
+<text  x="568.68" y="111.5" ></text>
 </g>
 <g >
-<title>MyStringTester::MyStringTester (482,469 samples, 0.92%)</title><rect x="418.6" y="181" width="10.9" height="15.0" fill="rgb(251,213,50)" rx="2" ry="2" />
-<text  x="421.58" y="191.5" ></text>
+<title>testing::TestSuite::Run (26,966,827 samples, 29.28%)</title><rect x="362.2" y="357" width="345.6" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
+<text  x="365.20" y="367.5" >testing::TestSuite::Run</text>
 </g>
 <g >
-<title>__interceptor___tls_get_addr (482,469 samples, 0.92%)</title><rect x="418.6" y="117" width="10.9" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
-<text  x="421.58" y="127.5" ></text>
+<title>all (92,085,287 samples, 100%)</title><rect x="10.0" y="501" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<text  x="13.00" y="511.5" ></text>
 </g>
 <g >
-<title>__sanitizer::internal_mmap (1,709,949 samples, 3.28%)</title><rect x="1023.8" y="389" width="38.7" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
-<text  x="1026.82" y="399.5" >__s..</text>
+<title>MyString::toString[abi:cxx11] (707,300 samples, 0.77%)</title><rect x="589.4" y="165" width="9.1" height="15.0" fill="rgb(242,170,40)" rx="2" ry="2" />
+<text  x="592.43" y="175.5" ></text>
 </g>
 <g >
-<title>__asan::Allocator::Allocate (459,083 samples, 0.88%)</title><rect x="369.0" y="389" width="10.3" height="15.0" fill="rgb(229,111,26)" rx="2" ry="2" />
-<text  x="371.96" y="399.5" ></text>
+<title>std::operator+&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; (610,326 samples, 0.66%)</title><rect x="707.8" y="325" width="7.8" height="15.0" fill="rgb(209,19,4)" rx="2" ry="2" />
+<text  x="710.75" y="335.5" ></text>
 </g>
 <g >
-<title>_GLOBAL__sub_I__ZN7testing15AssertionResultC2ERKS0_ (460,978 samples, 0.88%)</title><rect x="484.5" y="373" width="10.4" height="15.0" fill="rgb(229,114,27)" rx="2" ry="2" />
-<text  x="487.53" y="383.5" ></text>
+<title>_GLOBAL__sub_I__ZN7testing15AssertionResultC2ERKS0_ (608,667 samples, 0.66%)</title><rect x="731.2" y="453" width="7.8" height="15.0" fill="rgb(229,114,27)" rx="2" ry="2" />
+<text  x="734.21" y="463.5" ></text>
 </g>
 <g >
-<title>testing::Test::Run (1,157,390 samples, 2.22%)</title><rect x="392.4" y="245" width="26.2" height="15.0" fill="rgb(233,129,30)" rx="2" ry="2" />
-<text  x="395.42" y="255.5" >t..</text>
+<title>[unknown] (7,416,901 samples, 8.05%)</title><rect x="10.0" y="453" width="95.0" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
+<text  x="13.00" y="463.5" >[unknown]</text>
 </g>
 <g >
-<title>testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::internal::TestFactoryBase, testing::Test*&gt; (482,469 samples, 0.92%)</title><rect x="418.6" y="245" width="10.9" height="15.0" fill="rgb(252,216,51)" rx="2" ry="2" />
-<text  x="421.58" y="255.5" ></text>
+<title>std::map&lt;MyString, unsigned long, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::operator[] (15,903,881 samples, 17.27%)</title><rect x="370.0" y="229" width="203.8" height="15.0" fill="rgb(223,84,20)" rx="2" ry="2" />
+<text  x="372.98" y="239.5" >std::map&lt;MyString, unsigne..</text>
 </g>
 <g >
-<title>__sanitizer::FlagHandler&lt;bool&gt;::Format (456,917 samples, 0.88%)</title><rect x="107.9" y="373" width="10.3" height="15.0" fill="rgb(209,18,4)" rx="2" ry="2" />
-<text  x="110.91" y="383.5" ></text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_local_data (1,217,998 samples, 1.32%)</title><rect x="606.3" y="85" width="15.6" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
+<text  x="609.31" y="95.5" ></text>
 </g>
 <g >
-<title>std::vector&lt;testing::TestEventListener*, std::allocator&lt;testing::TestEventListener*&gt; &gt;::push_back (460,316 samples, 0.88%)</title><rect x="463.7" y="213" width="10.4" height="15.0" fill="rgb(222,78,18)" rx="2" ry="2" />
-<text  x="466.72" y="223.5" ></text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::operator+= (1,329,726 samples, 1.44%)</title><rect x="409.8" y="165" width="17.0" height="15.0" fill="rgb(249,202,48)" rx="2" ry="2" />
+<text  x="412.75" y="175.5" ></text>
 </g>
 <g >
-<title>_dl_map_object (1,133,123 samples, 2.17%)</title><rect x="1148.4" y="389" width="25.6" height="15.0" fill="rgb(248,199,47)" rx="2" ry="2" />
-<text  x="1151.42" y="399.5" >_..</text>
+<title>MyString::toString[abi:cxx11] (1,954,797 samples, 2.12%)</title><rect x="401.7" y="181" width="25.1" height="15.0" fill="rgb(242,170,40)" rx="2" ry="2" />
+<text  x="404.75" y="191.5" >M..</text>
 </g>
 <g >
-<title>[unknown] (456,917 samples, 0.88%)</title><rect x="107.9" y="357" width="10.3" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
-<text  x="110.91" y="367.5" ></text>
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::lower_bound (4,871,823 samples, 5.29%)</title><rect x="621.9" y="197" width="62.4" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="624.92" y="207.5" >std::_..</text>
 </g>
 <g >
-<title>__asan_register_globals.part.0 (920,408 samples, 1.76%)</title><rect x="494.9" y="357" width="20.9" height="15.0" fill="rgb(217,59,14)" rx="2" ry="2" />
-<text  x="497.95" y="367.5" ></text>
+<title>__sanitizer::internal_memset (1,199,476 samples, 1.30%)</title><rect x="1115.1" y="469" width="15.4" height="15.0" fill="rgb(242,173,41)" rx="2" ry="2" />
+<text  x="1118.13" y="479.5" ></text>
 </g>
 <g >
-<title>__sanitizer::SizeClassAllocator32&lt;__sanitizer::AP32&gt;::PopulateFreeList (2,752,863 samples, 5.27%)</title><rect x="810.2" y="389" width="62.2" height="15.0" fill="rgb(211,31,7)" rx="2" ry="2" />
-<text  x="813.18" y="399.5" >__sani..</text>
+<title>std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt;::pair (609,619 samples, 0.66%)</title><rect x="723.4" y="277" width="7.8" height="15.0" fill="rgb(239,156,37)" rx="2" ry="2" />
+<text  x="726.40" y="287.5" ></text>
 </g>
 <g >
-<title>testing::internal::GTestFlagSaver::GTestFlagSaver (482,469 samples, 0.92%)</title><rect x="418.6" y="149" width="10.9" height="15.0" fill="rgb(251,215,51)" rx="2" ry="2" />
-<text  x="421.58" y="159.5" ></text>
+<title>[unknown] (22,207,505 samples, 24.12%)</title><rect x="10.0" y="469" width="284.6" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
+<text  x="13.00" y="479.5" >[unknown]</text>
 </g>
 <g >
-<title>testing::Message::GetString[abi:cxx11] (500,599 samples, 0.96%)</title><rect x="442.0" y="197" width="11.3" height="15.0" fill="rgb(225,95,22)" rx="2" ry="2" />
-<text  x="444.96" y="207.5" ></text>
+<title>MyString::MyString (610,258 samples, 0.66%)</title><rect x="598.5" y="101" width="7.8" height="15.0" fill="rgb(253,224,53)" rx="2" ry="2" />
+<text  x="601.49" y="111.5" ></text>
 </g>
 <g >
-<title>RUN_ALL_TESTS (3,154,600 samples, 6.04%)</title><rect x="392.4" y="357" width="71.3" height="15.0" fill="rgb(248,199,47)" rx="2" ry="2" />
-<text  x="395.42" y="367.5" >RUN_ALL_..</text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_get_allocator (626,871 samples, 0.68%)</title><rect x="492.2" y="53" width="8.0" height="15.0" fill="rgb(216,51,12)" rx="2" ry="2" />
+<text  x="495.17" y="63.5" ></text>
 </g>
 <g >
-<title>MyStringTester_countingUniqueWords_Test::TestBody (1,157,390 samples, 2.22%)</title><rect x="392.4" y="197" width="26.2" height="15.0" fill="rgb(252,219,52)" rx="2" ry="2" />
-<text  x="395.42" y="207.5" >M..</text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::operator+= (1,226,163 samples, 1.33%)</title><rect x="386.0" y="133" width="15.7" height="15.0" fill="rgb(249,202,48)" rx="2" ry="2" />
+<text  x="389.03" y="143.5" ></text>
 </g>
 <g >
-<title>_dl_lookup_symbol_x (456,310 samples, 0.87%)</title><rect x="165.4" y="373" width="10.3" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
-<text  x="168.35" y="383.5" ></text>
+<title>_start (52,679 samples, 0.06%)</title><rect x="1182.3" y="469" width="0.7" height="15.0" fill="rgb(245,185,44)" rx="2" ry="2" />
+<text  x="1185.35" y="479.5" ></text>
 </g>
 <g >
-<title>testing::TestEventListeners::SetDefaultResultPrinter (460,316 samples, 0.88%)</title><rect x="463.7" y="261" width="10.4" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="466.72" y="271.5" ></text>
+<title>__libc_start_call_main (27,577,153 samples, 29.95%)</title><rect x="362.2" y="469" width="353.4" height="15.0" fill="rgb(210,26,6)" rx="2" ry="2" />
+<text  x="365.20" y="479.5" >__libc_start_call_main</text>
 </g>
 <g >
-<title>testing::TestInfo::Run (2,692,614 samples, 5.16%)</title><rect x="392.4" y="261" width="60.9" height="15.0" fill="rgb(225,92,22)" rx="2" ry="2" />
-<text  x="395.42" y="271.5" >testin..</text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_data (605,732 samples, 0.66%)</title><rect x="661.0" y="85" width="7.7" height="15.0" fill="rgb(206,6,1)" rx="2" ry="2" />
+<text  x="663.96" y="95.5" ></text>
 </g>
 <g >
-<title>__sanitizer::StackStore::Alloc (530,316 samples, 1.02%)</title><rect x="139.0" y="373" width="12.0" height="15.0" fill="rgb(218,61,14)" rx="2" ry="2" />
-<text  x="142.01" y="383.5" ></text>
+<title>std::map&lt;MyString, unsigned long, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::at (707,300 samples, 0.77%)</title><rect x="589.4" y="261" width="9.1" height="15.0" fill="rgb(244,183,43)" rx="2" ry="2" />
+<text  x="592.43" y="271.5" ></text>
 </g>
 <g >
-<title>__sanitizer::internal_munmap (1,578,671 samples, 3.02%)</title><rect x="1062.5" y="389" width="35.6" height="15.0" fill="rgb(223,84,20)" rx="2" ry="2" />
-<text  x="1065.47" y="399.5" >__s..</text>
+<title>__asan::GetCurrentThread (611,147 samples, 0.66%)</title><rect x="34.8" y="437" width="7.8" height="15.0" fill="rgb(219,68,16)" rx="2" ry="2" />
+<text  x="37.80" y="447.5" ></text>
 </g>
 <g >
-<title>std::set&lt;MyString, std::less&lt;MyString&gt;, std::allocator&lt;MyString&gt; &gt;::insert (1,157,390 samples, 2.22%)</title><rect x="392.4" y="165" width="26.2" height="15.0" fill="rgb(224,88,21)" rx="2" ry="2" />
-<text  x="395.42" y="175.5" >s..</text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::size (632,997 samples, 0.69%)</title><rect x="525.0" y="85" width="8.1" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="527.95" y="95.5" ></text>
 </g>
 <g >
-<title>testing::internal::HandleSehExceptionsInMethodIfSupported&lt;testing::internal::UnitTestImpl, bool&gt; (3,154,600 samples, 6.04%)</title><rect x="392.4" y="309" width="71.3" height="15.0" fill="rgb(249,206,49)" rx="2" ry="2" />
-<text  x="395.42" y="319.5" >testing:..</text>
+<title>_sub_I_00099_1 (3,046,249 samples, 3.31%)</title><rect x="739.0" y="453" width="39.0" height="15.0" fill="rgb(222,79,18)" rx="2" ry="2" />
+<text  x="742.01" y="463.5" >_su..</text>
 </g>
 <g >
-<title>testing::internal::UnitTestImpl::FilterTests (461,986 samples, 0.88%)</title><rect x="453.3" y="277" width="10.4" height="15.0" fill="rgb(237,148,35)" rx="2" ry="2" />
-<text  x="456.27" y="287.5" ></text>
+<title>testing::internal::UnitTestImpl::GetTestSuite (609,619 samples, 0.66%)</title><rect x="723.4" y="389" width="7.8" height="15.0" fill="rgb(213,41,9)" rx="2" ry="2" />
+<text  x="726.40" y="399.5" ></text>
 </g>
 <g >
-<title>__sanitizer::internal_clone (10,074 samples, 0.02%)</title><rect x="1002.9" y="389" width="0.2" height="15.0" fill="rgb(230,119,28)" rx="2" ry="2" />
-<text  x="1005.90" y="399.5" ></text>
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_M_create_node&lt;std::piecewise_construct_t const&amp;, std::tuple&lt;MyString const&amp;&gt;, std::tuple&lt;&gt; &gt; (610,258 samples, 0.66%)</title><rect x="598.5" y="181" width="7.8" height="15.0" fill="rgb(227,101,24)" rx="2" ry="2" />
+<text  x="601.49" y="191.5" ></text>
 </g>
 <g >
-<title>std::forward&lt;testing::TestEventListener* const&amp;&gt; (460,316 samples, 0.88%)</title><rect x="463.7" y="181" width="10.4" height="15.0" fill="rgb(246,189,45)" rx="2" ry="2" />
-<text  x="466.72" y="191.5" ></text>
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_Auto_node::_M_insert (623,077 samples, 0.68%)</title><rect x="370.0" y="197" width="8.0" height="15.0" fill="rgb(216,51,12)" rx="2" ry="2" />
+<text  x="372.98" y="207.5" ></text>
 </g>
 <g >
-<title>[unknown] (592,828 samples, 1.14%)</title><rect x="10.0" y="357" width="13.4" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
-<text  x="13.00" y="367.5" ></text>
+<title>MyString::base_iterator&lt;true&gt;::operator++ (671,880 samples, 0.73%)</title><rect x="451.6" y="117" width="8.6" height="15.0" fill="rgb(248,199,47)" rx="2" ry="2" />
+<text  x="454.55" y="127.5" ></text>
 </g>
 <g >
-<title>tests (52,209,253 samples, 100.00%)</title><rect x="10.0" y="405" width="1180.0" height="15.0" fill="rgb(226,99,23)" rx="2" ry="2" />
-<text  x="13.00" y="415.5" >tests</text>
+<title>MyString::countWordsUsageIgnoringCases (8,526,864 samples, 9.26%)</title><rect x="598.5" y="261" width="109.3" height="15.0" fill="rgb(242,174,41)" rx="2" ry="2" />
+<text  x="601.49" y="271.5" >MyString::cou..</text>
 </g>
 <g >
-<title>testing::internal::UnitTestImpl::RunAllTests (3,154,600 samples, 6.04%)</title><rect x="392.4" y="293" width="71.3" height="15.0" fill="rgb(242,171,40)" rx="2" ry="2" />
-<text  x="395.42" y="303.5" >testing:..</text>
+<title>std::char_traits&lt;char&gt;::assign (611,127 samples, 0.66%)</title><rect x="393.9" y="101" width="7.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="396.91" y="111.5" ></text>
 </g>
 <g >
-<title>std::unique_ptr&lt;std::__cxx11::basic_stringstream&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::default_delete&lt;std::__cxx11::basic_stringstream&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt; &gt;::unique_ptr&lt;std::default_delete&lt;std::__cxx11::basic_stringstream&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, void&gt; (552,156 samples, 1.06%)</title><rect x="429.5" y="197" width="12.5" height="15.0" fill="rgb(241,166,39)" rx="2" ry="2" />
-<text  x="432.48" y="207.5" ></text>
+<title>RUN_ALL_TESTS (27,577,153 samples, 29.95%)</title><rect x="362.2" y="437" width="353.4" height="15.0" fill="rgb(248,199,47)" rx="2" ry="2" />
+<text  x="365.20" y="447.5" >RUN_ALL_TESTS</text>
 </g>
 <g >
-<title>std::vector&lt;testing::TestEventListener*, std::allocator&lt;testing::TestEventListener*&gt; &gt;::_M_realloc_insert&lt;testing::TestEventListener* const&amp;&gt; (460,316 samples, 0.88%)</title><rect x="463.7" y="197" width="10.4" height="15.0" fill="rgb(254,228,54)" rx="2" ry="2" />
-<text  x="466.72" y="207.5" ></text>
+<title>__strpbrk_sse42 (714,572 samples, 0.78%)</title><rect x="181.9" y="453" width="9.1" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
+<text  x="184.85" y="463.5" ></text>
 </g>
 <g >
-<title>[unknown] (2,009,406 samples, 3.85%)</title><rect x="10.0" y="373" width="45.4" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
-<text  x="13.00" y="383.5" >[unk..</text>
+<title>MyString::operator+= (609,896 samples, 0.66%)</title><rect x="692.2" y="245" width="7.8" height="15.0" fill="rgb(228,107,25)" rx="2" ry="2" />
+<text  x="695.18" y="255.5" ></text>
 </g>
 <g >
-<title>testing::internal::TestFactoryImpl&lt;MyStringTester_clear_expectedEmptyStringAfterClearing_Test&gt;::CreateTest (482,469 samples, 0.92%)</title><rect x="418.6" y="213" width="10.9" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
-<text  x="421.58" y="223.5" ></text>
+<title>std::less&lt;MyString&gt;::operator (11,470,234 samples, 12.46%)</title><rect x="426.8" y="165" width="147.0" height="15.0" fill="rgb(238,154,36)" rx="2" ry="2" />
+<text  x="429.79" y="175.5" >std::less&lt;MyString..</text>
 </g>
 <g >
-<title>do_lookup_x (455,036 samples, 0.87%)</title><rect x="1175.6" y="389" width="10.2" height="15.0" fill="rgb(245,187,44)" rx="2" ry="2" />
-<text  x="1178.56" y="399.5" ></text>
+<title>std::map&lt;MyString, unsigned long, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::operator[] (6,700,079 samples, 7.28%)</title><rect x="598.5" y="229" width="85.8" height="15.0" fill="rgb(223,84,20)" rx="2" ry="2" />
+<text  x="601.49" y="239.5" >std::map&lt;M..</text>
 </g>
 <g >
-<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string (482,469 samples, 0.92%)</title><rect x="418.6" y="133" width="10.9" height="15.0" fill="rgb(212,35,8)" rx="2" ry="2" />
-<text  x="421.58" y="143.5" ></text>
+<title>std::_Hashtable&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt; &gt;, std::__detail::_Select1st, std::equal_to&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::hash&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits&lt;true, false, true&gt; &gt;::_Hashtable (610,236 samples, 0.66%)</title><rect x="715.6" y="325" width="7.8" height="15.0" fill="rgb(233,130,31)" rx="2" ry="2" />
+<text  x="718.58" y="335.5" ></text>
 </g>
 <g >
-<title>__static_initialization_and_destruction_0 (460,978 samples, 0.88%)</title><rect x="484.5" y="357" width="10.4" height="15.0" fill="rgb(207,9,2)" rx="2" ry="2" />
-<text  x="487.53" y="367.5" ></text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_mutate (626,871 samples, 0.68%)</title><rect x="492.2" y="85" width="8.0" height="15.0" fill="rgb(217,56,13)" rx="2" ry="2" />
+<text  x="495.17" y="95.5" ></text>
 </g>
 <g >
-<title>testing::internal::PrettyUnitTestResultPrinter::OnTestEnd (1,052,755 samples, 2.02%)</title><rect x="429.5" y="229" width="23.8" height="15.0" fill="rgb(225,96,23)" rx="2" ry="2" />
-<text  x="432.48" y="239.5" >t..</text>
+<title>__static_initialization_and_destruction_0 (608,667 samples, 0.66%)</title><rect x="731.2" y="437" width="7.8" height="15.0" fill="rgb(207,9,2)" rx="2" ry="2" />
+<text  x="734.21" y="447.5" ></text>
 </g>
 <g >
-<title>testing::internal::StringStreamToString (500,599 samples, 0.96%)</title><rect x="442.0" y="181" width="11.3" height="15.0" fill="rgb(237,149,35)" rx="2" ry="2" />
-<text  x="444.96" y="191.5" ></text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_create (610,326 samples, 0.66%)</title><rect x="707.8" y="245" width="7.8" height="15.0" fill="rgb(248,198,47)" rx="2" ry="2" />
+<text  x="710.75" y="255.5" ></text>
 </g>
 <g >
-<title>testing::TestEventListeners::Append (460,316 samples, 0.88%)</title><rect x="463.7" y="245" width="10.4" height="15.0" fill="rgb(226,99,23)" rx="2" ry="2" />
-<text  x="466.72" y="255.5" ></text>
+<title>__lsan::LsanMetadata::LsanMetadata (484,789 samples, 0.53%)</title><rect x="126.3" y="453" width="6.2" height="15.0" fill="rgb(218,64,15)" rx="2" ry="2" />
+<text  x="129.32" y="463.5" ></text>
 </g>
 <g >
-<title>__memset_avx2_unaligned_erms (1,381,891 samples, 2.65%)</title><rect x="515.8" y="357" width="31.2" height="15.0" fill="rgb(223,84,20)" rx="2" ry="2" />
-<text  x="518.75" y="367.5" >__..</text>
+<title>__sanitizer::DTLS_on_tls_get_addr (1,848,637 samples, 2.01%)</title><rect x="50.4" y="437" width="23.7" height="15.0" fill="rgb(220,70,16)" rx="2" ry="2" />
+<text  x="53.40" y="447.5" >_..</text>
 </g>
 <g >
-<title>__sanitizer::SizeClassAllocator64&lt;__asan::AP64&lt;__sanitizer::LocalAddressSpaceView&gt; &gt;::PopulateFreeArray (918,787 samples, 1.76%)</title><rect x="118.2" y="373" width="20.8" height="15.0" fill="rgb(237,150,36)" rx="2" ry="2" />
-<text  x="121.24" y="383.5" ></text>
+<title>__asan_register_globals.part.0 (1,217,929 samples, 1.32%)</title><rect x="739.0" y="437" width="15.6" height="15.0" fill="rgb(217,59,14)" rx="2" ry="2" />
+<text  x="742.01" y="447.5" ></text>
 </g>
 <g >
-<title>testing::UnitTest::UnitTest (460,316 samples, 0.88%)</title><rect x="463.7" y="293" width="10.4" height="15.0" fill="rgb(217,56,13)" rx="2" ry="2" />
-<text  x="466.72" y="303.5" ></text>
+<title>testing::UnitTest::GetInstance (610,236 samples, 0.66%)</title><rect x="715.6" y="389" width="7.8" height="15.0" fill="rgb(227,105,25)" rx="2" ry="2" />
+<text  x="718.58" y="399.5" ></text>
 </g>
 <g >
-<title>_dl_load_cache_lookup (332,271 samples, 0.64%)</title><rect x="1148.4" y="373" width="7.5" height="15.0" fill="rgb(245,186,44)" rx="2" ry="2" />
-<text  x="1151.42" y="383.5" ></text>
+<title>MyString::operator&lt; (1,217,998 samples, 1.32%)</title><rect x="606.3" y="165" width="15.6" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
+<text  x="609.31" y="175.5" ></text>
 </g>
 <g >
-<title>main (3,154,600 samples, 6.04%)</title><rect x="392.4" y="373" width="71.3" height="15.0" fill="rgb(243,179,42)" rx="2" ry="2" />
-<text  x="395.42" y="383.5" >main</text>
+<title>testing::internal::GetUnitTestImpl (610,236 samples, 0.66%)</title><rect x="715.6" y="405" width="7.8" height="15.0" fill="rgb(222,81,19)" rx="2" ry="2" />
+<text  x="718.58" y="415.5" ></text>
 </g>
 <g >
-<title>__sanitizer::internal_memset (915,632 samples, 1.75%)</title><rect x="1003.1" y="389" width="20.7" height="15.0" fill="rgb(242,173,41)" rx="2" ry="2" />
-<text  x="1006.13" y="399.5" ></text>
+<title>std::char_traits&lt;char&gt;::assign (1,242,068 samples, 1.35%)</title><rect x="500.2" y="69" width="15.9" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="503.20" y="79.5" ></text>
 </g>
 <g >
-<title>__sanitizer::internal_prctl (26,628 samples, 0.05%)</title><rect x="1098.1" y="389" width="0.6" height="15.0" fill="rgb(251,214,51)" rx="2" ry="2" />
-<text  x="1101.15" y="399.5" ></text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_mutate (610,326 samples, 0.66%)</title><rect x="707.8" y="261" width="7.8" height="15.0" fill="rgb(217,56,13)" rx="2" ry="2" />
+<text  x="710.75" y="271.5" ></text>
 </g>
 <g >
-<title>testing::UnitTest::GetInstance (460,316 samples, 0.88%)</title><rect x="463.7" y="309" width="10.4" height="15.0" fill="rgb(227,105,25)" rx="2" ry="2" />
-<text  x="466.72" y="319.5" ></text>
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_Auto_node::_Auto_node&lt;std::piecewise_construct_t const&amp;, std::tuple&lt;MyString const&amp;&gt;, std::tuple&lt;&gt; &gt; (610,258 samples, 0.66%)</title><rect x="598.5" y="197" width="7.8" height="15.0" fill="rgb(207,13,3)" rx="2" ry="2" />
+<text  x="601.49" y="207.5" ></text>
 </g>
 <g >
-<title>testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::internal::UnitTestImpl, bool&gt; (3,154,600 samples, 6.04%)</title><rect x="392.4" y="325" width="71.3" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
-<text  x="395.42" y="335.5" >testing:..</text>
+<title>MyString::toString[abi:cxx11] (1,217,998 samples, 1.32%)</title><rect x="606.3" y="149" width="15.6" height="15.0" fill="rgb(242,170,40)" rx="2" ry="2" />
+<text  x="609.31" y="159.5" ></text>
 </g>
 <g >
-<title>testing::internal::HandleSehExceptionsInMethodIfSupported&lt;testing::Test, void&gt; (1,157,390 samples, 2.22%)</title><rect x="392.4" y="213" width="26.2" height="15.0" fill="rgb(206,7,1)" rx="2" ry="2" />
-<text  x="395.42" y="223.5" >t..</text>
+<title>std::_Rb_tree&lt;MyString, MyString, std::_Identity&lt;MyString&gt;, std::less&lt;MyString&gt;, std::allocator&lt;MyString&gt; &gt;::_M_insert_unique&lt;MyString const&amp;&gt; (607,471 samples, 0.66%)</title><rect x="362.2" y="229" width="7.8" height="15.0" fill="rgb(240,165,39)" rx="2" ry="2" />
+<text  x="365.20" y="239.5" ></text>
 </g>
 <g >
-<title>_dl_lookup_symbol_x (439,644 samples, 0.84%)</title><rect x="45.5" y="357" width="9.9" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
-<text  x="48.48" y="367.5" ></text>
+<title>[unknown] (1,326,542 samples, 1.44%)</title><rect x="10.0" y="437" width="17.0" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
+<text  x="13.00" y="447.5" ></text>
 </g>
 <g >
-<title>testing::internal::StringFromGTestEnv (460,978 samples, 0.88%)</title><rect x="484.5" y="341" width="10.4" height="15.0" fill="rgb(254,225,53)" rx="2" ry="2" />
-<text  x="487.53" y="351.5" ></text>
+<title>MyString::operator&lt; (11,470,234 samples, 12.46%)</title><rect x="426.8" y="149" width="147.0" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
+<text  x="429.79" y="159.5" >MyString::operator&lt;</text>
 </g>
 <g >
-<title>__libc_start_main@@GLIBC_2.34 (3,684,229 samples, 7.06%)</title><rect x="463.7" y="389" width="83.3" height="15.0" fill="rgb(229,113,27)" rx="2" ry="2" />
-<text  x="466.72" y="399.5" >__libc_st..</text>
+<title>[unknown] (632,658 samples, 0.69%)</title><rect x="540.9" y="117" width="8.1" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
+<text  x="543.89" y="127.5" ></text>
 </g>
 <g >
-<title>testing::internal::ToUpper (460,978 samples, 0.88%)</title><rect x="484.5" y="309" width="10.4" height="15.0" fill="rgb(209,22,5)" rx="2" ry="2" />
-<text  x="487.53" y="319.5" ></text>
+<title>MyString::operator[] (605,396 samples, 0.66%)</title><rect x="700.0" y="213" width="7.8" height="15.0" fill="rgb(211,29,7)" rx="2" ry="2" />
+<text  x="703.00" y="223.5" ></text>
 </g>
 <g >
-<title>_sub_I_00099_1 (2,302,299 samples, 4.41%)</title><rect x="494.9" y="373" width="52.1" height="15.0" fill="rgb(222,79,18)" rx="2" ry="2" />
-<text  x="497.95" y="383.5" >_sub_..</text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::capacity (1,217,998 samples, 1.32%)</title><rect x="606.3" y="101" width="15.6" height="15.0" fill="rgb(214,44,10)" rx="2" ry="2" />
+<text  x="609.31" y="111.5" ></text>
 </g>
 <g >
-<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::operator+= (1,157,390 samples, 2.22%)</title><rect x="392.4" y="69" width="26.2" height="15.0" fill="rgb(249,202,48)" rx="2" ry="2" />
-<text  x="395.42" y="79.5" >s..</text>
+<title>testing::internal::FlagToEnvVar (608,667 samples, 0.66%)</title><rect x="731.2" y="405" width="7.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="734.21" y="415.5" ></text>
 </g>
 <g >
-<title>_dl_sysdep_start (6,649,021 samples, 12.74%)</title><rect x="186.1" y="373" width="150.3" height="15.0" fill="rgb(234,137,32)" rx="2" ry="2" />
-<text  x="189.09" y="383.5" >_dl_sysdep_start</text>
+<title>MyString::operator&lt; (4,871,823 samples, 5.29%)</title><rect x="621.9" y="149" width="62.4" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
+<text  x="624.92" y="159.5" >MyStri..</text>
 </g>
 <g >
-<title>__sanitizer::ThreadLister::ListThreads (174,777 samples, 0.33%)</title><rect x="151.0" y="373" width="3.9" height="15.0" fill="rgb(217,59,14)" rx="2" ry="2" />
-<text  x="153.99" y="383.5" ></text>
+<title>MyStringTester_countingUniqueWords_Test::TestBody (607,471 samples, 0.66%)</title><rect x="362.2" y="277" width="7.8" height="15.0" fill="rgb(252,219,52)" rx="2" ry="2" />
+<text  x="365.20" y="287.5" ></text>
 </g>
 <g >
-<title>testing::internal::TestEventRepeater::Append (460,316 samples, 0.88%)</title><rect x="463.7" y="229" width="10.4" height="15.0" fill="rgb(248,201,48)" rx="2" ry="2" />
-<text  x="466.72" y="239.5" ></text>
+<title>__asan::GetFakeStackFast (610,977 samples, 0.66%)</title><rect x="653.1" y="85" width="7.9" height="15.0" fill="rgb(233,130,31)" rx="2" ry="2" />
+<text  x="656.13" y="95.5" ></text>
 </g>
 <g >
-<title>__lsan::PointsIntoChunk (1,532,287 samples, 2.93%)</title><rect x="557.2" y="389" width="34.6" height="15.0" fill="rgb(233,130,31)" rx="2" ry="2" />
-<text  x="560.20" y="399.5" >__..</text>
+<title>do_lookup_x (544,525 samples, 0.59%)</title><rect x="1183.0" y="469" width="7.0" height="15.0" fill="rgb(245,187,44)" rx="2" ry="2" />
+<text  x="1186.02" y="479.5" ></text>
 </g>
 <g >
-<title>__ubsan::checkDynamicType (1,003,898 samples, 1.92%)</title><rect x="1125.7" y="389" width="22.7" height="15.0" fill="rgb(243,174,41)" rx="2" ry="2" />
-<text  x="1128.73" y="399.5" >_..</text>
+<title>MyString::toString[abi:cxx11] (1,855,773 samples, 2.02%)</title><rect x="378.0" y="149" width="23.7" height="15.0" fill="rgb(242,170,40)" rx="2" ry="2" />
+<text  x="380.96" y="159.5" >M..</text>
 </g>
 <g >
-<title>MyString::toString[abi:cxx11] (1,157,390 samples, 2.22%)</title><rect x="392.4" y="85" width="26.2" height="15.0" fill="rgb(242,170,40)" rx="2" ry="2" />
-<text  x="395.42" y="95.5" >M..</text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_append (610,326 samples, 0.66%)</title><rect x="707.8" y="277" width="7.8" height="15.0" fill="rgb(222,79,19)" rx="2" ry="2" />
+<text  x="710.75" y="287.5" ></text>
 </g>
 <g >
-<title>__sanitizer::internal_read (460,613 samples, 0.88%)</title><rect x="154.9" y="373" width="10.5" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="157.94" y="383.5" ></text>
+<title>testing::internal::HandleSehExceptionsInMethodIfSupported&lt;testing::internal::UnitTestImpl, bool&gt; (27,577,153 samples, 29.95%)</title><rect x="362.2" y="389" width="353.4" height="15.0" fill="rgb(249,206,49)" rx="2" ry="2" />
+<text  x="365.20" y="399.5" >testing::internal::HandleSehExceptionsInMethodI..</text>
 </g>
 <g >
-<title>testing::internal::MakeAndRegisterTestInfo (920,952 samples, 1.76%)</title><rect x="463.7" y="341" width="20.8" height="15.0" fill="rgb(208,14,3)" rx="2" ry="2" />
-<text  x="466.72" y="351.5" ></text>
+<title>__asan_stack_malloc_0 (632,658 samples, 0.69%)</title><rect x="540.9" y="101" width="8.1" height="15.0" fill="rgb(246,189,45)" rx="2" ry="2" />
+<text  x="543.89" y="111.5" ></text>
 </g>
 <g >
-<title>testing::TestSuite::should_run (461,986 samples, 0.88%)</title><rect x="453.3" y="261" width="10.4" height="15.0" fill="rgb(209,20,4)" rx="2" ry="2" />
-<text  x="456.27" y="271.5" ></text>
+<title>__memset_avx2_unaligned_erms (1,827,229 samples, 1.98%)</title><rect x="132.5" y="453" width="23.4" height="15.0" fill="rgb(223,84,20)" rx="2" ry="2" />
+<text  x="135.53" y="463.5" >_..</text>
 </g>
 <g >
-<title>__sanitizer::DTLS_on_tls_get_addr (516,523 samples, 0.99%)</title><rect x="33.8" y="357" width="11.7" height="15.0" fill="rgb(220,70,16)" rx="2" ry="2" />
-<text  x="36.80" y="367.5" ></text>
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_M_insert_node (623,077 samples, 0.68%)</title><rect x="370.0" y="181" width="8.0" height="15.0" fill="rgb(221,75,17)" rx="2" ry="2" />
+<text  x="372.98" y="191.5" ></text>
 </g>
 <g >
-<title>__lsan::LsanMetadata::LsanMetadata (452,151 samples, 0.87%)</title><rect x="547.0" y="389" width="10.2" height="15.0" fill="rgb(218,64,15)" rx="2" ry="2" />
-<text  x="549.98" y="399.5" ></text>
+<title>__lsan::GetUserBegin (1,176,452 samples, 1.28%)</title><rect x="111.2" y="453" width="15.1" height="15.0" fill="rgb(234,136,32)" rx="2" ry="2" />
+<text  x="114.24" y="463.5" ></text>
 </g>
 <g >
-<title>testing::internal::GetUnitTestImpl (460,316 samples, 0.88%)</title><rect x="463.7" y="325" width="10.4" height="15.0" fill="rgb(222,81,19)" rx="2" ry="2" />
-<text  x="466.72" y="335.5" ></text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_is_local (609,367 samples, 0.66%)</title><rect x="668.7" y="85" width="7.8" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
+<text  x="671.72" y="95.5" ></text>
 </g>
 <g >
-<title>__lsan::GetUserBegin (1,598,198 samples, 3.06%)</title><rect x="61.4" y="373" width="36.1" height="15.0" fill="rgb(234,136,32)" rx="2" ry="2" />
-<text  x="64.36" y="383.5" >__l..</text>
+<title>std::_Hashtable&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt; &gt;, std::__detail::_Select1st, std::equal_to&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::hash&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits&lt;true, false, true&gt; &gt;::emplace&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, testing::TestSuite* const&amp;&gt; (609,619 samples, 0.66%)</title><rect x="723.4" y="357" width="7.8" height="15.0" fill="rgb(251,213,50)" rx="2" ry="2" />
+<text  x="726.40" y="367.5" ></text>
 </g>
 <g >
-<title>testing::internal::FlagToEnvVar (460,978 samples, 0.88%)</title><rect x="484.5" y="325" width="10.4" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="487.53" y="335.5" ></text>
+<title>_dl_map_object (990,530 samples, 1.08%)</title><rect x="1167.5" y="469" width="12.7" height="15.0" fill="rgb(248,199,47)" rx="2" ry="2" />
+<text  x="1170.52" y="479.5" ></text>
 </g>
 <g >
-<title>all (52,209,253 samples, 100%)</title><rect x="10.0" y="421" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::append (610,326 samples, 0.66%)</title><rect x="707.8" y="293" width="7.8" height="15.0" fill="rgb(247,193,46)" rx="2" ry="2" />
+<text  x="710.75" y="303.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string (1,239,336 samples, 1.35%)</title><rect x="468.0" y="117" width="15.9" height="15.0" fill="rgb(212,35,8)" rx="2" ry="2" />
+<text  x="470.99" y="127.5" ></text>
+</g>
+<g >
+<title>memset (515,037 samples, 0.56%)</title><rect x="1173.6" y="453" width="6.6" height="15.0" fill="rgb(208,14,3)" rx="2" ry="2" />
+<text  x="1176.62" y="463.5" ></text>
+</g>
+<g >
+<title>std::char_traits&lt;char&gt;::assign (611,014 samples, 0.66%)</title><rect x="533.1" y="85" width="7.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="536.07" y="95.5" ></text>
+</g>
+<g >
+<title>std::map&lt;MyString, unsigned long, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::lower_bound (4,871,823 samples, 5.29%)</title><rect x="621.9" y="213" width="62.4" height="15.0" fill="rgb(222,79,19)" rx="2" ry="2" />
+<text  x="624.92" y="223.5" >std::m..</text>
+</g>
+<g >
+<title>std::char_traits&lt;char&gt;::assign (633,333 samples, 0.69%)</title><rect x="418.7" y="133" width="8.1" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="421.68" y="143.5" ></text>
+</g>
+<g >
+<title>__asan_stack_malloc_0 (608,916 samples, 0.66%)</title><rect x="10.0" y="421" width="7.8" height="15.0" fill="rgb(246,189,45)" rx="2" ry="2" />
 <text  x="13.00" y="431.5" ></text>
 </g>
 <g >
-<title>__sanitizer::internal_read (456,917 samples, 0.88%)</title><rect x="107.9" y="341" width="10.3" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="110.91" y="351.5" ></text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::operator+= (1,217,998 samples, 1.32%)</title><rect x="606.3" y="133" width="15.6" height="15.0" fill="rgb(249,202,48)" rx="2" ry="2" />
+<text  x="609.31" y="143.5" ></text>
 </g>
 <g >
-<title>__sanitizer::StackDepotBase&lt;__sanitizer::StackDepotNode, 1, 20&gt;::Put (5,773,964 samples, 11.06%)</title><rect x="872.4" y="389" width="130.5" height="15.0" fill="rgb(226,99,23)" rx="2" ry="2" />
-<text  x="875.40" y="399.5" >__sanitizer::Sta..</text>
+<title>MyString::base_iterator&lt;true&gt;::operator* (618,279 samples, 0.67%)</title><rect x="443.6" y="117" width="8.0" height="15.0" fill="rgb(232,127,30)" rx="2" ry="2" />
+<text  x="446.63" y="127.5" ></text>
 </g>
 <g >
-<title>__memset_avx2_unaligned_erms (461,611 samples, 0.88%)</title><rect x="97.5" y="373" width="10.4" height="15.0" fill="rgb(223,84,20)" rx="2" ry="2" />
-<text  x="100.48" y="383.5" ></text>
+<title>testing::internal::BoolFromGTestEnv (608,667 samples, 0.66%)</title><rect x="731.2" y="421" width="7.8" height="15.0" fill="rgb(222,78,18)" rx="2" ry="2" />
+<text  x="734.21" y="431.5" ></text>
 </g>
 <g >
-<title>__lsan::ScanRangeForPointers (9,660,692 samples, 18.50%)</title><rect x="591.8" y="389" width="218.4" height="15.0" fill="rgb(251,216,51)" rx="2" ry="2" />
-<text  x="594.84" y="399.5" >__lsan::ScanRangeForPointers</text>
+<title>testing::internal::UnitTestImpl::UnitTestImpl (610,236 samples, 0.66%)</title><rect x="715.6" y="357" width="7.8" height="15.0" fill="rgb(212,33,8)" rx="2" ry="2" />
+<text  x="718.58" y="367.5" ></text>
 </g>
 <g >
-<title>std::default_delete&lt;std::__cxx11::basic_stringstream&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;::operator (587,399 samples, 1.13%)</title><rect x="355.7" y="373" width="13.3" height="15.0" fill="rgb(225,96,22)" rx="2" ry="2" />
-<text  x="358.69" y="383.5" ></text>
+<title>std::char_traits&lt;char&gt;::assign (610,964 samples, 0.66%)</title><rect x="476.0" y="85" width="7.9" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="479.04" y="95.5" ></text>
 </g>
 <g >
-<title>dl_main (6,649,021 samples, 12.74%)</title><rect x="186.1" y="357" width="150.3" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="189.09" y="367.5" >dl_main</text>
+<title>MyString::base_iterator&lt;true&gt;::operator++ (623,077 samples, 0.68%)</title><rect x="370.0" y="117" width="8.0" height="15.0" fill="rgb(248,199,47)" rx="2" ry="2" />
+<text  x="372.98" y="127.5" ></text>
 </g>
 <g >
-<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::reserve (500,599 samples, 0.96%)</title><rect x="442.0" y="165" width="11.3" height="15.0" fill="rgb(244,181,43)" rx="2" ry="2" />
-<text  x="444.96" y="175.5" ></text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_set_length (1,242,068 samples, 1.35%)</title><rect x="500.2" y="85" width="15.9" height="15.0" fill="rgb(249,204,48)" rx="2" ry="2" />
+<text  x="503.20" y="95.5" ></text>
 </g>
 <g >
-<title>_dl_relocate_object (6,649,021 samples, 12.74%)</title><rect x="186.1" y="341" width="150.3" height="15.0" fill="rgb(231,120,28)" rx="2" ry="2" />
-<text  x="189.09" y="351.5" >_dl_relocate_object</text>
+<title>__sanitizer::internal_close (603,422 samples, 0.66%)</title><rect x="163.7" y="453" width="7.8" height="15.0" fill="rgb(248,200,47)" rx="2" ry="2" />
+<text  x="166.75" y="463.5" ></text>
 </g>
 <g >
-<title>[unknown] (587,399 samples, 1.13%)</title><rect x="355.7" y="357" width="13.3" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
-<text  x="358.69" y="367.5" ></text>
+<title>__asan::GetFakeStackFast (610,991 samples, 0.66%)</title><rect x="460.2" y="117" width="7.8" height="15.0" fill="rgb(233,130,31)" rx="2" ry="2" />
+<text  x="463.16" y="127.5" ></text>
 </g>
 <g >
-<title>testing::internal::StreamableToString&lt;long&gt; (1,052,755 samples, 2.02%)</title><rect x="429.5" y="213" width="23.8" height="15.0" fill="rgb(225,92,22)" rx="2" ry="2" />
-<text  x="432.48" y="223.5" >t..</text>
+<title>MyString::operator&lt; (1,855,773 samples, 2.02%)</title><rect x="378.0" y="165" width="23.7" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
+<text  x="380.96" y="175.5" >M..</text>
 </g>
 <g >
-<title>testing::TestSuite::Run (2,692,614 samples, 5.16%)</title><rect x="392.4" y="277" width="60.9" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
-<text  x="395.42" y="287.5" >testin..</text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::capacity (609,896 samples, 0.66%)</title><rect x="692.2" y="229" width="7.8" height="15.0" fill="rgb(214,44,10)" rx="2" ry="2" />
+<text  x="695.18" y="239.5" ></text>
 </g>
 <g >
-<title>_start (67,765 samples, 0.13%)</title><rect x="1174.0" y="389" width="1.6" height="15.0" fill="rgb(245,185,44)" rx="2" ry="2" />
-<text  x="1177.03" y="399.5" ></text>
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_M_emplace_hint_unique&lt;std::piecewise_construct_t const&amp;, std::tuple&lt;MyString const&amp;&gt;, std::tuple&lt;&gt; &gt; (2,478,850 samples, 2.69%)</title><rect x="370.0" y="213" width="31.7" height="15.0" fill="rgb(206,9,2)" rx="2" ry="2" />
+<text  x="372.98" y="223.5" >st..</text>
 </g>
 <g >
-<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::_M_realloc_insert&lt;int&gt; (460,636 samples, 0.88%)</title><rect x="474.1" y="261" width="10.4" height="15.0" fill="rgb(221,76,18)" rx="2" ry="2" />
-<text  x="477.12" y="271.5" ></text>
+<title>MyStringTester_countingWordsNumbersInTextIgnoringWordCases_Test::TestBody (17,832,492 samples, 19.37%)</title><rect x="370.0" y="277" width="228.5" height="15.0" fill="rgb(234,133,31)" rx="2" ry="2" />
+<text  x="372.98" y="287.5" >MyStringTester_countingWordsNu..</text>
 </g>
 <g >
-<title>__libc_start_call_main (3,154,600 samples, 6.04%)</title><rect x="392.4" y="389" width="71.3" height="15.0" fill="rgb(210,26,6)" rx="2" ry="2" />
-<text  x="395.42" y="399.5" >__libc_s..</text>
+<title>MyString::toString[abi:cxx11] (623,077 samples, 0.68%)</title><rect x="370.0" y="133" width="8.0" height="15.0" fill="rgb(242,170,40)" rx="2" ry="2" />
+<text  x="372.98" y="143.5" ></text>
 </g>
 <g >
-<title>testing::internal::UnitTestImpl::UnitTestImpl (460,316 samples, 0.88%)</title><rect x="463.7" y="277" width="10.4" height="15.0" fill="rgb(212,33,8)" rx="2" ry="2" />
-<text  x="466.72" y="287.5" ></text>
+<title>_dl_lookup_symbol_x (1,754,736 samples, 1.91%)</title><rect x="74.1" y="437" width="22.5" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
+<text  x="77.09" y="447.5" >_..</text>
 </g>
 <g >
-<title>testing::internal::TestEventRepeater::OnTestEnd (1,052,755 samples, 2.02%)</title><rect x="429.5" y="245" width="23.8" height="15.0" fill="rgb(214,41,10)" rx="2" ry="2" />
-<text  x="432.48" y="255.5" >t..</text>
+<title>__sanitizer::internal_munmap (597,352 samples, 0.65%)</title><rect x="1141.4" y="469" width="7.7" height="15.0" fill="rgb(223,84,20)" rx="2" ry="2" />
+<text  x="1144.45" y="479.5" ></text>
 </g>
 <g >
-<title>__static_initialization_and_destruction_0 (920,952 samples, 1.76%)</title><rect x="463.7" y="357" width="20.8" height="15.0" fill="rgb(207,9,2)" rx="2" ry="2" />
-<text  x="466.72" y="367.5" ></text>
+<title>testing::internal::UnitTestImpl::FilterTests (610,326 samples, 0.66%)</title><rect x="707.8" y="357" width="7.8" height="15.0" fill="rgb(237,148,35)" rx="2" ry="2" />
+<text  x="710.75" y="367.5" ></text>
 </g>
 <g >
-<title>testing::Test::Test (482,469 samples, 0.92%)</title><rect x="418.6" y="165" width="10.9" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="421.58" y="175.5" ></text>
+<title>testing::internal::MakeAndRegisterTestInfo (1,219,855 samples, 1.32%)</title><rect x="715.6" y="421" width="15.6" height="15.0" fill="rgb(208,14,3)" rx="2" ry="2" />
+<text  x="718.58" y="431.5" ></text>
 </g>
 <g >
-<title>testing::TestSuite::AddTestInfo (460,636 samples, 0.88%)</title><rect x="474.1" y="309" width="10.4" height="15.0" fill="rgb(249,206,49)" rx="2" ry="2" />
-<text  x="477.12" y="319.5" ></text>
+<title>testing::UnitTest::UnitTest (610,236 samples, 0.66%)</title><rect x="715.6" y="373" width="7.8" height="15.0" fill="rgb(217,56,13)" rx="2" ry="2" />
+<text  x="718.58" y="383.5" ></text>
 </g>
 <g >
-<title>__asan_stack_malloc_0 (460,411 samples, 0.88%)</title><rect x="23.4" y="357" width="10.4" height="15.0" fill="rgb(246,189,45)" rx="2" ry="2" />
-<text  x="26.40" y="367.5" ></text>
+<title>std::pair&lt;MyString const, unsigned long&gt;::pair&lt;MyString const&amp;, 0ul&gt; (610,258 samples, 0.66%)</title><rect x="598.5" y="117" width="7.8" height="15.0" fill="rgb(227,104,25)" rx="2" ry="2" />
+<text  x="601.49" y="127.5" ></text>
 </g>
 <g >
-<title>testing::internal::HandleSehExceptionsInMethodIfSupported&lt;testing::internal::TestFactoryBase, testing::Test*&gt; (482,469 samples, 0.92%)</title><rect x="418.6" y="229" width="10.9" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
-<text  x="421.58" y="239.5" ></text>
+<title>MyString::operator+= (610,067 samples, 0.66%)</title><rect x="573.8" y="245" width="7.8" height="15.0" fill="rgb(228,107,25)" rx="2" ry="2" />
+<text  x="576.78" y="255.5" ></text>
 </g>
 <g >
-<title>std::_Rb_tree&lt;MyString, MyString, std::_Identity&lt;MyString&gt;, std::less&lt;MyString&gt;, std::allocator&lt;MyString&gt; &gt;::_M_get_insert_unique_pos (1,157,390 samples, 2.22%)</title><rect x="392.4" y="133" width="26.2" height="15.0" fill="rgb(217,59,14)" rx="2" ry="2" />
-<text  x="395.42" y="143.5" >s..</text>
+<title>testing::internal::HandleSehExceptionsInMethodIfSupported&lt;testing::Test, void&gt; (26,966,827 samples, 29.28%)</title><rect x="362.2" y="293" width="345.6" height="15.0" fill="rgb(206,7,1)" rx="2" ry="2" />
+<text  x="365.20" y="303.5" >testing::internal::HandleSehExceptionsInMethod..</text>
 </g>
 <g >
-<title>testing::internal::UnitTestImpl::AddTestInfo (460,636 samples, 0.88%)</title><rect x="474.1" y="325" width="10.4" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="477.12" y="335.5" ></text>
+<title>std::__addressof&lt;char const&gt; (620,077 samples, 0.67%)</title><rect x="549.0" y="53" width="7.9" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="552.00" y="63.5" ></text>
 </g>
 <g >
-<title>std::char_traits&lt;char&gt;::assign (1,157,390 samples, 2.22%)</title><rect x="392.4" y="37" width="26.2" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="395.42" y="47.5" >s..</text>
+<title>MyString::base_iterator&lt;true&gt;::operator* (608,328 samples, 0.66%)</title><rect x="629.7" y="133" width="7.8" height="15.0" fill="rgb(232,127,30)" rx="2" ry="2" />
+<text  x="632.73" y="143.5" ></text>
 </g>
 <g >
-<title>_dl_sym (461,149 samples, 0.88%)</title><rect x="175.7" y="373" width="10.4" height="15.0" fill="rgb(213,40,9)" rx="2" ry="2" />
-<text  x="178.67" y="383.5" ></text>
+<title>testing::internal::UnitTestImpl::RunAllTests (27,577,153 samples, 29.95%)</title><rect x="362.2" y="373" width="353.4" height="15.0" fill="rgb(242,171,40)" rx="2" ry="2" />
+<text  x="365.20" y="383.5" >testing::internal::UnitTestImpl::RunAllTests</text>
 </g>
 <g >
-<title>MyStringTester_clear_expectedEmptyStringAfterClearing_Test::MyStringTester_clear_expectedEmptyStringAfterClearing_Test (482,469 samples, 0.92%)</title><rect x="418.6" y="197" width="10.9" height="15.0" fill="rgb(211,31,7)" rx="2" ry="2" />
-<text  x="421.58" y="207.5" ></text>
+<title>std::less&lt;MyString&gt;::operator (1,855,773 samples, 2.02%)</title><rect x="378.0" y="181" width="23.7" height="15.0" fill="rgb(238,154,36)" rx="2" ry="2" />
+<text  x="380.96" y="191.5" >s..</text>
 </g>
 <g >
-<title>testing::UnitTest::Run (3,154,600 samples, 6.04%)</title><rect x="392.4" y="341" width="71.3" height="15.0" fill="rgb(245,187,44)" rx="2" ry="2" />
-<text  x="395.42" y="351.5" >testing:..</text>
+<title>testing::Message::GetString[abi:cxx11] (608,667 samples, 0.66%)</title><rect x="731.2" y="389" width="7.8" height="15.0" fill="rgb(225,95,22)" rx="2" ry="2" />
+<text  x="734.21" y="399.5" ></text>
 </g>
 <g >
-<title>__asan_stack_malloc_2 (578,723 samples, 1.11%)</title><rect x="379.3" y="389" width="13.1" height="15.0" fill="rgb(233,129,31)" rx="2" ry="2" />
-<text  x="382.34" y="399.5" ></text>
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_is_local (620,077 samples, 0.67%)</title><rect x="549.0" y="101" width="7.9" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
+<text  x="552.00" y="111.5" ></text>
 </g>
 <g >
-<title>testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt; (1,157,390 samples, 2.22%)</title><rect x="392.4" y="229" width="26.2" height="15.0" fill="rgb(217,55,13)" rx="2" ry="2" />
-<text  x="395.42" y="239.5" >t..</text>
+<title>std::_Hashtable&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt; &gt;, std::__detail::_Select1st, std::equal_to&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::hash&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits&lt;true, false, true&gt; &gt;::_Scoped_node::_Scoped_node&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, testing::TestSuite* const&amp;&gt; (609,619 samples, 0.66%)</title><rect x="723.4" y="325" width="7.8" height="15.0" fill="rgb(212,32,7)" rx="2" ry="2" />
+<text  x="726.40" y="335.5" ></text>
 </g>
 <g >
-<title>_GLOBAL__sub_I__ZN62MyStringTester_emptyStringConstruction_expectedSizeIsZero_Test10test_info_E (920,952 samples, 1.76%)</title><rect x="463.7" y="373" width="20.8" height="15.0" fill="rgb(230,118,28)" rx="2" ry="2" />
-<text  x="466.72" y="383.5" ></text>
+<title>__sanitizer::internal_read (205,219 samples, 0.22%)</title><rect x="179.2" y="453" width="2.7" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
+<text  x="182.22" y="463.5" ></text>
 </g>
 <g >
-<title>std::_Rb_tree&lt;MyString, MyString, std::_Identity&lt;MyString&gt;, std::less&lt;MyString&gt;, std::allocator&lt;MyString&gt; &gt;::_M_insert_unique&lt;MyString const&amp;&gt; (1,157,390 samples, 2.22%)</title><rect x="392.4" y="149" width="26.2" height="15.0" fill="rgb(240,165,39)" rx="2" ry="2" />
-<text  x="395.42" y="159.5" >s..</text>
+<title>_dl_sysdep_start (166,327 samples, 0.18%)</title><rect x="1180.2" y="469" width="2.1" height="15.0" fill="rgb(234,137,32)" rx="2" ry="2" />
+<text  x="1183.22" y="479.5" ></text>
 </g>
 <g >
-<title>MyString::getUniqueWords (1,157,390 samples, 2.22%)</title><rect x="392.4" y="181" width="26.2" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
-<text  x="395.42" y="191.5" >M..</text>
+<title>MyString::toString[abi:cxx11] (8,904,217 samples, 9.67%)</title><rect x="426.8" y="133" width="114.1" height="15.0" fill="rgb(242,170,40)" rx="2" ry="2" />
+<text  x="429.79" y="143.5" >MyString::toSt..</text>
 </g>
 <g >
-<title>init_cpu_features.constprop.0 (184,004 samples, 0.35%)</title><rect x="1185.8" y="389" width="4.2" height="15.0" fill="rgb(211,30,7)" rx="2" ry="2" />
-<text  x="1188.84" y="399.5" ></text>
+<title>__sanitizer::internal_close (3,048,461 samples, 3.31%)</title><rect x="1076.1" y="469" width="39.0" height="15.0" fill="rgb(248,200,47)" rx="2" ry="2" />
+<text  x="1079.07" y="479.5" >__s..</text>
 </g>
 <g >
-<title>std::vector&lt;int, std::allocator&lt;int&gt; &gt;::emplace_back&lt;int&gt; (460,636 samples, 0.88%)</title><rect x="474.1" y="277" width="10.4" height="15.0" fill="rgb(246,192,46)" rx="2" ry="2" />
-<text  x="477.12" y="287.5" ></text>
+<title>__lsan::ScanRangeForPointers (12,184,243 samples, 13.23%)</title><rect x="778.0" y="469" width="156.2" height="15.0" fill="rgb(251,216,51)" rx="2" ry="2" />
+<text  x="781.04" y="479.5" >__lsan::ScanRangeFor..</text>
+</g>
+<g >
+<title>testing::internal::(anonymous namespace)::PositiveAndNegativeUnitTestFilter::MatchesTest (610,326 samples, 0.66%)</title><rect x="707.8" y="341" width="7.8" height="15.0" fill="rgb(208,13,3)" rx="2" ry="2" />
+<text  x="710.75" y="351.5" ></text>
+</g>
+<g >
+<title>__sched_yield (1,437,561 samples, 1.56%)</title><rect x="1149.1" y="469" width="18.4" height="15.0" fill="rgb(213,40,9)" rx="2" ry="2" />
+<text  x="1152.10" y="479.5" ></text>
+</g>
+<g >
+<title>__GI___close_nocancel (361,757 samples, 0.39%)</title><rect x="294.6" y="469" width="4.6" height="15.0" fill="rgb(207,11,2)" rx="2" ry="2" />
+<text  x="297.57" y="479.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::operator+= (3,042,886 samples, 3.30%)</title><rect x="645.4" y="117" width="38.9" height="15.0" fill="rgb(249,202,48)" rx="2" ry="2" />
+<text  x="648.35" y="127.5" >std..</text>
+</g>
+<g >
+<title>do_lookup_x (563,696 samples, 0.61%)</title><rect x="287.3" y="453" width="7.3" height="15.0" fill="rgb(245,187,44)" rx="2" ry="2" />
+<text  x="290.35" y="463.5" ></text>
+</g>
+<g >
+<title>__static_initialization_and_destruction_0 (1,219,855 samples, 1.32%)</title><rect x="715.6" y="437" width="15.6" height="15.0" fill="rgb(207,9,2)" rx="2" ry="2" />
+<text  x="718.58" y="447.5" ></text>
+</g>
+<g >
+<title>MyString::getUniqueWords (607,471 samples, 0.66%)</title><rect x="362.2" y="261" width="7.8" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
+<text  x="365.20" y="271.5" ></text>
+</g>
+<g >
+<title>std::less&lt;MyString&gt;::operator (707,300 samples, 0.77%)</title><rect x="589.4" y="197" width="9.1" height="15.0" fill="rgb(238,154,36)" rx="2" ry="2" />
+<text  x="592.43" y="207.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::capacity (610,067 samples, 0.66%)</title><rect x="573.8" y="229" width="7.8" height="15.0" fill="rgb(214,44,10)" rx="2" ry="2" />
+<text  x="576.78" y="239.5" ></text>
+</g>
+<g >
+<title>MyString::base_iterator&lt;true&gt;::base_iterator (625,071 samples, 0.68%)</title><rect x="401.7" y="149" width="8.1" height="15.0" fill="rgb(248,198,47)" rx="2" ry="2" />
+<text  x="404.75" y="159.5" ></text>
+</g>
+<g >
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_M_construct_node&lt;std::piecewise_construct_t const&amp;, std::tuple&lt;MyString const&amp;&gt;, std::tuple&lt;&gt; &gt; (610,258 samples, 0.66%)</title><rect x="598.5" y="165" width="7.8" height="15.0" fill="rgb(243,176,42)" rx="2" ry="2" />
+<text  x="601.49" y="175.5" ></text>
+</g>
+<g >
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_M_lower_bound (11,470,234 samples, 12.46%)</title><rect x="426.8" y="181" width="147.0" height="15.0" fill="rgb(232,126,30)" rx="2" ry="2" />
+<text  x="429.79" y="191.5" >std::_Rb_tree&lt;MySt..</text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::append (610,326 samples, 0.66%)</title><rect x="707.8" y="309" width="7.8" height="15.0" fill="rgb(247,193,46)" rx="2" ry="2" />
+<text  x="710.75" y="319.5" ></text>
+</g>
+<g >
+<title>testing::Test::Run (26,966,827 samples, 29.28%)</title><rect x="362.2" y="325" width="345.6" height="15.0" fill="rgb(233,129,30)" rx="2" ry="2" />
+<text  x="365.20" y="335.5" >testing::Test::Run</text>
+</g>
+<g >
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::lower_bound (707,300 samples, 0.77%)</title><rect x="589.4" y="229" width="9.1" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="592.43" y="239.5" ></text>
+</g>
+<g >
+<title>__asan::PoisonShadow (714,572 samples, 0.78%)</title><rect x="181.9" y="437" width="9.1" height="15.0" fill="rgb(231,120,28)" rx="2" ry="2" />
+<text  x="184.85" y="447.5" ></text>
+</g>
+<g >
+<title>std::less&lt;MyString&gt;::operator (607,471 samples, 0.66%)</title><rect x="362.2" y="197" width="7.8" height="15.0" fill="rgb(238,154,36)" rx="2" ry="2" />
+<text  x="365.20" y="207.5" ></text>
+</g>
+<g >
+<title>MyString::toLower (605,396 samples, 0.66%)</title><rect x="700.0" y="245" width="7.8" height="15.0" fill="rgb(226,101,24)" rx="2" ry="2" />
+<text  x="703.00" y="255.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::push_back (1,217,998 samples, 1.32%)</title><rect x="606.3" y="117" width="15.6" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="609.31" y="127.5" ></text>
+</g>
+<g >
+<title>std::pair&lt;MyString const, unsigned long&gt;::pair&lt;MyString const&amp;&gt; (610,258 samples, 0.66%)</title><rect x="598.5" y="133" width="7.8" height="15.0" fill="rgb(232,125,29)" rx="2" ry="2" />
+<text  x="601.49" y="143.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_local_data (620,077 samples, 0.67%)</title><rect x="549.0" y="85" width="7.9" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
+<text  x="552.00" y="95.5" ></text>
+</g>
+<g >
+<title>MyString::countWordsUsageIgnoringCases (15,903,881 samples, 17.27%)</title><rect x="370.0" y="245" width="203.8" height="15.0" fill="rgb(242,174,41)" rx="2" ry="2" />
+<text  x="372.98" y="255.5" >MyString::countWordsUsageI..</text>
+</g>
+<g >
+<title>__asan::FakeStack::GC (608,476 samples, 0.66%)</title><rect x="27.0" y="437" width="7.8" height="15.0" fill="rgb(223,87,20)" rx="2" ry="2" />
+<text  x="30.00" y="447.5" ></text>
+</g>
+<g >
+<title>MyString::operator&lt; (1,954,797 samples, 2.12%)</title><rect x="401.7" y="197" width="25.1" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
+<text  x="404.75" y="207.5" >M..</text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string (610,258 samples, 0.66%)</title><rect x="598.5" y="85" width="7.8" height="15.0" fill="rgb(212,35,8)" rx="2" ry="2" />
+<text  x="601.49" y="95.5" ></text>
+</g>
+<g >
+<title>__sanitizer::internal_clone (10,145 samples, 0.01%)</title><rect x="1075.9" y="469" width="0.2" height="15.0" fill="rgb(230,119,28)" rx="2" ry="2" />
+<text  x="1078.94" y="479.5" ></text>
+</g>
+<g >
+<title>__sanitizer::StackDepotBase&lt;__sanitizer::StackDepotNode, 1, 20&gt;::Put (6,803,556 samples, 7.39%)</title><rect x="988.4" y="469" width="87.2" height="15.0" fill="rgb(226,99,23)" rx="2" ry="2" />
+<text  x="991.41" y="479.5" >__sanitize..</text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::operator+= (4,450,097 samples, 4.83%)</title><rect x="483.9" y="117" width="57.0" height="15.0" fill="rgb(249,202,48)" rx="2" ry="2" />
+<text  x="486.87" y="127.5" >std::_..</text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::capacity (615,036 samples, 0.67%)</title><rect x="386.0" y="101" width="7.9" height="15.0" fill="rgb(214,44,10)" rx="2" ry="2" />
+<text  x="389.03" y="111.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::capacity (689,521 samples, 0.75%)</title><rect x="516.1" y="85" width="8.9" height="15.0" fill="rgb(214,44,10)" rx="2" ry="2" />
+<text  x="519.12" y="95.5" ></text>
+</g>
+<g >
+<title>std::construct_at&lt;std::pair&lt;MyString const, unsigned long&gt;, std::piecewise_construct_t const&amp;, std::tuple&lt;MyString const&amp;&gt;, std::tuple&lt;&gt; &gt; (610,258 samples, 0.66%)</title><rect x="598.5" y="149" width="7.8" height="15.0" fill="rgb(235,139,33)" rx="2" ry="2" />
+<text  x="601.49" y="159.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::~basic_string (620,077 samples, 0.67%)</title><rect x="549.0" y="133" width="7.9" height="15.0" fill="rgb(248,201,48)" rx="2" ry="2" />
+<text  x="552.00" y="143.5" ></text>
+</g>
+<g >
+<title>std::less&lt;MyString&gt;::operator (1,954,797 samples, 2.12%)</title><rect x="401.7" y="213" width="25.1" height="15.0" fill="rgb(238,154,36)" rx="2" ry="2" />
+<text  x="404.75" y="223.5" >s..</text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::capacity (610,276 samples, 0.66%)</title><rect x="676.5" y="85" width="7.8" height="15.0" fill="rgb(214,44,10)" rx="2" ry="2" />
+<text  x="679.53" y="95.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_create (626,871 samples, 0.68%)</title><rect x="492.2" y="69" width="8.0" height="15.0" fill="rgb(248,198,47)" rx="2" ry="2" />
+<text  x="495.17" y="79.5" ></text>
+</g>
+<g >
+<title>__memset_avx2_unaligned_erms (1,219,480 samples, 1.32%)</title><rect x="754.6" y="437" width="15.6" height="15.0" fill="rgb(223,84,20)" rx="2" ry="2" />
+<text  x="757.61" y="447.5" ></text>
+</g>
+<g >
+<title>__asan_stack_malloc_2 (2,471,366 samples, 2.68%)</title><rect x="330.5" y="469" width="31.7" height="15.0" fill="rgb(233,129,31)" rx="2" ry="2" />
+<text  x="333.53" y="479.5" >__..</text>
+</g>
+<g >
+<title>MyString::operator&lt; (607,471 samples, 0.66%)</title><rect x="362.2" y="181" width="7.8" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
+<text  x="365.20" y="191.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_data (631,845 samples, 0.69%)</title><rect x="565.7" y="85" width="8.1" height="15.0" fill="rgb(206,6,1)" rx="2" ry="2" />
+<text  x="568.68" y="95.5" ></text>
+</g>
+<g >
+<title>[unknown] (632,658 samples, 0.69%)</title><rect x="540.9" y="133" width="8.1" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
+<text  x="543.89" y="143.5" ></text>
+</g>
+<g >
+<title>MyString::operator[] (618,279 samples, 0.67%)</title><rect x="443.6" y="101" width="8.0" height="15.0" fill="rgb(211,29,7)" rx="2" ry="2" />
+<text  x="446.63" y="111.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::push_back (2,436,352 samples, 2.65%)</title><rect x="653.1" y="101" width="31.2" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="656.13" y="111.5" >st..</text>
+</g>
+<g >
+<title>__sanitizer::SizeClassAllocator32&lt;__sanitizer::AP32&gt;::PopulateFreeList (4,232,828 samples, 4.60%)</title><rect x="934.2" y="469" width="54.2" height="15.0" fill="rgb(211,31,7)" rx="2" ry="2" />
+<text  x="937.17" y="479.5" >__san..</text>
+</g>
+<g >
+<title>std::less&lt;MyString&gt;::operator (4,871,823 samples, 5.29%)</title><rect x="621.9" y="165" width="62.4" height="15.0" fill="rgb(238,154,36)" rx="2" ry="2" />
+<text  x="624.92" y="175.5" >std::l..</text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::operator+= (707,300 samples, 0.77%)</title><rect x="589.4" y="149" width="9.1" height="15.0" fill="rgb(249,202,48)" rx="2" ry="2" />
+<text  x="592.43" y="159.5" ></text>
+</g>
+<g >
+<title>__asan_stack_malloc_1 (2,444,208 samples, 2.65%)</title><rect x="299.2" y="469" width="31.3" height="15.0" fill="rgb(239,159,38)" rx="2" ry="2" />
+<text  x="302.21" y="479.5" >__..</text>
+</g>
+<g >
+<title>__libc_start_main@@GLIBC_2.34 (4,874,771 samples, 5.29%)</title><rect x="715.6" y="469" width="62.4" height="15.0" fill="rgb(229,113,27)" rx="2" ry="2" />
+<text  x="718.58" y="479.5" >__libc..</text>
+</g>
+<g >
+<title>MyString::toLower (611,244 samples, 0.66%)</title><rect x="581.6" y="245" width="7.8" height="15.0" fill="rgb(226,101,24)" rx="2" ry="2" />
+<text  x="584.59" y="255.5" ></text>
+</g>
+<g >
+<title>std::map&lt;MyString, unsigned long, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::lower_bound (11,470,234 samples, 12.46%)</title><rect x="426.8" y="213" width="147.0" height="15.0" fill="rgb(222,79,19)" rx="2" ry="2" />
+<text  x="429.79" y="223.5" >std::map&lt;MyString,..</text>
+</g>
+<g >
+<title>__interceptor___tls_get_addr (610,799 samples, 0.66%)</title><rect x="637.5" y="117" width="7.9" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
+<text  x="640.53" y="127.5" ></text>
+</g>
+<g >
+<title>__lsan::ForEachChunk (483,936 samples, 0.53%)</title><rect x="105.0" y="453" width="6.2" height="15.0" fill="rgb(207,11,2)" rx="2" ry="2" />
+<text  x="108.04" y="463.5" ></text>
+</g>
+<g >
+<title>__sanitizer::internal_mmap (853,965 samples, 0.93%)</title><rect x="1130.5" y="469" width="10.9" height="15.0" fill="rgb(239,160,38)" rx="2" ry="2" />
+<text  x="1133.50" y="479.5" ></text>
+</g>
+<g >
+<title>std::_Hashtable&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt; &gt;, std::__detail::_Select1st, std::equal_to&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::hash&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits&lt;true, false, true&gt; &gt;::_M_emplace&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, testing::TestSuite* const&amp;&gt; (609,619 samples, 0.66%)</title><rect x="723.4" y="341" width="7.8" height="15.0" fill="rgb(226,99,23)" rx="2" ry="2" />
+<text  x="726.40" y="351.5" ></text>
+</g>
+<g >
+<title>std::less&lt;MyString&gt;::operator (623,077 samples, 0.68%)</title><rect x="370.0" y="165" width="8.0" height="15.0" fill="rgb(238,154,36)" rx="2" ry="2" />
+<text  x="372.98" y="175.5" ></text>
+</g>
+<g >
+<title>MyStringTester_countingWordsNumbersInText_Test::TestBody (8,526,864 samples, 9.26%)</title><rect x="598.5" y="277" width="109.3" height="15.0" fill="rgb(248,199,47)" rx="2" ry="2" />
+<text  x="601.49" y="287.5" >MyStringTeste..</text>
+</g>
+<g >
+<title>testing::internal::UnitTestImpl::AddTestInfo (609,619 samples, 0.66%)</title><rect x="723.4" y="405" width="7.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="726.40" y="415.5" ></text>
+</g>
+<g >
+<title>__asan_stack_malloc_0 (606,767 samples, 0.66%)</title><rect x="42.6" y="437" width="7.8" height="15.0" fill="rgb(246,189,45)" rx="2" ry="2" />
+<text  x="45.63" y="447.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_local_data (610,276 samples, 0.66%)</title><rect x="676.5" y="53" width="7.8" height="15.0" fill="rgb(214,42,10)" rx="2" ry="2" />
+<text  x="679.53" y="63.5" ></text>
+</g>
+<g >
+<title>__sanitizer::TracerThread (26,879 samples, 0.03%)</title><rect x="1075.6" y="469" width="0.3" height="15.0" fill="rgb(213,40,9)" rx="2" ry="2" />
+<text  x="1078.60" y="479.5" ></text>
+</g>
+<g >
+<title>testing::TestInfo::Run (26,966,827 samples, 29.28%)</title><rect x="362.2" y="341" width="345.6" height="15.0" fill="rgb(225,92,22)" rx="2" ry="2" />
+<text  x="365.20" y="351.5" >testing::TestInfo::Run</text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_set_length (696,393 samples, 0.76%)</title><rect x="409.8" y="133" width="8.9" height="15.0" fill="rgb(249,204,48)" rx="2" ry="2" />
+<text  x="412.75" y="143.5" ></text>
+</g>
+<g >
+<title>_dl_map_object_from_fd (475,493 samples, 0.52%)</title><rect x="1167.5" y="453" width="6.1" height="15.0" fill="rgb(249,205,49)" rx="2" ry="2" />
+<text  x="1170.52" y="463.5" ></text>
+</g>
+<g >
+<title>testing::UnitTest::Run (27,577,153 samples, 29.95%)</title><rect x="362.2" y="421" width="353.4" height="15.0" fill="rgb(245,187,44)" rx="2" ry="2" />
+<text  x="365.20" y="431.5" >testing::UnitTest::Run</text>
+</g>
+<g >
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_M_emplace_hint_unique&lt;std::piecewise_construct_t const&amp;, std::tuple&lt;MyString const&amp;&gt;, std::tuple&lt;&gt; &gt; (1,828,256 samples, 1.99%)</title><rect x="598.5" y="213" width="23.4" height="15.0" fill="rgb(206,9,2)" rx="2" ry="2" />
+<text  x="601.49" y="223.5" >s..</text>
+</g>
+<g >
+<title>std::set&lt;MyString, std::less&lt;MyString&gt;, std::allocator&lt;MyString&gt; &gt;::insert (607,471 samples, 0.66%)</title><rect x="362.2" y="245" width="7.8" height="15.0" fill="rgb(224,88,21)" rx="2" ry="2" />
+<text  x="365.20" y="255.5" ></text>
+</g>
+<g >
+<title>MyString::toString[abi:cxx11] (3,653,685 samples, 3.97%)</title><rect x="637.5" y="133" width="46.8" height="15.0" fill="rgb(242,170,40)" rx="2" ry="2" />
+<text  x="640.53" y="143.5" >MySt..</text>
+</g>
+<g >
+<title>MyString::countWordsUsageIgnoringCases (17,125,192 samples, 18.60%)</title><rect x="370.0" y="261" width="219.4" height="15.0" fill="rgb(242,174,41)" rx="2" ry="2" />
+<text  x="372.98" y="271.5" >MyString::countWordsUsageIgn..</text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_set_length (610,964 samples, 0.66%)</title><rect x="476.0" y="101" width="7.9" height="15.0" fill="rgb(249,204,48)" rx="2" ry="2" />
+<text  x="479.04" y="111.5" ></text>
+</g>
+<g >
+<title>_GLOBAL__sub_I__ZN62MyStringTester_emptyStringConstruction_expectedSizeIsZero_Test10test_info_E (1,219,855 samples, 1.32%)</title><rect x="715.6" y="453" width="15.6" height="15.0" fill="rgb(230,118,28)" rx="2" ry="2" />
+<text  x="718.58" y="463.5" ></text>
+</g>
+<g >
+<title>_dl_relocate_object (7,518,165 samples, 8.16%)</title><rect x="191.0" y="421" width="96.3" height="15.0" fill="rgb(231,120,28)" rx="2" ry="2" />
+<text  x="194.01" y="431.5" >_dl_relocat..</text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::compare (1,313,282 samples, 1.43%)</title><rect x="556.9" y="117" width="16.9" height="15.0" fill="rgb(230,115,27)" rx="2" ry="2" />
+<text  x="559.95" y="127.5" ></text>
+</g>
+<g >
+<title>pthread_getspecific@@GLIBC_2.34 (660,596 samples, 0.72%)</title><rect x="96.6" y="437" width="8.4" height="15.0" fill="rgb(206,8,1)" rx="2" ry="2" />
+<text  x="99.58" y="447.5" ></text>
+</g>
+<g >
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_M_lower_bound (707,300 samples, 0.77%)</title><rect x="589.4" y="213" width="9.1" height="15.0" fill="rgb(232,126,30)" rx="2" ry="2" />
+<text  x="592.43" y="223.5" ></text>
+</g>
+<g >
+<title>MyString::base_iterator&lt;false&gt;::operator* (605,396 samples, 0.66%)</title><rect x="700.0" y="229" width="7.8" height="15.0" fill="rgb(248,198,47)" rx="2" ry="2" />
+<text  x="703.00" y="239.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::push_back (1,329,726 samples, 1.44%)</title><rect x="409.8" y="149" width="17.0" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="412.75" y="159.5" ></text>
+</g>
+<g >
+<title>__memset_avx2_unaligned_erms (717,626 samples, 0.78%)</title><rect x="17.8" y="421" width="9.2" height="15.0" fill="rgb(223,84,20)" rx="2" ry="2" />
+<text  x="20.80" y="431.5" ></text>
+</g>
+<g >
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_M_lower_bound (4,871,823 samples, 5.29%)</title><rect x="621.9" y="181" width="62.4" height="15.0" fill="rgb(232,126,30)" rx="2" ry="2" />
+<text  x="624.92" y="191.5" >std::_..</text>
+</g>
+<g >
+<title>dl_main (7,518,165 samples, 8.16%)</title><rect x="191.0" y="437" width="96.3" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
+<text  x="194.01" y="447.5" >dl_main</text>
+</g>
+<g >
+<title>MyString::operator&lt; (623,077 samples, 0.68%)</title><rect x="370.0" y="149" width="8.0" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
+<text  x="372.98" y="159.5" ></text>
+</g>
+<g >
+<title>std::map&lt;MyString, unsigned long, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::lower_bound (707,300 samples, 0.77%)</title><rect x="589.4" y="245" width="9.1" height="15.0" fill="rgb(222,79,19)" rx="2" ry="2" />
+<text  x="592.43" y="255.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::push_back (707,300 samples, 0.77%)</title><rect x="589.4" y="133" width="9.1" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="592.43" y="143.5" ></text>
+</g>
+<g >
+<title>std::_Rb_tree&lt;MyString, MyString, std::_Identity&lt;MyString&gt;, std::less&lt;MyString&gt;, std::allocator&lt;MyString&gt; &gt;::_M_get_insert_unique_pos (607,471 samples, 0.66%)</title><rect x="362.2" y="213" width="7.8" height="15.0" fill="rgb(217,59,14)" rx="2" ry="2" />
+<text  x="365.20" y="223.5" ></text>
+</g>
+<g >
+<title>MyString::end (625,071 samples, 0.68%)</title><rect x="401.7" y="165" width="8.1" height="15.0" fill="rgb(249,206,49)" rx="2" ry="2" />
+<text  x="404.75" y="175.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::push_back (4,450,097 samples, 4.83%)</title><rect x="483.9" y="101" width="57.0" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="486.87" y="111.5" >std::_..</text>
+</g>
+<g >
+<title>__pipe (608,942 samples, 0.66%)</title><rect x="155.9" y="453" width="7.8" height="15.0" fill="rgb(208,15,3)" rx="2" ry="2" />
+<text  x="158.94" y="463.5" ></text>
+</g>
+<g >
+<title>__sanitizer::internal_open (604,182 samples, 0.66%)</title><rect x="171.5" y="453" width="7.7" height="15.0" fill="rgb(244,182,43)" rx="2" ry="2" />
+<text  x="174.48" y="463.5" ></text>
+</g>
+<g >
+<title>MyString::operator&lt; (707,300 samples, 0.77%)</title><rect x="589.4" y="181" width="9.1" height="15.0" fill="rgb(212,34,8)" rx="2" ry="2" />
+<text  x="592.43" y="191.5" ></text>
+</g>
+<g >
+<title>testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::internal::UnitTestImpl, bool&gt; (27,577,153 samples, 29.95%)</title><rect x="362.2" y="405" width="353.4" height="15.0" fill="rgb(210,24,5)" rx="2" ry="2" />
+<text  x="365.20" y="415.5" >testing::internal::HandleExceptionsInMethodIfSu..</text>
+</g>
+<g >
+<title>std::__is_constant_evaluated (1,242,068 samples, 1.35%)</title><rect x="500.2" y="53" width="15.9" height="15.0" fill="rgb(234,137,32)" rx="2" ry="2" />
+<text  x="503.20" y="63.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::push_back (608,667 samples, 0.66%)</title><rect x="731.2" y="341" width="7.8" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="734.21" y="351.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_set_length (707,300 samples, 0.77%)</title><rect x="589.4" y="117" width="9.1" height="15.0" fill="rgb(249,204,48)" rx="2" ry="2" />
+<text  x="592.43" y="127.5" ></text>
+</g>
+<g >
+<title>testing::internal::HandleExceptionsInMethodIfSupported&lt;testing::Test, void&gt; (26,966,827 samples, 29.28%)</title><rect x="362.2" y="309" width="345.6" height="15.0" fill="rgb(217,55,13)" rx="2" ry="2" />
+<text  x="365.20" y="319.5" >testing::internal::HandleExceptionsInMethodIfS..</text>
+</g>
+<g >
+<title>_dl_sysdep_start (7,518,165 samples, 8.16%)</title><rect x="191.0" y="453" width="96.3" height="15.0" fill="rgb(234,137,32)" rx="2" ry="2" />
+<text  x="194.01" y="463.5" >_dl_sysdep_..</text>
+</g>
+<g >
+<title>std::__detail::_Hashtable_alloc&lt;std::allocator&lt;std::__detail::_Hash_node&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt;, true&gt; &gt; &gt;::_M_allocate_node&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, testing::TestSuite* const&amp;&gt; (609,619 samples, 0.66%)</title><rect x="723.4" y="309" width="7.8" height="15.0" fill="rgb(248,200,47)" rx="2" ry="2" />
+<text  x="726.40" y="319.5" ></text>
+</g>
+<g >
+<title>std::unordered_map&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, testing::TestSuite*, std::hash&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::equal_to&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt; &gt; &gt;::emplace&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, testing::TestSuite* const&amp;&gt; (609,619 samples, 0.66%)</title><rect x="723.4" y="373" width="7.8" height="15.0" fill="rgb(232,128,30)" rx="2" ry="2" />
+<text  x="726.40" y="383.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::push_back (1,226,163 samples, 1.33%)</title><rect x="386.0" y="117" width="15.7" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="389.03" y="127.5" ></text>
+</g>
+<g >
+<title>tests (92,085,287 samples, 100.00%)</title><rect x="10.0" y="485" width="1180.0" height="15.0" fill="rgb(226,99,23)" rx="2" ry="2" />
+<text  x="13.00" y="495.5" >tests</text>
+</g>
+<g >
+<title>std::__ptr_traits_ptr_to&lt;char const*, char const, false&gt;::pointer_to (620,077 samples, 0.67%)</title><rect x="549.0" y="69" width="7.9" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
+<text  x="552.00" y="79.5" ></text>
+</g>
+<g >
+<title>MyString::toString[abi:cxx11] (607,471 samples, 0.66%)</title><rect x="362.2" y="165" width="7.8" height="15.0" fill="rgb(242,170,40)" rx="2" ry="2" />
+<text  x="365.20" y="175.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_is_local (610,276 samples, 0.66%)</title><rect x="676.5" y="69" width="7.8" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
+<text  x="679.53" y="79.5" ></text>
+</g>
+<g >
+<title>std::operator&lt;=&gt;&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; (1,313,282 samples, 1.43%)</title><rect x="556.9" y="133" width="16.9" height="15.0" fill="rgb(254,228,54)" rx="2" ry="2" />
+<text  x="559.95" y="143.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::operator+= (608,667 samples, 0.66%)</title><rect x="731.2" y="357" width="7.8" height="15.0" fill="rgb(249,202,48)" rx="2" ry="2" />
+<text  x="734.21" y="367.5" ></text>
+</g>
+<g >
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::lower_bound (11,470,234 samples, 12.46%)</title><rect x="426.8" y="197" width="147.0" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="429.79" y="207.5" >std::_Rb_tree&lt;MySt..</text>
+</g>
+<g >
+<title>std::unordered_map&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;, testing::TestSuite*, std::hash&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::equal_to&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; &gt;, std::allocator&lt;std::pair&lt;std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const, testing::TestSuite*&gt; &gt; &gt;::unordered_map (610,236 samples, 0.66%)</title><rect x="715.6" y="341" width="7.8" height="15.0" fill="rgb(223,83,19)" rx="2" ry="2" />
+<text  x="718.58" y="351.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_is_local (689,521 samples, 0.75%)</title><rect x="516.1" y="69" width="8.9" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
+<text  x="519.12" y="79.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::basic_string (609,619 samples, 0.66%)</title><rect x="723.4" y="261" width="7.8" height="15.0" fill="rgb(212,35,8)" rx="2" ry="2" />
+<text  x="726.40" y="271.5" ></text>
+</g>
+<g >
+<title>MyString::empty (611,493 samples, 0.66%)</title><rect x="684.3" y="245" width="7.9" height="15.0" fill="rgb(247,197,47)" rx="2" ry="2" />
+<text  x="687.35" y="255.5" ></text>
+</g>
+<g >
+<title>std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::_M_data (609,896 samples, 0.66%)</title><rect x="692.2" y="213" width="7.8" height="15.0" fill="rgb(206,6,1)" rx="2" ry="2" />
+<text  x="695.18" y="223.5" ></text>
+</g>
+<g >
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_M_get_insert_hint_unique_pos (1,217,998 samples, 1.32%)</title><rect x="606.3" y="197" width="15.6" height="15.0" fill="rgb(212,35,8)" rx="2" ry="2" />
+<text  x="609.31" y="207.5" ></text>
+</g>
+<g >
+<title>std::_Rb_tree&lt;MyString, std::pair&lt;MyString const, unsigned long&gt;, std::_Select1st&lt;std::pair&lt;MyString const, unsigned long&gt; &gt;, std::less&lt;MyString&gt;, std::allocator&lt;std::pair&lt;MyString const, unsigned long&gt; &gt; &gt;::_M_get_insert_hint_unique_pos (1,855,773 samples, 2.02%)</title><rect x="378.0" y="197" width="23.7" height="15.0" fill="rgb(212,35,8)" rx="2" ry="2" />
+<text  x="380.96" y="207.5" >s..</text>
+</g>
+<g >
+<title>MyString::countWordsUsageIgnoringCases (6,700,079 samples, 7.28%)</title><rect x="598.5" y="245" width="85.8" height="15.0" fill="rgb(242,174,41)" rx="2" ry="2" />
+<text  x="601.49" y="255.5" >MyString::..</text>
 </g>
 </g>
 </svg>
