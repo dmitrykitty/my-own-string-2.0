@@ -4,46 +4,7 @@
 [ 42%] Building CXX object tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 [ 57%] Linking CXX static library ../../../lib/libgtest_main.a
 [ 57%] Built target gtest_main
-[ 71%] Building CXX object tests/CMakeFiles/tests.dir/__/mystring.cpp.o
-[ 85%] Building CXX object tests/CMakeFiles/tests.dir/myStringTests.cpp.o
-In file included from /tmp/tmpwpz6tp9q/student/tests/lib/googletest/include/gtest/gtest-printers.h:122,
-                 from /tmp/tmpwpz6tp9q/student/tests/lib/googletest/include/gtest/gtest-matchers.h:49,
-                 from /tmp/tmpwpz6tp9q/student/tests/lib/googletest/include/gtest/internal/gtest-death-test-internal.h:47,
-                 from /tmp/tmpwpz6tp9q/student/tests/lib/googletest/include/gtest/gtest-death-test.h:43,
-                 from /tmp/tmpwpz6tp9q/student/tests/lib/googletest/include/gtest/gtest.h:64,
-                 from /tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp:7:
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_startsWith_Test::TestBody()’:
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp:347:22: error: ‘const class MyString’ has no member named ‘startsWith’
-  347 |     EXPECT_TRUE(text.startsWith("Nauczania"));
-      |                      ^~~~~~~~~~
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp:348:23: error: ‘const class MyString’ has no member named ‘startsWith’
-  348 |     EXPECT_FALSE(text.startsWith("Oduczanie"));
-      |                       ^~~~~~~~~~
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_endsWith_Test::TestBody()’:
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp:359:22: error: ‘const class MyString’ has no member named ‘endsWith’
-  359 |     EXPECT_TRUE(text.endsWith("sprawiedliwy."));
-      |                      ^~~~~~~~
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp:360:23: error: ‘const class MyString’ has no member named ‘endsWith’
-  360 |     EXPECT_FALSE(text.endsWith("lajdacki"));
-      |                       ^~~~~~~~
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_joiningContainer_Test::TestBody()’:
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp:394:43: error: ‘const class MyString’ has no member named ‘join’
-  394 |     const MyString joinedText = separator.join(polishExtinctAnimals);
-      |                                           ^~~~
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp: In member function ‘virtual void MyStringTester_all_of_Test::TestBody()’:
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp:402:29: error: ‘const class MyString’ has no member named ‘all_of’
-  402 |     EXPECT_TRUE(onlyNumbers.all_of(::isdigit));
-      |                             ^~~~~~
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp:403:29: error: ‘const class MyString’ has no member named ‘all_of’
-  403 |     EXPECT_TRUE(onlyNumbers.all_of(::isalnum));
-      |                             ^~~~~~
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp:404:30: error: ‘const class MyString’ has no member named ‘all_of’
-  404 |     EXPECT_FALSE(onlyNumbers.all_of(::isalpha));
-      |                              ^~~~~~
-/tmp/tmpwpz6tp9q/student/tests/myStringTests.cpp:405:30: error: ‘const class MyString’ has no member named ‘all_of’
-  405 |     EXPECT_FALSE(onlyNumbers.all_of(::isspace));
-      |                              ^~~~~~
-make[3]: *** [tests/CMakeFiles/tests.dir/build.make:76: tests/CMakeFiles/tests.dir/myStringTests.cpp.o] Error 1
-make[2]: *** [CMakeFiles/Makefile2:454: tests/CMakeFiles/tests.dir/all] Error 2
-make[1]: *** [CMakeFiles/Makefile2:461: tests/CMakeFiles/tests.dir/rule] Error 2
-make: *** [Makefile:312: tests] Error 2
+[ 71%] Building CXX object tests/CMakeFiles/tests.dir/myStringTests.cpp.o
+[ 85%] Building CXX object tests/CMakeFiles/tests.dir/__/mystring.cpp.o
+[100%] Linking CXX executable ../bin/tests
+[100%] Built target tests
