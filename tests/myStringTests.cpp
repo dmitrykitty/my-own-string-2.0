@@ -319,7 +319,7 @@ TEST_F(MyStringTester, wordsIntoLowerCase)
 
     ASSERT_EQ(string(quoteLowerCase), stream.str());
 }
-/*
+
 // use: std::generate_n, std::back_inserter
 TEST_F(MyStringTester, randomWordGeneration)
 {
@@ -331,6 +331,7 @@ TEST_F(MyStringTester, randomWordGeneration)
         EXPECT_TRUE(std::isalpha(randomWord[i])) << "index = " << i << ", word: " << randomWord;
     }
 }
+/*
 // use: std::search
 TEST_F(MyStringTester, startsWith)
 {

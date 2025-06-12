@@ -21,6 +21,7 @@ public:
     MyString() = default;
 
     MyString(const char* text);
+    MyString(std::size_t length, char ch);
 
     MyString(const MyString& other) = default;
 
@@ -98,6 +99,7 @@ public:
 
     std::set<MyString> getUniqueWords() const;
     std::map<MyString, size_t>  countWordsUsageIgnoringCases()const;
+    static MyString generateRandomWord(size_t length);
 
     void trim();
 

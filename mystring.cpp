@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <cstring>
+#include <random>
 
 MyString::MyString(const char* text) {
     size_ = std::strlen(text);
@@ -19,6 +20,20 @@ MyString::MyString(const char* text) {
     }
     capacity_ = initialBufferSize_ + bigText_.capacity();
 }
+
+MyString::MyString(std::size_t length, char c) {
+    if (length <= initialBufferSize_) {
+        std::fill_n(smallText_.begin(), length, c);
+        if (length < initialBufferSize_)
+            smallText_[length] = '\0';
+    } else {
+        std::ranges::fill(smallText_, c);
+        bigText_.assign(length - initialBufferSize_, c);
+    }
+    size_ = length;
+    capacity_ = initialBufferSize_ + bigText_.capacity();
+}
+
 
 void MyString::clear() {
     size_ = 0;
@@ -182,4 +197,25 @@ std::string MyString::toString() const {
     for (const auto ch: *this)
         res += ch;
     return res;
+}
+
+auto makeRandomCharGenerator() {
+    return [] {
+        constexpr std::string_view alphabet = "abcdefghijklmnopqrstuvwxyz";
+        static std::random_device rd;
+        static std::mt19937 gen(rd());
+        static std::uniform_int_distribution<size_t> dist(0, alphabet.length() - 1);
+
+        return alphabet[dist(gen)];
+    };
+}
+
+MyString MyString::generateRandomWord(size_t length) {
+    if (length == 0)
+        return MyString();
+
+    MyString randomWord(length, '\0');
+    auto generator = makeRandomCharGenerator();
+    std::generate_n(randomWord.begin(), length, generator);
+    return randomWord;
 }
