@@ -272,3 +272,4 @@ MyString MyString::join(const std::vector<MyString>& texts) const {
     result.capacity_ = result.bigText_.capacity() + initialBufferSize_;
     return result;
 }
+

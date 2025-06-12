@@ -396,7 +396,7 @@ TEST_F(MyStringTester, joiningContainer)
     const MyString joinedText = separator.join(polishExtinctAnimals);
     ASSERT_EQ(polishExtinctAnimalsAsString, joinedText);
 }
-/*
+
 // use: std::all_of
 TEST_F(MyStringTester, all_of)
 {
@@ -406,4 +406,3 @@ TEST_F(MyStringTester, all_of)
     EXPECT_FALSE(onlyNumbers.all_of(::isalpha));
     EXPECT_FALSE(onlyNumbers.all_of(::isspace));
 }
-*/

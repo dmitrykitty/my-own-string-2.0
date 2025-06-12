@@ -1,6 +1,7 @@
 #ifndef MYSTRING_H
 #define MYSTRING_H
 
+#include <algorithm>
 #include <array>
 #include <iostream>
 #include <map>
@@ -38,8 +39,8 @@ public:
     public:
         using value_type = std::conditional<IsConst, const char, char>;
         using string_pointer_type = std::conditional_t<IsConst, const MyString *, MyString *>;
-        using char_reference_type = std::conditional_t<IsConst, const char &, char &>;
-        using char_pointer_type = std::conditional_t<IsConst, const char *, char *>;
+        using reference = std::conditional_t<IsConst, const char &, char &>;
+        using pointer = std::conditional_t<IsConst, const char *, char *>;
         using difference_type = std::ptrdiff_t;
         using iterator_category = std::random_access_iterator_tag;
 
@@ -51,8 +52,8 @@ public:
         base_iterator(string_pointer_type str, std::size_t index) : str_(str), index_(index) {}
 
 
-        char_reference_type operator*() const { return (*str_)[index_]; }
-        char_pointer_type operator->() const { return &(*str_)[index_]; }
+        reference operator*() const { return (*str_)[index_]; }
+        pointer operator->() const { return &(*str_)[index_]; }
 
         base_iterator& operator++() {
             ++index_;
@@ -86,7 +87,7 @@ public:
             return static_cast<difference_type>(index_) - static_cast<difference_type>(other.index_);
         }
 
-        char_reference_type operator[](difference_type n) const {
+        reference operator[](difference_type n) const {
             return *(*this + n);
         }
 
@@ -147,7 +148,12 @@ public:
     static MyString generateRandomWord(size_t length);
     [[nodiscard]] bool startsWith(const MyString&) const;
     [[nodiscard]] bool endsWith(const MyString&) const;
-    MyString join(const std::vector<MyString> &texts) const;
+    [[nodiscard]] MyString join(const std::vector<MyString> &texts) const;
+
+    template<typename Predicate>
+    bool all_of(Predicate checker) const {
+        return std::all_of(cbegin(), cend(), checker);
+    }
 
     void trim();
 
