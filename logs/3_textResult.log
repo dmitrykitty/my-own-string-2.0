@@ -1,0 +1,43 @@
+Running main() from /tmp/tmpxvg8wt7d/student/tests/lib/googletest/src/gtest_main.cc
+[==========] Running 17 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 17 tests from MyStringTester
+[ RUN      ] MyStringTester.emptyStringConstruction_expectedSizeIsZero
+[       OK ] MyStringTester.emptyStringConstruction_expectedSizeIsZero (0 ms)
+[ RUN      ] MyStringTester.constructionFromConstChar_expectedTextCopied
+[       OK ] MyStringTester.constructionFromConstChar_expectedTextCopied (0 ms)
+[ RUN      ] MyStringTester.clear_expectedEmptyStringAfterClearing
+[       OK ] MyStringTester.clear_expectedEmptyStringAfterClearing (0 ms)
+[ RUN      ] MyStringTester.ostreamOperator_readTextShorterThanBufferSize_expectedTextInStream
+[       OK ] MyStringTester.ostreamOperator_readTextShorterThanBufferSize_expectedTextInStream (0 ms)
+[ RUN      ] MyStringTester.ostreamOperator_readTextEqualToBufferSize_expectedTextInStream
+[       OK ] MyStringTester.ostreamOperator_readTextEqualToBufferSize_expectedTextInStream (0 ms)
+[ RUN      ] MyStringTester.ostreamOperator_readTextLongerThanBufferSize_expectedTextInStream
+[       OK ] MyStringTester.ostreamOperator_readTextLongerThanBufferSize_expectedTextInStream (0 ms)
+[ RUN      ] MyStringTester.indexAccessOperator_expectedPossibilityToAccesElementsWithIndex
+[       OK ] MyStringTester.indexAccessOperator_expectedPossibilityToAccesElementsWithIndex (0 ms)
+[ RUN      ] MyStringTester.istreamOperator_expectedTextCopiedFromStreamToString
+[       OK ] MyStringTester.istreamOperator_expectedTextCopiedFromStreamToString (0 ms)
+[ RUN      ] MyStringTester.trimming_expectedSpacesRemoved
+[       OK ] MyStringTester.trimming_expectedSpacesRemoved (0 ms)
+[ RUN      ] MyStringTester.operatorPlusEqual_expectedTextConcatenation
+[       OK ] MyStringTester.operatorPlusEqual_expectedTextConcatenation (0 ms)
+[ RUN      ] MyStringTester.countingUniqueWords
+[       OK ] MyStringTester.countingUniqueWords (0 ms)
+[ RUN      ] MyStringTester.countingWordsNumbersInText
+[       OK ] MyStringTester.countingWordsNumbersInText (1 ms)
+[ RUN      ] MyStringTester.countingWordsNumbersInTextIgnoringWordCases
+[       OK ] MyStringTester.countingWordsNumbersInTextIgnoringWordCases (2 ms)
+[ RUN      ] MyStringTester.wordsIntoLowerCase
+[       OK ] MyStringTester.wordsIntoLowerCase (0 ms)
+[ RUN      ] MyStringTester.randomWordGeneration
+[       OK ] MyStringTester.randomWordGeneration (0 ms)
+[ RUN      ] MyStringTester.startsWith
+[       OK ] MyStringTester.startsWith (0 ms)
+[ RUN      ] MyStringTester.endsWith
+[       OK ] MyStringTester.endsWith (0 ms)
+[----------] 17 tests from MyStringTester (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 17 tests from 1 test suite ran. (7 ms total)
+[  PASSED  ] 17 tests.
