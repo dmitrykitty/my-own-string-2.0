@@ -171,3 +171,6 @@ The rest will be taken care of automatically. You can check the `GRADE.md` file 
        │   ├── CMakeLists.txt     # iner CMake for tests - it is included by outter CMake
        │   └── myStringTests.cpp  # tests for our class
        └── trescWygenerowan_dlaStudentowa.pdf
+
+
+

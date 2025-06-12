@@ -92,7 +92,8 @@ message(" + Znaleziono źródła bez main.cpp: ${SOURCES_WITHOUT_MAIN}")
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/README.md")
    add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} "${CMAKE_CURRENT_SOURCE_DIR}/README.md")
 else()
-   add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES})
+   add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES}
+           mystring.h)
 endif()
 
 
