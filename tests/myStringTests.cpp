@@ -195,7 +195,7 @@ TEST_F(MyStringTester, countingUniqueWords)
     const std::set<MyString> uniqueWords = text.getUniqueWords();
     ASSERT_EQ(expectedNumberOfWords, uniqueWords.size());
 }
-/*
+
 TEST_F(MyStringTester, countingWordsNumbersInText)
 {
     // source of text below: https://poezja.org/wz/Ga%C5%82czy%C5%84ski_Ildefons_Konstanty/22823/Zaczarowana_doro%C5%BCka
@@ -303,6 +303,7 @@ TEST_F(MyStringTester, countingWordsNumbersInTextIgnoringWordCases)
     EXPECT_EQ(16, wordsUsage.at("woznico")) << "all words: " << wordsUsage.size();
     EXPECT_EQ(11, wordsUsage.at("krol")) << "all words: " << wordsUsage.size();
 }
+
 // use: ::tolower, std::transform
 TEST_F(MyStringTester, wordsIntoLowerCase)
 {
@@ -318,6 +319,7 @@ TEST_F(MyStringTester, wordsIntoLowerCase)
 
     ASSERT_EQ(string(quoteLowerCase), stream.str());
 }
+/*
 // use: std::generate_n, std::back_inserter
 TEST_F(MyStringTester, randomWordGeneration)
 {

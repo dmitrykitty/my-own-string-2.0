@@ -72,6 +72,10 @@ MyString& MyString::operator+=(char ch) {
     return *this;
 }
 
+bool MyString::operator<(const MyString& other) const {
+    return this->toString() < other.toString();
+}
+
 
 void MyString::trim() {
     if (size_ == 0)
@@ -146,13 +150,36 @@ std::set<MyString> MyString::getUniqueWords() const {
     return uniqueWords;
 }
 
+std::map<MyString, size_t> MyString::countWordsUsageIgnoringCases() const {
+    MyString tmp = *this;
+    tmp.trim();
+    tmp = tmp.toLower();
+
+    std::map<MyString, size_t> wordCounter;
+    MyString currentWord;
+
+    auto addWordToCounter = [&] {
+        if (!currentWord.empty()) {
+            ++wordCounter[currentWord];
+            currentWord.clear();
+        }
+    };
+
+    for (const auto ch: tmp) {
+        if (std::isalpha(static_cast<unsigned>(ch)))
+            currentWord += ch;
+        else
+            addWordToCounter();
+    }
+    addWordToCounter();
+
+    return wordCounter;
+}
+
+
 std::string MyString::toString() const {
     std::string res;
     for (const auto ch: *this)
         res += ch;
     return res;
-}
-
-bool MyString::operator<(const MyString& other) const {
-    return this->toString() < other.toString();
 }

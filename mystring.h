@@ -3,6 +3,7 @@
 
 #include <array>
 #include <iostream>
+#include <map>
 #include <set>
 
 
@@ -19,7 +20,7 @@ private:
 public:
     MyString() = default;
 
-    explicit MyString(const char* text);
+    MyString(const char* text);
 
     MyString(const MyString& other) = default;
 
@@ -96,6 +97,7 @@ public:
     bool operator>(const MyString&) const;
 
     std::set<MyString> getUniqueWords() const;
+    std::map<MyString, size_t>  countWordsUsageIgnoringCases()const;
 
     void trim();
 
