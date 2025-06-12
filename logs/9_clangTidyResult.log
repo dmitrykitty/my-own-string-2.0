@@ -1,0 +1,48 @@
+make: Entering directory '/tmp/tmp9hxccsvg/student/build'
+make[1]: Entering directory '/tmp/tmp9hxccsvg/student/build'
+make[2]: Entering directory '/tmp/tmp9hxccsvg/student/build'
+make[3]: Entering directory '/tmp/tmp9hxccsvg/student/build'
+make[3]: Leaving directory '/tmp/tmp9hxccsvg/student/build'
+make[3]: Entering directory '/tmp/tmp9hxccsvg/student/build'
+[ 25%] Building CXX object CMakeFiles/zad12MyString_dlaStudentow.dir/main.cpp.o
+/tmp/tmp9hxccsvg/student/main.cpp: In function ‘void validateStudentsInfo()’:
+/tmp/tmp9hxccsvg/student/main.cpp:144:48: error: static assertion failed: You must input your first name!
+  144 |     static_assert(compileTimeStrlen(FIRSTNAME) > 2, "You must input your first name!");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/tmp/tmp9hxccsvg/student/main.cpp:144:48: note: the comparison reduces to ‘(0 > 2)’
+/tmp/tmp9hxccsvg/student/main.cpp:145:46: error: static assertion failed: You must input your surname!
+  145 |     static_assert(compileTimeStrlen(SURNAME) > 2, "You must input your surname!");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/tmp/tmp9hxccsvg/student/main.cpp:145:46: note: the comparison reduces to ‘(0 > 2)’
+/tmp/tmp9hxccsvg/student/main.cpp:147:46: error: static assertion failed: You must input your student book id!
+  147 |     static_assert(compileTimeStrlen(BOOK_ID) > 1, "You must input your student book id!");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/tmp/tmp9hxccsvg/student/main.cpp:147:46: note: the comparison reduces to ‘(0 > 1)’
+/tmp/tmp9hxccsvg/student/main.cpp:150:43: error: static assertion failed: You must input your mail (preferred AGH mail)!
+  150 |     static_assert(compileTimeStrlen(MAIL) > 3, "You must input your mail (preferred AGH mail)!");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/tmp/tmp9hxccsvg/student/main.cpp:150:43: note: the comparison reduces to ‘(0 > 3)’
+/tmp/tmp9hxccsvg/student/main.cpp:151:38: error: non-constant condition for static assertion
+  151 |     static_assert(compileTimeContains(MAIL, '@'), "Invalid mail! It should contain '@'!");
+      |                   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/tmp/tmp9hxccsvg/student/main.cpp:151:38:   in ‘constexpr’ expansion of ‘compileTimeContains(((const char*)MAIL), 64)’
+/tmp/tmp9hxccsvg/student/main.cpp:139:53:   in ‘constexpr’ expansion of ‘compileTimeContains((text + 1), ((int)letter))’
+/tmp/tmp9hxccsvg/student/main.cpp:136:17: error: array subscript value ‘1’ is outside the bounds of array type ‘const char [1]’
+  136 |     if ('\n' == *text)
+      |                 ^~~~~
+/tmp/tmp9hxccsvg/student/main.cpp:152:38: error: non-constant condition for static assertion
+  152 |     static_assert(compileTimeContains(MAIL, '.'), "Invalid mail! It should contain '.'!");
+      |                   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/tmp/tmp9hxccsvg/student/main.cpp:152:38:   in ‘constexpr’ expansion of ‘compileTimeContains(((const char*)MAIL), 46)’
+/tmp/tmp9hxccsvg/student/main.cpp:139:53:   in ‘constexpr’ expansion of ‘compileTimeContains((text + 1), ((int)letter))’
+/tmp/tmp9hxccsvg/student/main.cpp:136:17: error: array subscript value ‘1’ is outside the bounds of array type ‘const char [1]’
+  136 |     if ('\n' == *text)
+      |                 ^~~~~
+make[3]: *** [CMakeFiles/zad12MyString_dlaStudentow.dir/build.make:76: CMakeFiles/zad12MyString_dlaStudentow.dir/main.cpp.o] Error 1
+make[3]: Leaving directory '/tmp/tmp9hxccsvg/student/build'
+make[2]: *** [CMakeFiles/Makefile2:167: CMakeFiles/zad12MyString_dlaStudentow.dir/all] Error 2
+make[2]: Leaving directory '/tmp/tmp9hxccsvg/student/build'
+make[1]: *** [CMakeFiles/Makefile2:408: CMakeFiles/clang_tidy.dir/rule] Error 2
+make[1]: Leaving directory '/tmp/tmp9hxccsvg/student/build'
+make: *** [Makefile:286: clang_tidy] Error 2
+make: Leaving directory '/tmp/tmp9hxccsvg/student/build'

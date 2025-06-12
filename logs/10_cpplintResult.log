@@ -1,0 +1,64 @@
+make: Entering directory '/tmp/tmp9hxccsvg/student/build'
+make[1]: Entering directory '/tmp/tmp9hxccsvg/student/build'
+make[2]: Entering directory '/tmp/tmp9hxccsvg/student/build'
+make[3]: Entering directory '/tmp/tmp9hxccsvg/student/build'
+make[3]: Leaving directory '/tmp/tmp9hxccsvg/student/build'
+make[3]: Entering directory '/tmp/tmp9hxccsvg/student/build'
+[100%] Running cpplint to check for tabs and trailing whitespace
+/tmp/tmp9hxccsvg/student/main.cpp:105:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/main.cpp:105:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+/tmp/tmp9hxccsvg/student/main.cpp:111:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp9hxccsvg/student/main.cpp:113:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/main.cpp:114:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+/tmp/tmp9hxccsvg/student/main.cpp:120:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp9hxccsvg/student/main.cpp:125:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp9hxccsvg/student/main.cpp:126:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/main.cpp:126:  Missing spaces around <=  [whitespace/operators] [3]
+/tmp/tmp9hxccsvg/student/main.cpp:130:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp9hxccsvg/student/main.cpp:134:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/main.cpp:135:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp9hxccsvg/student/main.cpp:143:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+/tmp/tmp9hxccsvg/student/main.cpp:144:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/main.cpp:145:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/main.cpp:147:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/main.cpp:148:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/main.cpp:150:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/main.cpp:151:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/main.cpp:152:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.cpp:8:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.cpp:33:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.cpp:52:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.cpp:58:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.cpp:82:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp9hxccsvg/student/mystring.cpp:83:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.cpp:92:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.cpp:99:  Should have a space between // and comment  [whitespace/comments] [4]
+/tmp/tmp9hxccsvg/student/mystring.cpp:117:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
+/tmp/tmp9hxccsvg/student/mystring.cpp:131:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
+/tmp/tmp9hxccsvg/student/mystring.cpp:151:  Missing space around colon in range-based for loop  [whitespace/forcolon] [2]
+/tmp/tmp9hxccsvg/student/mystring.h:10:  public: should be indented +1 space inside class MyString  [whitespace/indent] [3]
+/tmp/tmp9hxccsvg/student/mystring.h:13:  private: should be indented +1 space inside class MyString  [whitespace/indent] [3]
+/tmp/tmp9hxccsvg/student/mystring.h:19:  public: should be indented +1 space inside class MyString  [whitespace/indent] [3]
+/tmp/tmp9hxccsvg/student/mystring.h:28:  public: should be indented +1 space inside class base_iterator  [whitespace/indent] [3]
+/tmp/tmp9hxccsvg/student/mystring.h:30:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.h:31:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.h:32:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.h:36:  private: should be indented +1 space inside class base_iterator  [whitespace/indent] [3]
+/tmp/tmp9hxccsvg/student/mystring.h:40:  public: should be indented +1 space inside class base_iterator  [whitespace/indent] [3]
+/tmp/tmp9hxccsvg/student/mystring.h:41:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.h:58:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.h:59:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+/tmp/tmp9hxccsvg/student/mystring.h:106:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+/tmp/tmp9hxccsvg/student/mystring.h:106:  Should have a space between // and comment  [whitespace/comments] [4]
+Done processing /tmp/tmp9hxccsvg/student/main.cpp
+Done processing /tmp/tmp9hxccsvg/student/mystring.cpp
+Done processing /tmp/tmp9hxccsvg/student/mystring.h
+Total errors found: 45
+make[3]: *** [CMakeFiles/cpplint.dir/build.make:71: CMakeFiles/cpplint] Error 1
+make[3]: Leaving directory '/tmp/tmp9hxccsvg/student/build'
+make[2]: *** [CMakeFiles/Makefile2:375: CMakeFiles/cpplint.dir/all] Error 2
+make[2]: Leaving directory '/tmp/tmp9hxccsvg/student/build'
+make[1]: *** [CMakeFiles/Makefile2:382: CMakeFiles/cpplint.dir/rule] Error 2
+make[1]: Leaving directory '/tmp/tmp9hxccsvg/student/build'
+make: *** [Makefile:273: cpplint] Error 2
+make: Leaving directory '/tmp/tmp9hxccsvg/student/build'
