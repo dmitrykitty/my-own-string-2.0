@@ -331,7 +331,7 @@ TEST_F(MyStringTester, randomWordGeneration)
         EXPECT_TRUE(std::isalpha(randomWord[i])) << "index = " << i << ", word: " << randomWord;
     }
 }
-/*
+
 // use: std::search
 TEST_F(MyStringTester, startsWith)
 {
@@ -404,4 +404,3 @@ TEST_F(MyStringTester, all_of)
     EXPECT_FALSE(onlyNumbers.all_of(::isalpha));
     EXPECT_FALSE(onlyNumbers.all_of(::isspace));
 }
-*/
